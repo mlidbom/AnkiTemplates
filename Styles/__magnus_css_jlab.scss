@@ -1,12 +1,14 @@
 @import "__magnus_css_universal.scss";
 @import "__magnus_css_japanese.scss";
+@import "__magnus_css_wanikani.scss";
+@import "Yomichan/MyYomichan.scss";
 
 
 /* FONTS AND COLORS */
 .card { font-size: 20pt; }
 
 .kanji, .kanjipopup {
-    font-size: 40pt;
+    font-size: 50pt;
     line-height:1;}
 
 .kanji.user, .my-comments { background: #141414;}
@@ -44,9 +46,3 @@
 .kanjipopup ruby rt { visibility: hidden; }
 .kanjipopup ruby:active rt { visibility: visible; }
 .kanjipopup ruby:hover rt { visibility: visible; }
-
-
-@font-face {
-    font-family: "Hiragino Kaku Gothic Pro W3";
-    src: url("_hirakakyprow3.otf");
-}

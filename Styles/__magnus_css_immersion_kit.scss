@@ -1,14 +1,17 @@
-/*FONTS & COLORS */
 @import "__magnus_css_universal.scss";
 @import "__magnus_css_japanese.scss";
 @import "__magnus_css_wanikani.scss";
+@import "Yomichan/MyYomichan.scss";
 
+
+/*FONTS & COLORS */
 .comments > div{ background:$colorBgDark1; }
-.comments.short { font-size:25pt; }
+.comments.short { font-size:25pt; 
+                  white-space:pre-line; }
 .comments.long { font-size:16pt; }
 
 .expression, .reading {
-    font-size: 40pt;
+    font-size: 50pt;
     line-height: 1;
 }
 
@@ -28,8 +31,6 @@
 .comments > div { text-align:left; }
 
 .reading ruby rt { visibility: hidden; }
-/*
-.reading ruby:active rt { visibility: visible; }
-.reading ruby:hover rt { visibility: visible; }
-*/
+
+
 
