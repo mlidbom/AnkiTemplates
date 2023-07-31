@@ -42,6 +42,10 @@ b {
   src: url("../Styles/_hirakakyprow3.otf");
 }
 /* FONTS & COLORS */
+primary {
+  text-decoration: underline;
+}
+
 .meaning, .reading {
   font-size: 30pt;
 }
@@ -578,7 +582,6 @@ read, reading {
 
 .primaryVocab {
   font-size: 50pt;
-  font-weight: bold;
   line-height: 1.25;
 }
 
@@ -592,18 +595,13 @@ read, reading {
   margin-right: 10px;
 }
 
-primary {
-  text-decoration: underline;
-}
-
 .radicals, .reading {
   font-size: 32px;
-  font-weight: bold;
-  color: #0a9ce6;
+  color: #ff9d17;
 }
 
 .mnemonics.user {
-  font-size: 30pt;
+  font-size: 25pt;
   line-height: unset;
 }
 

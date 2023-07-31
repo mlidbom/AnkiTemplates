@@ -1,4 +1,8 @@
 ﻿/* FONTS & COLORS */
+primary {
+  text-decoration: underline;
+}
+
 .meaning, .reading {
   font-size: 30pt;
 }

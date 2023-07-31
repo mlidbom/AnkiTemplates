@@ -15,7 +15,6 @@
              bottom: -36px; }
 
 .primaryVocab { font-size: 50pt;
-                font-weight: bold;
                 line-height: 1.25; }
 
 .meaning, .reading { font-size: 40pt;
@@ -24,14 +23,11 @@
 .meaning vocab { color: white;
                  margin-right: 10px; }
 
-primary { text-decoration: underline; }
-
 .radicals, .reading { font-size: 32px;
-                      font-weight: bold;
-                      color: #0a9ce6; }
+                      color: $colorTextReading; }
 
 
-.mnemonics.user { font-size: 30pt;
+.mnemonics.user { font-size: 25pt;
                   line-height: unset; }
 .mnemonics.user > div { background: $colorBgDark1;
                         white-space: pre-line; }

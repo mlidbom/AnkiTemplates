@@ -42,6 +42,10 @@ b {
   src: url("../Styles/_hirakakyprow3.otf");
 }
 /* FONTS & COLORS */
+primary {
+  text-decoration: underline;
+}
+
 .meaning, .reading {
   font-size: 30pt;
 }

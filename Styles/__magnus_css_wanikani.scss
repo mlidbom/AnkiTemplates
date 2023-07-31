@@ -7,6 +7,8 @@ $colorTextReading: #ff9d17;
 $colorTextMeaning: #e20096;
 
 /* FONTS & COLORS */
+primary { text-decoration: underline; }
+
 .meaning, .reading { font-size:30pt; }
 .meaning, .userExplanation { color:$colorTextMeaning; }
 .reading { color: $colorTextReading; }
