@@ -566,9 +566,10 @@ read, reading {
 }
 
 .kanji {
-  font-size: 180px;
-  line-height: 1;
+  font-size: 150px;
+  line-height: 0.8;
   background-color: #e20096;
+  padding-top: 20pt;
 }
 
 .kanji img {
