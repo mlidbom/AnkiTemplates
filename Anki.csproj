@@ -33,12 +33,16 @@
   </ItemGroup>
 
   <ItemGroup>
-	  <Content Include="collection.media\__magnus*" />
-      <Content Include="collection.media\_WakaFont*" />
+     <Content Include="collection.media\_WakaFont*" />
   </ItemGroup>
 
   <ItemGroup>
     <Content Remove="compilerconfig.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="collection.media\__magnus_css_immersion_kit.css" />
+    <Content Include="collection.media\__magnus_css_wanikani_vocab.css" />
   </ItemGroup>
 
 	<ItemGroup>
