@@ -1,0 +1,36 @@
+/* FONTS & COLORS */
+.meaning, .reading { font-size:30pt; }
+.meaning, .userExplanation { color:#e20096; }
+.reading { color: #ff9d17; }
+
+.meaning { line-height: 1.2; }
+
+.meaning.overridden{ font-size:12pt;  }
+
+.userExplanation {
+    white-space: pre-line;
+    font-size: 20pt;
+}
+
+/* highlights */
+rad, radical, kan, kanji, read, reading, voc, vocabulary, vocab, .primaryVocab { color:white; }
+
+rad, radical, kan, kanji, read, reading, voc, vocabulary, vocab {
+    display: inline-block;
+    line-height: 1.2;
+}
+
+rad, radical { background-color: #00a0f1; }
+kan, kanji   { background-color: #f100a0; }
+voc, vocabulary, vocab, .primaryVocab   { background-color: #a100f1; }
+read, reading { background-color: #555; }
+
+
+/* LAYOUT */
+.meaning div { text-align: center !important; } /* yomichan import fix */
+.userExplanation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}

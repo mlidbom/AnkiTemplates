@@ -1,0 +1,52 @@
+﻿[
+  {
+    "outputFile": "collection.media/__magnus_css_basic.css",
+    "inputFile": "Styles/__magnus_css_basic.scss",
+    "minify": { "enabled": false }
+  },
+  {
+    "outputFile": "collection.media/__magnus_css_immersion_kit.css",
+    "inputFile": "Styles/__magnus_css_immersion_kit.scss",
+    "minify": { "enabled": false }
+  },
+  {
+    "outputFile": "collection.media/__magnus_css_japanese.css",
+    "inputFile": "Styles/__magnus_css_japanese.scss",
+    "minify": { "enabled": false }
+  },
+  {
+    "outputFile": "collection.media/__magnus_css_jlab.css",
+    "inputFile": "Styles/__magnus_css_jlab.scss",
+    "minify": { "enabled": false }
+  },
+  {
+    "outputFile": "collection.media/__magnus_css_universal.css",
+    "inputFile": "Styles/__magnus_css_universal.scss",
+    "minify": { "enabled": false }
+  },
+  {
+    "outputFile": "collection.media/__magnus_css_wanikani.css",
+    "inputFile": "Styles/__magnus_css_wanikani.scss",
+    "minify": { "enabled": false }
+  },
+  {
+    "outputFile": "collection.media/__magnus_css_wanikani_kanji.css",
+    "inputFile": "Styles/__magnus_css_wanikani_kanji.scss",
+    "minify": { "enabled": false }
+  },
+  {
+    "outputFile": "collection.media/__magnus_css_wanikani_radical.css",
+    "inputFile": "Styles/__magnus_css_wanikani_radical.scss",
+    "minify": { "enabled": false }
+  },
+  {
+    "outputFile": "collection.media/__magnus_css_wanikani_radical_icons_font.css",
+    "inputFile": "Styles/__magnus_css_wanikani_radical_icons_font.scss",
+    "minify": { "enabled": false }
+  },
+  {
+    "outputFile": "collection.media/__magnus_css_wanikani_vocab.css",
+    "inputFile": "Styles/__magnus_css_wanikani_vocab.scss",
+    "minify": { "enabled": false }
+  }
+]

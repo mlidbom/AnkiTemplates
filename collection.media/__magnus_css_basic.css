@@ -1,17 +1,66 @@
-@import url("__magnus_css_universal.css");
-@import url("__magnus_css_japanese.css");
-
+﻿@charset "UTF-8";
 /* FONTS & COLORS */
-#container2 { font-size: 20pt; }
+.card {
+  background: #282828 !important;
+  color: white !important;
+}
 
-#container2 .answer { text-align: left; }
+u {
+  color: #bbb1ff;
+}
 
-.reference_url { font-size: 12pt; }
+i {
+  color: #ff9d17;
+}
 
-.question { font-size:30pt; }
+b {
+  color: #ff5838;
+}
+
+/* LAYOUT */
+#container1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#container2 {
+  text-align: center;
+}
+
+.card #container1 #container2 a:hover {
+  cursor: pointer !important;
+}
+
+.card {
+  font-family: Meiryo, "Hiragino Kaku Gothic Pro W3";
+}
+
+@font-face {
+  font-family: "Hiragino Kaku Gothic Pro W3";
+  src: url("../Styles/_hirakakyprow3.otf");
+}
+/* FONTS & COLORS */
+#container2 {
+  font-size: 20pt;
+}
+
+#container2 .answer {
+  text-align: left;
+}
+
+.reference_url {
+  font-size: 12pt;
+}
+
+.question {
+  font-size: 30pt;
+}
 
 /*　www.japanesewithanime.com　*/
-:not(a).transcript-extra { color: rgb(109, 255, 109); }
-
+:not(a).transcript-extra {
+  color: rgb(109, 255, 109);
+}
 
 /* LAYOUT */

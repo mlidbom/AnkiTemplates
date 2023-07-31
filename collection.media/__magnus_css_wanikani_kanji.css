@@ -1,94 +1,700 @@
-/* FONTS AND COLORS */
-@import url("__magnus_css_universal.css");
-@import url("__magnus_css_japanese.css");
-@import url("__magnus_css_wanikani.css");
-@import url("__magnus_css_wanikani_radical_icons_font.css");
+﻿/* FONTS AND COLORS */ /* FONTS & COLORS */
+.card {
+  background: #282828 !important;
+  color: white !important;
+}
 
-.mainContent { font-family: "Hiragino Kaku Gothic Pro W3", Meiryo;
-    font-size: 20px;
-    background: #292b2c;
-    color: white; }
+u {
+  color: #bbb1ff;
+}
 
-.kanji { font-size:180px;
-    line-height: 1;
-    background-color:#e20096; }
+i {
+  color: #ff9d17;
+}
 
-.kanji img { position:relative; bottom:-36px; }
+b {
+  color: #ff5838;
+}
 
-.primaryVocab{ font-size: 50pt;
-    font-weight:bold;
-    line-height:1.25; }
+/* LAYOUT */
+#container1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
 
-.meaning, .reading { font-size:40pt;
-    line-height:1.1; }
-.meaning vocab { color: white;
-    margin-right: 10px;}
+#container2 {
+  text-align: center;
+}
 
+.card #container1 #container2 a:hover {
+  cursor: pointer !important;
+}
 
+.card {
+  font-family: Meiryo, "Hiragino Kaku Gothic Pro W3";
+}
 
+@font-face {
+  font-family: "Hiragino Kaku Gothic Pro W3";
+  src: url("../Styles/_hirakakyprow3.otf");
+}
+/* FONTS & COLORS */
+.meaning, .reading {
+  font-size: 30pt;
+}
 
-primary { 	text-decoration: underline;}
+.meaning, .userExplanation {
+  color: #e20096;
+}
 
-.radicals, .reading { font-size: 32px;
-    font-weight: bold;
-    color:#0a9ce6; }
+.reading {
+  color: #ff9d17;
+}
 
+.meaning {
+  line-height: 1.2;
+}
+
+.meaning.overridden {
+  font-size: 12pt;
+}
+
+.userExplanation {
+  white-space: pre-line;
+  font-size: 20pt;
+}
+
+/* highlights */
+rad, radical, kan, kanji, read, reading, voc, vocabulary, vocab, .primaryVocab {
+  color: white;
+}
+
+rad, radical, kan, kanji, read, reading, voc, vocabulary, vocab {
+  display: inline-block;
+  line-height: 1.2;
+}
+
+rad, radical {
+  background-color: #00a0f1;
+}
+
+kan, kanji {
+  background-color: #f100a0;
+}
+
+voc, vocabulary, vocab, .primaryVocab {
+  background-color: #a100f1;
+}
+
+read, reading {
+  background-color: #555;
+}
+
+/* LAYOUT */
+.meaning div {
+  text-align: center !important;
+} /* yomichan import fix */
+.userExplanation {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+@font-face {
+  font-family: "WakaFont";
+  src: url("../Styles/_WakaFont.eot");
+  src: url("../Styles/_WakaFont.eot?#iefix") format("embedded-opentype"), url("../Styles/_WakaFont.woff") format("woff"), url("../Styles/_WakaFont.ttf") format("truetype"), url("../Styles/_WakaFont.svg#WakaFont") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+  @font-face {
+    font-family: "WakaFont";
+    src: url("../Styles/_WakaFont.svg#WakaFont") format("svg");
+  }
+}
+[data-icon]:before {
+  content: attr(data-icon);
+}
+
+[data-icon]:before,
+.radical-animal:before,
+.radical-arrows:before,
+.radical-bar:before,
+.radical-bear:before,
+.radical-beggar:before,
+.radical-black-hole:before,
+.radical-blackjack:before,
+.radical-boob:before,
+.radical-bookshelf:before,
+.radical-butcher:before,
+.radical-cactus:before,
+.radical-cat-pirate:before,
+.radical-chester:before,
+.radical-chinese:before,
+.radical-circus:before,
+.radical-cleat:before,
+.radical-cloak:before,
+.radical-clown:before,
+.radical-coffin:before,
+.radical-comb:before,
+.radical-corn:before,
+.radical-cow-god:before,
+.radical-creeper:before,
+.radical-death-star:before,
+.radical-egg:before,
+.radical-explosion:before,
+.radical-fish-stick:before,
+.radical-fish-tail:before,
+.radical-flowers:before,
+.radical-football:before,
+.radical-four:before,
+.radical-gambler:before,
+.radical-geoduck:before,
+.radical-grass:before,
+.radical-greenhouse:before,
+.radical-gun:before,
+.radical-hat:before,
+.radical-hercules:before,
+.radical-hick:before,
+.radical-hills:before,
+.radical-horns:before,
+.radical-key:before,
+.radical-kick:before,
+.radical-lantern:before,
+.radical-leaf:before,
+.radical-mohawk:before,
+.radical-morning:before,
+.radical-mustache:before,
+.radical-nailbat:before,
+.radical-ox:before,
+.radical-pi:before,
+.radical-poem:before,
+.radical-pool:before,
+.radical-pope:before,
+.radical-potato:before,
+.radical-propaganda:before,
+.radical-psychopath:before,
+.radical-ribs:before,
+.radical-rocket:before,
+.radical-roof:before,
+.radical-sauron:before,
+.radical-saw:before,
+.radical-shark:before,
+.radical-sick:before,
+.radical-signpost:before,
+.radical-slice:before,
+.radical-slinky:before,
+.radical-sock:before,
+.radical-spikes:before,
+.radical-splinter:before,
+.radical-squid:before,
+.radical-stick:before,
+.radical-superman:before,
+.radical-tofu:before,
+.radical-tombstone:before,
+.radical-train:before,
+.radical-triceratops:before,
+.radical-trident:before,
+.radical-tsunami:before,
+.radical-umbrella:before,
+.radical-viking:before,
+.radical-water-slide:before,
+.radical-womb:before,
+.radical-worm:before,
+.radical-zombie:before {
+  display: inline-block;
+  font-family: "WakaFont";
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  line-height: 1;
+  text-decoration: inherit;
+  text-rendering: optimizeLegibility;
+  text-transform: none;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  /* ReSharper disable once CssNotResolved */
+  font-smoothing: antialiased;
+}
+
+.radical-animal:before {
+  content: "\f100";
+}
+
+.radical-arrows:before {
+  content: "\f101";
+}
+
+.radical-bar:before {
+  content: "\f102";
+}
+
+.radical-bear:before {
+  content: "\f103";
+}
+
+.radical-beggar:before {
+  content: "\f104";
+}
+
+.radical-black-hole:before {
+  content: "\f105";
+}
+
+.radical-blackjack:before {
+  content: "\f106";
+}
+
+.radical-boob:before {
+  content: "\f107";
+}
+
+.radical-bookshelf:before {
+  content: "\f108";
+}
+
+.radical-butcher:before {
+  content: "\f109";
+}
+
+.radical-cactus:before {
+  content: "\f10a";
+}
+
+.radical-cat-pirate:before {
+  content: "\f10b";
+}
+
+.radical-chester:before {
+  content: "\f10c";
+}
+
+.radical-chinese:before {
+  content: "\f10d";
+}
+
+.radical-circus:before {
+  content: "\f10e";
+}
+
+.radical-cleat:before {
+  content: "\f10f";
+}
+
+.radical-cloak:before {
+  content: "\f110";
+}
+
+.radical-clown:before {
+  content: "\f111";
+}
+
+.radical-coffin:before {
+  content: "\f112";
+}
+
+.radical-comb:before {
+  content: "\f113";
+}
+
+.radical-corn:before {
+  content: "\f114";
+}
+
+.radical-cow-god:before {
+  content: "\f115";
+}
+
+.radical-creeper:before {
+  content: "\f116";
+}
+
+.radical-death-star:before {
+  content: "\f117";
+}
+
+.radical-egg:before {
+  content: "\f118";
+}
+
+.radical-explosion:before {
+  content: "\f119";
+}
+
+.radical-fish-stick:before {
+  content: "\f11a";
+}
+
+.radical-fish-tail:before {
+  content: "\f11b";
+}
+
+.radical-flowers:before {
+  content: "\f11c";
+}
+
+.radical-football:before {
+  content: "\f11d";
+}
+
+.radical-four:before {
+  content: "\f11e";
+}
+
+.radical-gambler:before {
+  content: "\f11f";
+}
+
+.radical-geoduck:before {
+  content: "\f120";
+}
+
+.radical-grass:before {
+  content: "\f121";
+}
+
+.radical-greenhouse:before {
+  content: "\f122";
+}
+
+.radical-gun:before {
+  content: "\f123";
+}
+
+.radical-hat:before {
+  content: "\f124";
+}
+
+.radical-hercules:before {
+  content: "\f125";
+}
+
+.radical-hick:before {
+  content: "\f126";
+}
+
+.radical-hills:before {
+  content: "\f127";
+}
+
+.radical-horns:before {
+  content: "\f128";
+}
+
+.radical-key:before {
+  content: "\f129";
+}
+
+.radical-kick:before {
+  content: "\f12a";
+}
+
+.radical-lantern:before {
+  content: "\f12b";
+}
+
+.radical-leaf:before {
+  content: "\f12c";
+}
+
+.radical-mohawk:before {
+  content: "\f12d";
+}
+
+.radical-morning:before {
+  content: "\f12e";
+}
+
+.radical-mustache:before {
+  content: "\f12f";
+}
+
+.radical-nailbat:before {
+  content: "\f130";
+}
+
+.radical-ox:before {
+  content: "\f131";
+}
+
+.radical-pi:before {
+  content: "\f132";
+}
+
+.radical-poem:before {
+  content: "\f133";
+}
+
+.radical-pool:before {
+  content: "\f134";
+}
+
+.radical-pope:before {
+  content: "\f135";
+}
+
+.radical-potato:before {
+  content: "\f136";
+}
+
+.radical-propaganda:before {
+  content: "\f137";
+}
+
+.radical-psychopath:before {
+  content: "\f138";
+}
+
+.radical-ribs:before {
+  content: "\f139";
+}
+
+.radical-rocket:before {
+  content: "\f13a";
+}
+
+.radical-roof:before {
+  content: "\f13b";
+}
+
+.radical-sauron:before {
+  content: "\f13c";
+}
+
+.radical-saw:before {
+  content: "\f13d";
+}
+
+.radical-shark:before {
+  content: "\f13e";
+}
+
+.radical-sick:before {
+  content: "\f13f";
+}
+
+.radical-signpost:before {
+  content: "\f140";
+}
+
+.radical-slice:before {
+  content: "\f141";
+}
+
+.radical-slinky:before {
+  content: "\f142";
+}
+
+.radical-sock:before {
+  content: "\f143";
+}
+
+.radical-spikes:before {
+  content: "\f144";
+}
+
+.radical-splinter:before {
+  content: "\f145";
+}
+
+.radical-squid:before {
+  content: "\f146";
+}
+
+.radical-stick:before {
+  content: "\f147";
+}
+
+.radical-superman:before {
+  content: "\f148";
+}
+
+.radical-tofu:before {
+  content: "\f149";
+}
+
+.radical-tombstone:before {
+  content: "\f14a";
+}
+
+.radical-train:before {
+  content: "\f14b";
+}
+
+.radical-triceratops:before {
+  content: "\f14c";
+}
+
+.radical-trident:before {
+  content: "\f14d";
+}
+
+.radical-tsunami:before {
+  content: "\f14e";
+}
+
+.radical-umbrella:before {
+  content: "\f14f";
+}
+
+.radical-viking:before {
+  content: "\f150";
+}
+
+.radical-water-slide:before {
+  content: "\f151";
+}
+
+.radical-womb:before {
+  content: "\f152";
+}
+
+.radical-worm:before {
+  content: "\f153";
+}
+
+.radical-zombie:before {
+  content: "\f154";
+}
+
+.mainContent {
+  font-size: 20px;
+}
+
+.kanji {
+  font-size: 180px;
+  line-height: 1;
+  background-color: #e20096;
+}
+
+.kanji img {
+  position: relative;
+  bottom: -36px;
+}
+
+.primaryVocab {
+  font-size: 50pt;
+  font-weight: bold;
+  line-height: 1.25;
+}
+
+.meaning, .reading {
+  font-size: 40pt;
+  line-height: 1.1;
+}
+
+.meaning vocab {
+  color: white;
+  margin-right: 10px;
+}
+
+primary {
+  text-decoration: underline;
+}
+
+.radicals, .reading {
+  font-size: 32px;
+  font-weight: bold;
+  color: #0a9ce6;
+}
 
 .mnemonics.user {
-    font-size:30pt;
-    line-height: unset;
+  font-size: 30pt;
+  line-height: unset;
 }
+
 .mnemonics.user > div {
-    background:#1b1d1e;
-    white-space:pre-line;}
-.hints { background:#1b1d1e; }
-.referenceLink { 	font-size:12px; }
-.vocabList { font-size:30pt; }
+  background: #1b1d1e;
+  white-space: pre-line;
+}
 
+.hints {
+  background: #1b1d1e;
+}
 
+.referenceLink {
+  font-size: 12px;
+}
+
+.vocabList {
+  font-size: 30pt;
+}
 
 /*Yomitan import*/
-.meaning ol { list-style-type: none;
-    padding: 0;
-    margin: 0; }
-.meaning li { display: inline-block; }
-.meaning  li:not(:last-child)::after { content: ", ";
-    margin: 0 10px 0 0; }
-.meaning li::first-letter { text-transform: uppercase; }
+.meaning ol {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
 
+.meaning li {
+  display: inline-block;
+}
+
+.meaning li:not(:last-child)::after {
+  content: ", ";
+  margin: 0 10px 0 0;
+}
+
+.meaning li::first-letter {
+  text-transform: uppercase;
+}
 
 /* LAYOUT */
 .mainContent {
-    display: flex;
-    flex-direction:column;
-    width:100%;
-    align-items: center;
-    justify-content: center; }
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
 
-.mainContent > div { width:100%;
-    max-width:1000px;
-    justify-content: center;
-    text-align:left; }
+.mainContent > div {
+  width: 100%;
+  max-width: 1000px;
+  justify-content: center;
+  text-align: left;
+}
 
-.userExplanation { margin-top: 10px; }
+.userExplanation {
+  margin-top: 10px;
+}
 
-.itemInfo { display: inline-block;
-    text-align: left;
-    margin-top: 10px;
-    margin-bottom:20px; }
+.itemInfo {
+  display: inline-block;
+  text-align: left;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
 
-.kanji {margin-bottom: 5px;}
+.kanji {
+  margin-bottom: 5px;
+}
 
+.mnemonics.user {
+  margin-bottom: 10pt;
+}
 
+.mnemonics {
+  margin-top: 10px;
+}
 
-.mnemonics.user { margin-bottom: 10pt;}
+.hints {
+  margin-top: 10pt;
+}
 
-.mnemonics { margin-top:10px; }
-.hints { margin-top:10pt; }
+.front-and-answer > div {
+  text-align: center;
+}
 
-.front-and-answer > div { text-align: center; }
+.meaning.overridden {
+  margin-top: 5px;
+}
 
-.meaning.overridden{ margin-top:5px; }
-.hints { margin-bottom:10px; }
-
-
+.hints {
+  margin-bottom: 10px;
+}

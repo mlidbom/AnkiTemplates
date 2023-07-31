@@ -1,34 +1,91 @@
-/*FONTS & COLORS */
-@import url("__magnus_css_universal.css");
-@import url("__magnus_css_japanese.css");
-
-.comments > div{ background:#1b1d1e; }
-.comments.short { font-size:25pt; }
-.comments.long { font-size:16pt; }
-
-.expression, .reading {
-    font-size: 40pt;
-    line-height: 1;
+﻿/*FONTS & COLORS */ /* FONTS & COLORS */
+.card {
+  background: #282828 !important;
+  color: white !important;
 }
 
-.english { font-size:20pt; }
+u {
+  color: #bbb1ff;
+}
+
+i {
+  color: #ff9d17;
+}
+
+b {
+  color: #ff5838;
+}
 
 /* LAYOUT */
-.card { text-align: center; }
+#container1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#container2 {
+  text-align: center;
+}
+
+.card #container1 #container2 a:hover {
+  cursor: pointer !important;
+}
+
+.card {
+  font-family: Meiryo, "Hiragino Kaku Gothic Pro W3";
+}
+
+@font-face {
+  font-family: "Hiragino Kaku Gothic Pro W3";
+  src: url("../Styles/_hirakakyprow3.otf");
+}
+.comments > div {
+  background: #1b1d1e;
+}
+
+.comments.short {
+  font-size: 25pt;
+}
+
+.comments.long {
+  font-size: 16pt;
+}
+
+.expression, .reading {
+  font-size: 40pt;
+  line-height: 1;
+}
+
+.english {
+  font-size: 20pt;
+}
+
+/* LAYOUT */
+.card {
+  text-align: center;
+}
+
 .screenshot img {
-    width: auto;
-    height: 200pt; }
+  width: auto;
+  height: 200pt;
+}
 
 .comments {
-    margin-top:0pt;
-    display: flex;
-    justify-content: center; }
+  margin-top: 0pt;
+  display: flex;
+  justify-content: center;
+}
 
-.comments > div { text-align:left; }
+.comments > div {
+  text-align: left;
+}
 
-.reading ruby rt { visibility: hidden; }
+.reading ruby rt {
+  visibility: hidden;
+}
+
 /*
 .reading ruby:active rt { visibility: visible; }
 .reading ruby:hover rt { visibility: visible; }
 */
-

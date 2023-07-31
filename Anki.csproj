@@ -34,10 +34,33 @@
 
   <ItemGroup>
 	  <Content Include="collection.media\__magnus*" />
+      <Content Include="collection.media\_WakaFont*" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Remove="compilerconfig.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="Styles\__magnus_css_basic.scss" />
+    <Content Include="Styles\__magnus_css_immersion_kit.scss" />
+    <Content Include="Styles\__magnus_css_japanese.scss" />
+    <Content Include="Styles\__magnus_css_jlab.scss" />
+    <Content Include="Styles\__magnus_css_universal.scss" />
+    <Content Include="Styles\__magnus_css_wanikani.scss" />
+    <Content Include="Styles\__magnus_css_wanikani_kanji.scss" />
+    <Content Include="Styles\__magnus_css_wanikani_radical.scss" />
+    <Content Include="Styles\__magnus_css_wanikani_radical_icons_font.scss" />
+    <Content Include="Styles\__magnus_css_wanikani_vocab.scss" />
   </ItemGroup>
 
   <ItemGroup>
     <None Include="Anki.sln" />
+    <None Include="compilerconfig.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="BuildWebCompiler2022" Version="1.14.10" />
   </ItemGroup>
 
 </Project>

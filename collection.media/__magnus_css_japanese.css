@@ -1,7 +1,8 @@
-.card { font-family: Meiryo, "Hiragino Kaku Gothic Pro W3"; }
+﻿.card {
+  font-family: Meiryo, "Hiragino Kaku Gothic Pro W3";
+}
 
 @font-face {
-    font-family: "Hiragino Kaku Gothic Pro W3";
-    src: url("_hirakakyprow3.otf"); }
-
-
+  font-family: "Hiragino Kaku Gothic Pro W3";
+  src: url("../Styles/_hirakakyprow3.otf");
+}

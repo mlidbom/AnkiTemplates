@@ -1,0 +1,60 @@
+/* FONTS & COLORS */
+/*@import url("__magnus_css_universal.css");
+@import url("__magnus_css_japanese.css");*/
+@import "__magnus_css_universal.scss";
+@import "__magnus_css_japanese.scss";
+@import "__magnus_css_wanikani.scss";
+@import "__magnus_css_wanikani_radical_icons_font.scss";
+
+.card {
+    line-height: 1.25;
+    font-size: 20px; }
+
+.mainContent{
+    background: #292b2c;
+    color:white; }
+
+.question {
+    font-size:150px;
+    line-height: .8;
+    background-color:#a900fd;
+    padding-top:20px; }
+
+
+.meaning > div { text-align:center !important;} /*hack for yomitan imported notes*/
+
+.meaning.user { font-size:40pt; }
+
+.partOfSpeech { color: #ff9d17; }
+
+.auxiliaryMeanings { font-size:12px; }
+.referenceLink { font-size:12px; }
+
+.mnemonic.override {
+    font-size:25pt;
+    background:#141414;
+    line-height: 1.6;
+    white-space: pre-line; }
+
+.context_jp { font-size: 25pt; }
+
+
+/* LAYOUT */
+.mainContent { display: flex;
+    flex-direction:column;
+    align-items: center;}
+
+.mainContent > div { max-width:1000px; }
+
+.front-and-answer {
+    text-align: center;
+    width: 100%; }
+
+.userExplanation { margin-top: 0pt; }
+
+.itemInfo { display: inline-block;
+    text-align: left;
+    margin-top:10px;
+    margin-bottom:20px; }
+
+.context { margin-top: 10pt;}

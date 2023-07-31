@@ -1,0 +1,20 @@
+/* FONTS & COLORS */
+.card {
+    background:#282828 !important;
+    color:white !important;}
+
+u { color:#bbb1ff; }
+i { color:#ff9d17; }
+b { color: #ff5838;}
+
+
+/* LAYOUT */
+#container1 {
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: center; }
+
+#container2 { text-align: center; }
+
+.card #container1 #container2 a:hover { cursor: pointer !important; }

@@ -1,0 +1,52 @@
+@import "__magnus_css_universal.scss";
+@import "__magnus_css_japanese.scss";
+
+
+/* FONTS AND COLORS */
+.card { font-size: 20pt; }
+
+.kanji, .kanjipopup {
+    font-size: 40pt;
+    line-height:1;}
+
+.kanji.user, .my-comments { background: #141414;}
+
+/* LAYOUT */
+.mainContent { display: flex;
+    flex-direction:column;
+    width:100%;
+    align-items: center;
+    justify-content: center; }
+
+.topSection { width:100%;
+    justify-content: center;
+    text-align:center; }
+
+.bottomSection { width:90%;
+    max-width:1000px;
+    justify-content: center;
+    text-align:left; }
+
+.image { text-align:center;
+    width:100%; }
+
+.image img{ height: 300px;
+    width: auto;
+    object-fit: contain; }
+
+
+.kanji, .kanjipopup { text-align: center; }
+.meaning {	text-align: center; }
+
+
+
+/* hide furigana */
+.kanjipopup ruby rt { visibility: hidden; }
+.kanjipopup ruby:active rt { visibility: visible; }
+.kanjipopup ruby:hover rt { visibility: visible; }
+
+
+@font-face {
+    font-family: "Hiragino Kaku Gothic Pro W3";
+    src: url("_hirakakyprow3.otf");
+}

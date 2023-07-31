@@ -1,52 +1,113 @@
-@import url("__magnus_css_universal.css");
-@import url("__magnus_css_japanese.css");
+﻿/* FONTS & COLORS */
+.card {
+  background: #282828 !important;
+  color: white !important;
+}
 
+u {
+  color: #bbb1ff;
+}
 
-/* FONTS AND COLORS */
-.card { font-size: 20pt; }
+i {
+  color: #ff9d17;
+}
 
-.kanji, .kanjipopup {
-    font-size: 40pt;
-    line-height:1;}
-
-.kanji.user, .my-comments { background: #141414FF;}
+b {
+  color: #ff5838;
+}
 
 /* LAYOUT */
-.mainContent { display: flex;
-    flex-direction:column;
-    width:100%;
-    align-items: center;
-    justify-content: center; }
+#container1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
 
-.topSection { width:100%;
-    justify-content: center;
-    text-align:center; }
+#container2 {
+  text-align: center;
+}
 
-.bottomSection { width:90%;
-    max-width:1000px;
-    justify-content: center;
-    text-align:left; }
+.card #container1 #container2 a:hover {
+  cursor: pointer !important;
+}
 
-.image { text-align:center;
-    width:100%; }
-
-.image img{ height: 300px;
-    width: auto;
-    object-fit: contain; }
-
-
-.kanji, .kanjipopup { text-align: center; }
-.meaning {	text-align: center; }
-
-
-
-/* hide furigana */
-.kanjipopup ruby rt { visibility: hidden; }
-.kanjipopup ruby:active rt { visibility: visible; }
-.kanjipopup ruby:hover rt { visibility: visible; }
-
+.card {
+  font-family: Meiryo, "Hiragino Kaku Gothic Pro W3";
+}
 
 @font-face {
-    font-family: "Hiragino Kaku Gothic Pro W3";
-    src: url("_hirakakyprow3.otf");
+  font-family: "Hiragino Kaku Gothic Pro W3";
+  src: url("../Styles/_hirakakyprow3.otf");
+} /* FONTS AND COLORS */
+.card {
+  font-size: 20pt;
+}
+
+.kanji, .kanjipopup {
+  font-size: 40pt;
+  line-height: 1;
+}
+
+.kanji.user, .my-comments {
+  background: #141414;
+}
+
+/* LAYOUT */
+.mainContent {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.topSection {
+  width: 100%;
+  justify-content: center;
+  text-align: center;
+}
+
+.bottomSection {
+  width: 90%;
+  max-width: 1000px;
+  justify-content: center;
+  text-align: left;
+}
+
+.image {
+  text-align: center;
+  width: 100%;
+}
+
+.image img {
+  height: 300px;
+  width: auto;
+  object-fit: contain;
+}
+
+.kanji, .kanjipopup {
+  text-align: center;
+}
+
+.meaning {
+  text-align: center;
+}
+
+/* hide furigana */
+.kanjipopup ruby rt {
+  visibility: hidden;
+}
+
+.kanjipopup ruby:active rt {
+  visibility: visible;
+}
+
+.kanjipopup ruby:hover rt {
+  visibility: visible;
+}
+
+@font-face {
+  font-family: "Hiragino Kaku Gothic Pro W3";
+  src: url("../Styles/_hirakakyprow3.otf");
 }
