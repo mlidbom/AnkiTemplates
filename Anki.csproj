@@ -40,12 +40,7 @@
     <Content Remove="compilerconfig.json" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Content Include="collection.media\__magnus_css_immersion_kit.css" />
-    <Content Include="collection.media\__magnus_css_wanikani_vocab.css" />
-  </ItemGroup>
-
-	<ItemGroup>
+   <ItemGroup>
     <None Include="Anki.sln" />
     <None Include="compilerconfig.json" />
   </ItemGroup>
