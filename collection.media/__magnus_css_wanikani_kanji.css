@@ -1,0 +1,94 @@
+/* FONTS AND COLORS */
+@import url("__magnus_css_universal.css");
+@import url("__magnus_css_japanese.css");
+@import url("__magnus_css_wanikani.css");
+@import url("__magnus_css_wanikani_radical_icons_font.css");
+
+.mainContent { font-family: "Hiragino Kaku Gothic Pro W3", Meiryo;
+    font-size: 20px;
+    background: #292b2c;
+    color: white; }
+
+.kanji { font-size:180px;
+    line-height: 1;
+    background-color:#e20096; }
+
+.kanji img { position:relative; bottom:-36px; }
+
+.primaryVocab{ font-size: 50pt;
+    font-weight:bold;
+    line-height:1.25; }
+
+.meaning, .reading { font-size:40pt;
+    line-height:1.1; }
+.meaning vocab { color: white;
+    margin-right: 10px;}
+
+
+
+
+primary { 	text-decoration: underline;}
+
+.radicals, .reading { font-size: 32px;
+    font-weight: bold;
+    color:#0a9ce6; }
+
+
+.mnemonics.user {
+    font-size:30pt;
+    line-height: unset;
+}
+.mnemonics.user > div {
+    background:#1b1d1e;
+    white-space:pre-line;}
+.hints { background:#1b1d1e; }
+.referenceLink { 	font-size:12px; }
+.vocabList { font-size:30pt; }
+
+
+
+/*Yomitan import*/
+.meaning ol { list-style-type: none;
+    padding: 0;
+    margin: 0; }
+.meaning li { display: inline-block; }
+.meaning  li:not(:last-child)::after { content: ", ";
+    margin: 0 10px 0 0; }
+.meaning li::first-letter { text-transform: uppercase; }
+
+
+/* LAYOUT */
+.mainContent {
+    display: flex;
+    flex-direction:column;
+    width:100%;
+    align-items: center;
+    justify-content: center; }
+
+.mainContent > div { width:100%;
+    max-width:1000px;
+    justify-content: center;
+    text-align:left; }
+
+.userExplanation { margin-top: 10px; }
+
+.itemInfo { display: inline-block;
+    text-align: left;
+    margin-top: 10px;
+    margin-bottom:20px; }
+
+.kanji {margin-bottom: 5px;}
+
+
+
+.mnemonics.user { margin-bottom: 10pt;}
+
+.mnemonics { margin-top:10px; }
+.hints { margin-top:10pt; }
+
+.front-and-answer > div { text-align: center; }
+
+.meaning.overridden{ margin-top:5px; }
+.hints { margin-bottom:10px; }
+
+

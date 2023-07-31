@@ -1,0 +1,14 @@
+/_ReSharper.Caches/
+/.vs/Anki/FileContentIndex/
+/backup/
+/backups/
+/collection.media/*
+!/collection.media/__magnus*
+/bin/
+/obj/
+/.vs/
+*.csproj.user
+/collection.anki2
+/collection.anki2-wal
+/collection.media.db2
+/deleted.txt

@@ -1,0 +1,43 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="backups\**" />
+    <Compile Remove="backup\**" />
+    <Compile Remove="collection.media\**" />
+    <Compile Remove="_ReSharper.Caches\**" />
+    <Content Remove="backups\**" />
+    <Content Remove="backup\**" />
+    <Content Remove="collection.media\**" />
+    <Content Remove="_ReSharper.Caches\**" />
+    <EmbeddedResource Remove="backups\**" />
+    <EmbeddedResource Remove="backup\**" />
+    <EmbeddedResource Remove="collection.media\**" />
+    <EmbeddedResource Remove="_ReSharper.Caches\**" />
+    <None Remove="backups\**" />
+    <None Remove="backup\**" />
+    <None Remove="collection.media\**" />
+    <None Remove="_ReSharper.Caches\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="collection.anki2" />
+    <None Remove="collection.anki2-wal" />
+    <None Remove="collection.media.db2" />
+    <None Remove="deleted.txt" />
+  </ItemGroup>
+
+  <ItemGroup>
+	  <Content Include="collection.media\__magnus*" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="Anki.sln" />
+  </ItemGroup>
+
+</Project>
