@@ -220,8 +220,6 @@ read, reading {
   text-transform: none;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
-  /* ReSharper disable once CssNotResolved */
-  font-smoothing: antialiased;
 }
 
 .radical-animal:before {
@@ -569,11 +567,6 @@ read, reading {
   font-size: 20px;
 }
 
-.mainContent {
-  background: #292b2c;
-  color: white;
-}
-
 .question {
   font-size: 150px;
   line-height: 0.8;
@@ -589,7 +582,7 @@ read, reading {
 }
 
 .partOfSpeech {
-  color: #ff9d17;
+  color: #ff5838;
 }
 
 .auxiliaryMeanings {
@@ -625,10 +618,6 @@ read, reading {
 .front-and-answer {
   text-align: center;
   width: 100%;
-}
-
-.userExplanation {
-  margin-top: 0pt;
 }
 
 .itemInfo {

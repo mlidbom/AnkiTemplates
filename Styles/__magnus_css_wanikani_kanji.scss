@@ -33,10 +33,10 @@ primary { text-decoration: underline; }
 
 .mnemonics.user { font-size: 30pt;
                   line-height: unset; }
-.mnemonics.user > div { background: #1b1d1e;
+.mnemonics.user > div { background: $colorBgDark1;
                         white-space: pre-line; }
 
-.hints { background: #1b1d1e; }
+.hints { background: $colorBgDark1; }
 .referenceLink { font-size: 12px; }
 .vocabList { font-size: 30pt; }
 

@@ -39,7 +39,8 @@ b {
 @font-face {
   font-family: "Hiragino Kaku Gothic Pro W3";
   src: url("../Styles/_hirakakyprow3.otf");
-} /* FONTS AND COLORS */
+}
+/* FONTS AND COLORS */
 .card {
   font-size: 20pt;
 }

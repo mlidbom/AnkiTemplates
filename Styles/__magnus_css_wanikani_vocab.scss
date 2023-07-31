@@ -9,9 +9,6 @@
 .card { line-height: 1.25;
         font-size: 20px; }
 
-.mainContent { background: #292b2c;
-               color:white; }
-
 .question { font-size:150px;
             line-height: .8;
             background-color:#a900fd;
@@ -22,7 +19,7 @@
 
 .meaning.user { font-size:40pt; }
 
-.partOfSpeech { color: #ff9d17; }
+.partOfSpeech { color: $colorTextBold; }
 
 .auxiliaryMeanings { font-size:12px; }
 .referenceLink { font-size:12px; }
@@ -44,8 +41,6 @@
 
 .front-and-answer { text-align: center;
                     width: 100%; }
-
-.userExplanation { margin-top: 0pt; }
 
 .itemInfo { display: inline-block;
             text-align: left;

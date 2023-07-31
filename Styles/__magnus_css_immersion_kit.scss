@@ -1,8 +1,9 @@
 /*FONTS & COLORS */
 @import "__magnus_css_universal.scss";
 @import "__magnus_css_japanese.scss";
+@import "__magnus_css_wanikani.scss";
 
-.comments > div{ background:#1b1d1e; }
+.comments > div{ background:$colorBgDark1; }
 .comments.short { font-size:25pt; }
 .comments.long { font-size:16pt; }
 

@@ -1,7 +1,15 @@
+$colorBgRad: #00a0f1;
+$colorBgKan: #f100a0;
+$colorBgVoc: #a100f1;
+$colorBgRead:#555;
+
+$colorTextReading: #ff9d17;
+$colorTextMeaning: #e20096;
+
 /* FONTS & COLORS */
 .meaning, .reading { font-size:30pt; }
-.meaning, .userExplanation { color:#e20096; }
-.reading { color: #ff9d17; }
+.meaning, .userExplanation { color:$colorTextMeaning; }
+.reading { color: $colorTextReading; }
 
 .meaning { line-height: 1.2; }
 
@@ -20,10 +28,10 @@ rad, radical, kan, kanji, read, reading, voc, vocabulary, vocab {
     line-height: 1.2;
 }
 
-rad, radical { background-color: #00a0f1; }
-kan, kanji   { background-color: #f100a0; }
-voc, vocabulary, vocab, .primaryVocab   { background-color: #a100f1; }
-read, reading { background-color: #555; }
+rad, radical { background-color: $colorBgRad}
+kan, kanji   { background-color: $colorBgKan; }
+voc, vocabulary, vocab, .primaryVocab   { background-color: $colorBgVoc; }
+read, reading { background-color: $colorBgRead; }
 
 
 /* LAYOUT */
