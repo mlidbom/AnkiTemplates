@@ -1,5 +1,7 @@
 @import "_02_mixins.scss";
 
+body {margin: 0px 10px 0px 10px;}
+
 /* FONTS & COLORS */
 .card { background:$colorBgCard !important;
         color:$colorTextCard !important;}
@@ -11,8 +13,5 @@ b { color: $colorTextBold;}
 
 /* LAYOUT */
 #container1, #container2 { @include flexContainerColumn }
-
-/*fixme: this does not seem to be working as intended. With small windows there is no margin on the sides.*/
-#container2 { margin: 0px 10px 0px 10px; }
 
 .card #container1 #container2 a:hover { cursor: pointer !important; }

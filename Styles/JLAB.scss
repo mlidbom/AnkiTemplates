@@ -9,7 +9,6 @@
 .kanji.user, .my-comments { background: $colorBgDark1;}
 
 /* LAYOUT */
-.mainContent { @include flexContainerColumn; }
 .topSection { @include flexContainerColumn; 
               margin-bottom: 6pt; }
 
@@ -18,12 +17,13 @@
     justify-content: center;
     text-align:left; 
     div {
-       background: $colorBgDark1;
        border-bottom: 1px groove white;
        &.my-comments{ border-bottom:none; }
     }
 
 }
+
+.my-comments { margin-bottom: 5pt; }
 
 .image { text-align:center;
          width:100%; }

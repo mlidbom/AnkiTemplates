@@ -1,0 +1,114 @@
+﻿<div id="container1">
+   <div id="container2">
+      <!--######-->
+
+      <div class="mainContent kanji{{Card}}">
+         <div class="front-and-answer">
+            <div class="kanjiContainer">
+               <div class="kanji">
+                  {{Kanji}}
+                  {{#__similar_Characters}}!{{__similar_Characters}}{{/__similar_Characters}}
+               </div>
+            </div>
+
+            {{#__primary_Vocab}}
+            <div class="primaryVocab">{{__primary_Vocab}} {{__primary_Vocab_Audio}}</div>
+            {{/__primary_Vocab}}
+            {{#__meaning_Override}}
+            <div class="meaning user"># {{__meaning_Override}} #</div>
+            <div class="meaning overridden">{{Kanji_Meaning}}	</div>
+            {{/__meaning_Override}}
+            {{#__user_explanation}}
+            <div class="userExplanation">	{{__user_explanation}}</div>
+            {{/__user_explanation}}
+
+            {{^__meaning_Override}}<div class="meaning">{{Kanji_Meaning}}</div>{{/__meaning_Override}}
+
+            <div class="referenceLink">{{auxiliary_meanings_whitelist}}</div>
+
+            <div>
+               <div class="itemInfo">
+                  <div>
+                     <div class="text ">
+                        <span>On'yomi:</span>
+                        <span class="reading">{{Reading_On}}</span>
+                     </div>
+
+                     <div class="text">
+                        <span>Kun'yomi:</span>
+                        <span class="reading">{{Reading_Kun}}</span>
+                     </div>
+
+                     {{#__reading_Nan}}
+                     <div class="text">
+                        <span>Nanori:</span>
+                        <span class="reading">{{__reading_Nan}}</span>
+                     </div>
+                     {{/__reading_Nan}}
+                  </div>
+
+                  <div class="text">
+                     <span>Radicals:</span>
+                     <span class="radicals">{{Radicals}}</span>
+                     <span class="radical_icons">{{^Radicals_Icons}}, {{Radicals_Icons}}{{/Radicals_Icons}}</span>
+                     <span class="text">({{Radicals_Names}}{{#Radicals_Icons_Names}}, {{Radicals_Icons_Names}}{{/Radicals_Icons_Names}})</span>
+                  </div>
+                  <div class="referenceLink">
+                     <a target="_blank" href="https://www.wanikani.com/kanji/{{Kanji}}">Wanikani</a>
+                     <a target="_blank" href="https://jisho.org/search/{{Kanji}}%20%23kanji">Jisho(kanji)</a>
+                     <a target="_blank" href="https://jisho.org/search/*{{Kanji}}*">Jisho(vocab)</a>
+                     <a target="_blank" href="https://www.immersionkit.com/dictionary?keyword={{Kanji}}&exact=true&sort=shortness">Immersion Kit</a>
+                     Tags:{{Tags}}
+                  </div>
+               </div>
+            </div>
+         </div>
+
+         <div class="vocab list">
+            <div class="vocab entry">{{__vocab1}}</div>
+            <div class="vocab entry">{{__vocab2}}</div>
+            <div class="vocab entry">{{__vocab3}}</div>
+         </div>
+
+         <div>
+
+            {{#__mnemonics_Override}}
+            <div class="mnemonics user">
+               <div>{{__mnemonics_Override}}</div>
+            </div>
+            {{/__mnemonics_Override}}
+
+            {{#__reading_Mnemonic}}
+            <div class="mnemonics user">
+               <div class="alternative">
+                  <div class="text">{{__reading_Mnemonic}}</div>
+               </div>
+            </div>
+            {{/__reading_Mnemonic}}
+
+            {{^__mnemonics_Override}}
+            <div>
+               <div class="text">{{Meaning_Mnemonic}}</div>
+               <div class="text hints">{{Meaning_Info}}</div>
+            </div>
+            <div>
+               <div class="text">{{Reading_Mnemonic}}</div>
+               <div class="text hints">{{Reading_Info}}</i></div>
+            </div>
+         </div>
+         {{/__mnemonics_Override}}
+
+         {{Vocabs}}
+      </div>
+
+   </div>
+
+   <!--######-->
+</div></div>
+
+<!-- Yomichan hack to get styles working right -->
+<script>
+	document.documentElement.setAttribute('data-glossary-layout-mode', 'compact');
+	document.documentElement.setAttribute('data-theme', 'dark');
+</script>
+
