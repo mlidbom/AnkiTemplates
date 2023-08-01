@@ -2,7 +2,7 @@ $colorTextGreen: #57a64a;
 
 $colorTextUnderline: #bbb1ff;
 $colorTextItalic: #ff9d17;
-$colorTextBold: #ff5838;
+$colorTextBold: #f15034;
 
 $colorBgDark1: #1b1d1e;
 $colorBgCard: #282828;
@@ -21,7 +21,9 @@ b { color: $colorTextBold;}
 #container1 { display: flex;
               flex-direction:column;
               align-items: center;
-              justify-content: center; }
+              justify-content: center; 
+              padding: 0px 10px 0px 10px;
+}
 
 #container2 { text-align: center; }
 

@@ -5,10 +5,12 @@
 
 
 /*FONTS & COLORS */
-.comments > div{ background:$colorBgDark1; }
-.comments.short { font-size:25pt; 
-                  white-space:pre-line; }
-.comments.long { font-size:16pt; }
+.comments {
+   > div{ background:$colorBgDark1; }
+   &.short { font-size:16pt; 
+            white-space:pre-line; }
+   &.long { font-size:16pt; }
+}
 
 .expression, .reading {
     font-size: 50pt;
@@ -24,11 +26,12 @@
     height: 200pt; }
 
 .comments {
-    margin-top:0pt;
-    display: flex;
-    justify-content: center; }
+   display: flex;
+   margin: 2px 2px 2px 2px;     
+   justify-content: center; 
 
-.comments > div { text-align:left; }
+   > div { text-align:left; }
+}
 
 .reading ruby rt { visibility: hidden; }
 

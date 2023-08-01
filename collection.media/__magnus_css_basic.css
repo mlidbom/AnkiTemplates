@@ -14,7 +14,7 @@ i {
 }
 
 b {
-  color: #ff5838;
+  color: #f15034;
 }
 
 /* LAYOUT */
@@ -23,6 +23,7 @@ b {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  padding: 0px 10px 0px 10px;
 }
 
 #container2 {

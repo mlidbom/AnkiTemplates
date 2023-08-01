@@ -6,6 +6,33 @@ $colorBgRead:#555;
 $colorTextReading: #ff9d17;
 $colorTextMeaning: #e20096;
 
+/* Yomichan */
+.entry {
+   padding: 0px 0px 0px 0px !important;
+   .gloss-content { color:$colorTextMeaning; }
+   .pronunciation {color:$colorTextReading; }
+
+   .headword-term { &, .headword-kanji-link, rt { color:#f15034; } }
+
+   .headword-kanji-link, + .entry {
+      border:none !important;
+   }
+
+   span.tag[data-category="dictionary"],
+      .entry-current-indicator,
+      .pronunciation-group-tag-list.tag-list { 
+      display:none; 
+   }
+}
+
+.vocab {
+   &.list { display: flex; 
+            flex-wrap: wrap;
+   }
+   &.entry { background:$colorBgDark1;
+             margin: 2px 0px 0px 2px; }
+}
+
 /* FONTS & COLORS */
 primary { text-decoration: underline; }
 
