@@ -16,9 +16,7 @@ $colorTextMeaning: #e20096;
 
    .headword-term { &, .headword-kanji-link, rt { color:#f15034; } }
 
-   .headword-kanji-link, + .entry {
-      border:none !important;
-   }
+   .headword-kanji-link, + .entry { border:none !important; }
 
    .actions,
    span.tag[data-category="dictionary"],
