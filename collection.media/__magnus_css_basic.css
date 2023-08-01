@@ -4389,7 +4389,7 @@ primary {
   font-size: 30pt;
 }
 
-.meaning, .userExplanation {
+.meaning {
   color: #e20096;
 }
 
@@ -4408,6 +4408,7 @@ primary {
 .userExplanation {
   white-space: pre-line;
   font-size: 20pt;
+  color: #e20096;
 }
 
 /* highlights */

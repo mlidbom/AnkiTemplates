@@ -9,15 +9,9 @@
 .kanji.user, .my-comments { background: $colorBgDark1;}
 
 /* LAYOUT */
-.mainContent { 
-    display: flex;
-    flex-direction:column;
-    align-items: center;
-    justify-content: center; }
-
-.topSection { 
-    justify-content: center;
-    text-align:center; }
+.mainContent { @include flexContainerColumn; }
+.topSection { @include flexContainerColumn; 
+              margin-bottom: 6pt; }
 
 .bottomSection {
     max-width:1000px;
@@ -25,7 +19,8 @@
     text-align:left; 
     div {
        background: $colorBgDark1;
-       border-top: 1px groove white;
+       border-bottom: 1px groove white;
+       &.my-comments{ border-bottom:none; }
     }
 
 }

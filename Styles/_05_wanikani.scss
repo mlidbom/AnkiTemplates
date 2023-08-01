@@ -42,7 +42,7 @@ $colorTextMeaning: #e20096;
 primary { text-decoration: underline; }
 
 .meaning, .reading { font-size:30pt; }
-.meaning, .userExplanation { color:$colorTextMeaning; }
+.meaning { color:$colorTextMeaning; }
 .reading { color: $colorTextReading; }
 
 .meaning { line-height: 1.2; }
@@ -52,6 +52,7 @@ primary { text-decoration: underline; }
 .userExplanation {
     white-space: pre-line;
     font-size: 20pt;
+    color:$colorTextMeaning;
 }
 
 /* highlights */

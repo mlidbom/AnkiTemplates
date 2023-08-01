@@ -30,7 +30,7 @@
 /* LAYOUT */
 .mainContent { @include flexContainerColumn; }
 
-.mainContent > div { max-width:1000px; }
+.mainContent .bottomSection  { max-width:1000px; }
 
 .front-and-answer { text-align: center;
                     width: 100%; }
