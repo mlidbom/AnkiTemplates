@@ -1,0 +1,47 @@
+@import "__universal.scss";
+@import '__japanese.scss';
+
+/* FONTS & COLORS */
+#container2 { font-size: 20pt; }
+
+#container2 .answer { text-align: left; }
+
+.reference_url { font-size: 12pt; }
+
+.question { font-size:30pt; }
+
+/*　www.japanesewithanime.com　*/
+:not(a).transcript-extra { color: rgb(109, 255, 109); }
+
+
+.comments > div{ 	font-family: "Hiragino Kaku Gothic Pro W3", Meiryo;
+                 font-size:30pt;
+                 background:black; }
+
+.expression, .reading { font-family: "Hiragino Kaku Gothic Pro W3", Meiryo;
+                        font-size: 60pt; }
+
+.english { font-size:30pt; }
+
+/* LAYOUT */
+.card { text-align: center; }
+
+.screenshot img { width: auto;
+                  height: 200pt; }
+
+.comments { margin-top:20pt;
+            display: flex;
+            justify-content: center; }
+
+.comments > div{ 	text-align:left; }
+
+
+.reading ruby rt { visibility: hidden; }
+/*
+.reading ruby:active rt { visibility: visible; }
+.reading ruby:hover rt { visibility: visible; }
+*/
+
+
+@font-face { font-family: "Hiragino Kaku Gothic Pro W3";
+             src: url("_hirakakyprow3.otf"); }

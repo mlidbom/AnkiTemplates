@@ -18,16 +18,16 @@ b {
 }
 
 /* LAYOUT */
-#container1 {
+#container1, #container2 {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 0px 10px 0px 10px;
+  width: 100%;
 }
 
 #container2 {
-  text-align: center;
+  margin: 0px 10px 0px 10px;
 }
 
 .card #container1 #container2 a:hover {
@@ -64,4 +64,50 @@ b {
   color: rgb(109, 255, 109);
 }
 
+.comments > div {
+  font-family: "Hiragino Kaku Gothic Pro W3", Meiryo;
+  font-size: 30pt;
+  background: black;
+}
+
+.expression, .reading {
+  font-family: "Hiragino Kaku Gothic Pro W3", Meiryo;
+  font-size: 60pt;
+}
+
+.english {
+  font-size: 30pt;
+}
+
 /* LAYOUT */
+.card {
+  text-align: center;
+}
+
+.screenshot img {
+  width: auto;
+  height: 200pt;
+}
+
+.comments {
+  margin-top: 20pt;
+  display: flex;
+  justify-content: center;
+}
+
+.comments > div {
+  text-align: left;
+}
+
+.reading ruby rt {
+  visibility: hidden;
+}
+
+/*
+.reading ruby:active rt { visibility: visible; }
+.reading ruby:hover rt { visibility: visible; }
+*/
+@font-face {
+  font-family: "Hiragino Kaku Gothic Pro W3";
+  src: url("../Styles/_hirakakyprow3.otf");
+}

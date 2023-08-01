@@ -1,8 +1,8 @@
 /* FONTS AND COLORS */
-@import "__magnus_css_universal.scss";
-@import "__magnus_css_japanese.scss";
-@import "__magnus_css_wanikani.scss";
-@import "__magnus_css_wanikani_radical_icons_font.scss";
+@import "__universal.scss";
+@import "__japanese.scss";
+@import "__wanikani.scss";
+@import "__wanikani_radical_icons_font.scss";
 @import "Yomichan/MyYomichan.scss";
 
 .mainContent { font-size: 20px; }

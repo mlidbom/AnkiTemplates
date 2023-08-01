@@ -18,6 +18,7 @@ $colorTextMeaning: #e20096;
       border:none !important;
    }
 
+   .actions,
    span.tag[data-category="dictionary"],
       .entry-current-indicator,
       .pronunciation-group-tag-list.tag-list { 
@@ -27,6 +28,8 @@ $colorTextMeaning: #e20096;
 
 .vocab {
    &.list { display: flex; 
+            align-items: center;
+            justify-content: center;
             flex-wrap: wrap;
    }
    &.entry { background:$colorBgDark1;

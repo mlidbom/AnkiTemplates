@@ -17,14 +17,15 @@ i { color:$colorTextItalic; }
 b { color: $colorTextBold;}
 
 
-/* LAYOUT */
-#container1 { display: flex;
-              flex-direction:column;
-              align-items: center;
-              justify-content: center; 
-              padding: 0px 10px 0px 10px;
-}
+@mixin flexContainerColumn { display: flex;
+                             flex-direction:column;
+                             align-items: center;
+                             justify-content: center; 
+                             width: 100%; }
 
-#container2 { text-align: center; }
+/* LAYOUT */
+#container1, #container2 { @include flexContainerColumn }
+
+#container2 { margin: 0px 10px 0px 10px; }
 
 .card #container1 #container2 a:hover { cursor: pointer !important; }

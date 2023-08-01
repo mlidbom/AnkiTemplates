@@ -1,0 +1,57 @@
+﻿<div id="container1">
+   <div id="container2">
+      <!--######-->
+      <div class="topSection">
+         <div>{{Audio}}</div>
+         <div class="image">{{Image}}</div>
+
+         {{#__kanji}}<div class="kanji user">{{__kanji}}</div>{{/__kanji}}
+         {{^__kanji}}<div class=kanji>{{Jlab-Kanji}}</div>{{/__kanji}}
+      </div>
+
+      <div class="bottomSection">
+         <div class="my-comments">
+            {{#__feedback-link}}<a href="{{__feedback-link}}">feedback</a>{{/__feedback-link}}
+            {{#__hinative}}<a href="{{__hinative}}">hinative</a>{{/__hinative}}
+         </div>
+
+         {{#__comments}}
+         <div class="my-comments">{{__comments}}</div>
+         {{/__comments}}
+
+         {{#RemarksFront}}
+         <div>{{RemarksFront}}</div>
+         {{/RemarksFront}}
+
+         {{#RemarksBack}}
+         <div>{{RemarksBack}}</div>
+         {{/RemarksBack}}
+
+         {{#Jlab-Remarks}}
+         <div>{{Jlab-Remarks}}</div>
+         {{/Jlab-Remarks}}
+      </div>
+
+      <div class="vocab list">
+         <div class="vocab entry">{{__vocab1}}</div>
+         <div class="vocab entry">{{__vocab2}}</div>
+         <div class="vocab entry">{{__vocab3}}</div>
+      </div>
+
+      <div class="bottomSection">
+         {{#References}}
+         <div>{{References}}</div>
+         {{/References}}
+
+         <div>{{Other-Back}}</div>
+         <div><a href="mailto:joe@japanese-like-a-breeze.com?subject={{Version}}:{{Sequence}}">Mail feedback</a></div>
+      </div>
+      <!--######-->
+   </div>
+</div>
+
+<!-- Yomichan hack to get styles working right -->
+<script>
+   document.documentElement.setAttribute('data-glossary-layout-mode', 'compact');
+   document.documentElement.setAttribute('data-theme', 'dark');
+</script>

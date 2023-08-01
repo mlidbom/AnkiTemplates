@@ -1,46 +1,48 @@
-@import "__magnus_css_universal.scss";
-@import "__magnus_css_japanese.scss";
-@import "__magnus_css_wanikani.scss";
+@import "__universal.scss";
+@import "__japanese.scss";
+@import "__wanikani.scss";
 @import "Yomichan/MyYomichan.scss";
 
 
 /* FONTS AND COLORS */
 .card { font-size: 20pt; }
 
-.kanji, .kanjipopup {
-    font-size: 50pt;
-    line-height:1;}
+.kanji, .kanjipopup { font-size: 50pt;
+                      line-height:1;}
 
-.kanji.user, .my-comments { background: #141414;}
+.kanji.user, .my-comments { background: $colorBgDark1;}
 
 /* LAYOUT */
-.mainContent { display: flex;
+.mainContent { 
+    display: flex;
     flex-direction:column;
-    width:100%;
     align-items: center;
     justify-content: center; }
 
-.topSection { width:100%;
+.topSection { 
     justify-content: center;
     text-align:center; }
 
-.bottomSection { width:90%;
+.bottomSection {
     max-width:1000px;
     justify-content: center;
-    text-align:left; }
+    text-align:left; 
+    div {
+       background: $colorBgDark1;
+       border-top: 1px groove white;
+    }
+
+}
 
 .image { text-align:center;
-    width:100%; }
+         width:100%; }
 
 .image img{ height: 300px;
-    width: auto;
-    object-fit: contain; }
-
+            width: auto;
+            object-fit: contain; }
 
 .kanji, .kanjipopup { text-align: center; }
 .meaning {	text-align: center; }
-
-
 
 /* hide furigana */
 .kanjipopup ruby rt { visibility: hidden; }

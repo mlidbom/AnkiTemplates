@@ -1,0 +1,31 @@
+$colorTextGreen: #57a64a;
+
+$colorTextUnderline: #bbb1ff;
+$colorTextItalic: #ff9d17;
+$colorTextBold: #f15034;
+
+$colorBgDark1: #1b1d1e;
+$colorBgCard: #282828;
+$colorTextCard: white;
+
+/* FONTS & COLORS */
+.card { background:$colorBgCard !important;
+        color:$colorTextCard !important;}
+
+u { color:$colorTextUnderline; }
+i { color:$colorTextItalic; }
+b { color: $colorTextBold;}
+
+
+@mixin flexContainerColumn { display: flex;
+                             flex-direction:column;
+                             align-items: center;
+                             justify-content: center; 
+                             width: 100%; }
+
+/* LAYOUT */
+#container1, #container2 { @include flexContainerColumn }
+
+#container2 { margin: 0px 10px 0px 10px; }
+
+.card #container1 #container2 a:hover { cursor: pointer !important; }
