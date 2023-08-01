@@ -1,0 +1,120 @@
+<div id="container1">
+   <div id="container2">
+      <!--######-->
+
+      <div class="mainContent">
+         <div class="front-and-answer">
+            <div>
+               <div class="question">
+                  {{Vocab}}
+                  {{#__similar_vocab}}!{{__similar_vocab}}{{/__similar_vocab}}
+               </div>
+            </div>
+            <div>{{Audio_g}}{{Audio_b}}</div>
+
+            {{#__override_meaning}}
+            <div class="meaning user"> # {{__override_meaning}} #</div>
+            {{/__override_meaning}}
+
+            {{#___explanation}}
+            <div class="userExplanation">{{___explanation}}</div>
+            {{/___explanation}}
+
+            {{^__vocab1}}
+            {{^__override_meaning}}
+            <div class="meaning"> {{Vocab_Meaning}}</div>
+            {{/__override_meaning}}
+
+            {{#__override_meaning}}
+            <div class="meaning overridden">{{Vocab_Meaning}}</div>
+            {{/__override_meaning}}
+            {{#Speech_Type}}<div class="partOfSpeech">{{Speech_Type}}</div>{{/Speech_Type}}
+
+            <!--
+               {{#auxiliary_meanings_whitelist}}
+                  <div class="auxiliaryMeanings">Auxiliary: {{auxiliary_meanings_whitelist}}</div>
+               {{/auxiliary_meanings_whitelist}}
+            -->
+
+            <div class="reading">{{Reading}}</div>
+            {{/__vocab1}}
+            {{#__vocab1}}
+            <div class="vocab list"><div class="vocab entry">{{__vocab1}}</div></div>
+            {{/__vocab1}}
+
+            <div>
+               <div class="itemInfo">
+                  {{#Kanji_Name}}
+                  <div>
+                     Kanji: <span class="used_kanji">{{Kanji}}</span> <span class="mnemonic">({{Kanji_Name}})</span>
+                  </div>
+                  {{/Kanji_Name}}
+                  <div class="referenceLink">
+                     <a target="_blank" href="https://www.wanikani.com/vocabulary/{{Vocab}}">Wanikani</a>
+                     <a target="_blank" href="https://jisho.org/search/{{Vocab}}">Jisho</a>
+                     <a target="_blank" href="https://www.immersionkit.com/dictionary?keyword={{Vocab}}&exact=true&sort=shortness">Anime Sentences</a>
+                     {{Tags}}
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div>
+            {{#__override_mnemonic}}
+            <div>
+               <div class="mnemonic override">{{__override_mnemonic}}</div>
+            </div>
+            {{/__override_mnemonic}}
+
+
+            {{^__override_mnemonic}}
+            <div>
+               {{#Meaning_Exp}}
+               <div class="mnemonic">{{Meaning_Exp}}</div>
+               {{/Meaning_Exp}}
+
+               <br>
+
+               {{#Reading_Exp}}
+               <div>
+                  <div class="mnemonic">{{Reading_Exp}}</div>
+               </div>
+               {{/Reading_Exp}}
+
+               <br>
+            </div>
+            {{/__override_mnemonic}}
+
+            <div>
+               {{#Context_jp}}
+               <div class="context">
+                  <div class="context_jp">{{Context_jp}}</div>
+                  <div>{{Context_en}}</div>
+               </div>
+               {{/Context_jp}}
+
+               {{#Context_jp_2}}
+               <div class="context">
+                  <div class="context_jp">{{Context_jp_2}}</div>
+                  <div>{{Context_en_2}}</div>
+               </div>
+               {{/Context_jp_2}}
+
+               {{#Context_jp_3}}
+               <div class="context">
+                  <div class="context_jp">{{Context_jp_3}}</div>
+                  <div>{{Context_en_3}}</div>
+               </div>
+               {{/Context_jp_3}}
+
+            </div>
+         </div>
+
+         <!--######-->
+      </div>
+   </div>
+
+   <!-- Yomichan hack to get styles working right -->
+   <script>
+      document.documentElement.setAttribute('data-glossary-layout-mode', 'compact');
+      document.documentElement.setAttribute('data-theme', 'dark');
+   </script>
