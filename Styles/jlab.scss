@@ -1,8 +1,4 @@
-@import "__universal.scss";
-@import "__japanese.scss";
-@import "__wanikani.scss";
-@import "Yomichan/MyYomichan.scss";
-
+@import "_05_wanikani.scss";
 
 /* FONTS AND COLORS */
 .card { font-size: 20pt; }
