@@ -9,20 +9,23 @@ $colorTextReading: #ff9d17;
 $colorTextMeaning: #e20096;
 
 /* Yomichan */
-.entry {
+.vocab.list .vocab.entry {
    padding: 0px 0px 0px 0px !important;
-   .gloss-content { color:$colorTextMeaning; }
-   .pronunciation {color:$colorTextReading; }
+   .entry {      
+      a { text-decoration: none; }
+      .gloss-content { color:$colorTextMeaning; }
+      .pronunciation {color:$colorTextReading; }
 
-   .headword-term { &, .headword-kanji-link, rt { color:#f15034; } }
+      .headword-term { &, .headword-kanji-link, rt { color:#f15034; } }
 
-   .headword-kanji-link, + .entry { border:none !important; }
+      .headword-kanji-link, + .entry { border:none !important; }
 
-   .actions,
-   span.tag[data-category="dictionary"],
-      .entry-current-indicator,
-      .pronunciation-group-tag-list.tag-list { 
-      display:none; 
+      .actions,
+      span.tag[data-category="dictionary"],
+         .entry-current-indicator,
+         .pronunciation-group-tag-list.tag-list { 
+         display:none; 
+      }
    }
 }
 
