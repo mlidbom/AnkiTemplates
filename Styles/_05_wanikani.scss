@@ -27,13 +27,17 @@ $colorTextMeaning: #e20096;
 }
 
 .vocab {
-   &.list { display: flex; 
-            align-items: center;
-            justify-content: center;
-            flex-wrap: wrap;
+   &.list { display: flex;
+            flex-direction:column;
+            flex-wrap: nowrap;
+            width: fit-content;
+            margin-right:auto;
+            margin-left:auto;
    }
    &.entry { background:$colorBgDark1;
-             margin: 2px 0px 0px 2px; }
+            margin: 2px 0px 0px 2px;
+
+   }
 }
 
 /* FONTS & COLORS */
@@ -69,10 +73,7 @@ read, reading { background-color: $colorBgRead; }
 
 /* LAYOUT */
 .meaning div { text-align: center !important; } /* yomichan import fix */
-.userExplanation {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align:left;
-}
+.userExplanation { display: inline-block;
+                   max-width: $maxWidth;
+                   text-align: left; 
+                   margin-top:10px; }

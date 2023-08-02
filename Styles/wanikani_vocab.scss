@@ -4,15 +4,13 @@
 .card { line-height: 1.25;
         font-size: 20px; }
 
-.question { font-size:150px;
-            line-height: .8;
+.question { font-size:80pt;
+            line-height: .9;
             background-color:#a900fd;
-            padding-top:17pt; }
+            padding-top:10pt; }
 
 
 .meaning > div { text-align:center !important;} /*hack for yomitan imported notes*/
-
-.meaning.user { font-size:40pt; }
 
 .partOfSpeech { color: $colorTextBold; }
 
@@ -26,11 +24,13 @@
 
 .context_jp { font-size: 25pt; }
 
+.vocab.entry { font-size:20pt; }
+
 
 /* LAYOUT */
 .mainContent { @include flexContainerColumn; }
 
-.mainContent .bottomSection  { max-width:1000px; }
+.mainContent .bottomSection  { max-width:$maxWidth; }
 
 .front-and-answer { text-align: center;
                     width: 100%; }
