@@ -16,7 +16,11 @@ $colorTextMeaning: #e20096;
       .gloss-content { color:$colorTextMeaning; }
       .pronunciation {color:$colorTextReading; }
 
-      .headword-term { &, .headword-kanji-link, rt { color:#f15034; } }
+      .headword-reading { color:$colorTextBold; } 
+      .headword-term { 
+         &, rt{ color:$colorTextBold; }
+         .headword-kanji-link { color: $colorTextMeaning; }
+      }
 
       .headword-kanji-link, + .entry { border:none !important; }
 
