@@ -10,26 +10,8 @@
       </div>
 
       <div class="bottomSection">
-         <div class="my-comments">
-            {{#__feedback-link}}<a href="{{__feedback-link}}">feedback</a>{{/__feedback-link}}
-            {{#__hinative}}<a href="{{__hinative}}">hinative</a>{{/__hinative}}
-         </div>
-
-         {{#__comments}}
-         <div class="my-comments">{{__comments}}</div>
-         {{/__comments}}
-
-         {{#RemarksFront}}
-         <div>{{RemarksFront}}</div>
-         {{/RemarksFront}}
-
-         {{#RemarksBack}}
-         <div>{{RemarksBack}}</div>
-         {{/RemarksBack}}
-
-         {{#Jlab-Remarks}}
-         <div>{{Jlab-Remarks}}</div>
-         {{/Jlab-Remarks}}
+         {{#__comments}}<div class="my-comments">{{__comments}}</div>{{/__comments}}
+         {{#RemarksBack}}<div>{{RemarksBack}}</div>{{/RemarksBack}}
       </div>
 
       <div class="vocab list">
@@ -39,14 +21,15 @@
       </div>
 
       <div class="bottomSection">
-         {{#References}}
-         <div>{{References}}</div>
-         {{/References}}
+         <div>
+            {{#__feedback-link}}<a href="{{__feedback-link}}">Sent feedback</a>{{/__feedback-link}}
+            {{#__hinative}}<a href="{{__hinative}}">Hinative</a>{{/__hinative}}
+            {{^__feedback-link}}<a href="mailto:joe@japanese-like-a-breeze.com?subject={{Version}}:{{Sequence}}">Mail feedback</a>{{/__feedback-link}}
+         </div>
 
-         {{#Other-Back}}
-         <div>{{Other-Back}}</div>
-         {{/Other-Back}}
-         <div><a href="mailto:joe@japanese-like-a-breeze.com?subject={{Version}}:{{Sequence}}">Mail feedback</a></div>
+         {{#References}}<div>{{References}}</div>{{/References}}
+         {{#Jlab-Remarks}}<div>Jlab-Remarks:{{Jlab-Remarks}}</div>{{/Jlab-Remarks}}
+         {{#Other-Back}}<div>Other-Back:{{Other-Back}}</div>{{/Other-Back}}
       </div>
       <!--######-->
    </div>
