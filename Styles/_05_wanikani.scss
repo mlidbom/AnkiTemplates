@@ -11,7 +11,8 @@ $colorTextMeaning: #e20096;
 /* Yomichan */
 .vocab.list .vocab.entry {
    padding: 0px 0px 0px 0px !important;
-   .entry {      
+   .entry {
+      padding: 0px 0px 0px 0px !important;
       a { text-decoration: none; }
       .gloss-content { color:$colorTextMeaning; }
       .pronunciation {color:$colorTextReading; }

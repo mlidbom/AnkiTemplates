@@ -1,0 +1,36 @@
+<div id="container1">
+   <div id="container2">
+      <!--####-->
+
+      <div>{{Audio Sentence}}</div>
+      <div class="screenshot">{{Screenshot}}</div>
+      <div id="answer" class="expression">{{Expression}}</div>
+      <div class="english">{{English}}</div>
+
+      {{#__comments}}
+      <div class="comments short">
+         <div>{{__comments}}</div>
+      </div>
+      {{/__comments}}
+
+      {{#__comments_Long}}
+      <div class="comments long">
+         <div>	{{__comments_Long}}</div>
+      </div>
+      {{/__comments_Long}}
+
+      <div class="vocab list">
+         <div class="vocab entry">{{__vocab1}}</div>
+         <div class="vocab entry">{{__vocab2}}</div>
+         <div class="vocab entry">{{__vocab3}}</div>
+      </div>
+
+      <!--####-->
+   </div>
+</div>
+
+<!-- Yomichan hack to get styles working right -->
+<script>
+   document.documentElement.setAttribute('data-glossary-layout-mode', 'compact');
+   document.documentElement.setAttribute('data-theme', 'dark');
+</script>
