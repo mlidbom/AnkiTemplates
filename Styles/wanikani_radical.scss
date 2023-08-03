@@ -1,45 +1,46 @@
 @import "_05_wanikani.scss";
+.card #container1 #container2 { //Let's stay focused and not break other stuff
+   /* FONTS AND COLORS */
+   font-size: 20pt;
 
-/* FONTS AND COLORS */
-.card { font-size: 20pt; }
+   .kanji { font-size:180px;
+            line-height: 0.8;
+            padding-top: 20pt;
+            background:$colorBgRad;}
 
-.kanji { font-size:180px;
-         line-height: 0.8;
-         padding-top: 20pt;
-         background:$colorBgRad;}
+   .radicon { color:white;
+              font-size:180px; }
 
-.radicon { color:white;
-           font-size:180px; }
+   .kanji > span { position:relative; 
+				   bottom: -18px; }
 
-.kanji > span { position:relative; 
-				bottom: -18px; }
+   .kanji > img { position:absolute; 
+                  bottom:-16px; }
 
-.kanji > img { position:absolute; 
-               bottom:-16px; }
+   .radicalName { color:#0a9ce6;
+                  font-weight:bold;
+                  font-size: 40px; }
 
-.radicalName { color:#0a9ce6;
-               font-weight:bold;
-               font-size: 40px; }
-
-.referenceLink { font-size:10pt;	}
+   .referenceLink { font-size:10pt;	}
 
 
-.mnemonics.user { background:$colorBgDark1; }
+   .mnemonics.user { background:$colorBgDark1; }
 
-/* LAYOUT */ 
-.mainContent { 	display: flex;
-               flex-direction:column;
-               width:100%;
-               align-items: center;
-               justify-content: center; }
+   /* LAYOUT */ 
+   .mainContent { 	display: flex;
+                  flex-direction:column;
+                  width:100%;
+                  align-items: center;
+                  justify-content: center; }
 
-.mainContent > div { width:100%;
-	                   max-width:1000px;
-	                   justify-content: center;
-	                   text-align:left; }
+   .mainContent > div { width:100%;
+	                      max-width:1000px;
+	                      justify-content: center;
+	                      text-align:left; }
 
-.front-and-answer > div { text-align: center; }
+   .front-and-answer > div { text-align: center; }
 
-.mnemonics.user > div {white-space:pre-line;}
+   .mnemonics.user > div {white-space:pre-line;}
 
-.mnemonics { margin-top: 20pt; }
+   .mnemonics { margin-top: 20pt; }
+}

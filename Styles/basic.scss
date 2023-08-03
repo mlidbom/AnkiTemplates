@@ -1,46 +1,43 @@
 @import "_05_wanikani.scss";
 
-/* FONTS & COLORS */
-#container2 { font-size: 20pt; }
+.card #container1 #container2 { //Let's stay focused and not break other stuff
 
-#container2 .answer { text-align: left; }
+   /* FONTS & COLORS */
+   font-size: 20pt;
 
-.reference_url { font-size: 12pt; }
+   .answer { text-align: left; }
 
-.question { font-size:30pt; }
+   .reference_url { font-size: 12pt; }
 
-/*　www.japanesewithanime.com　*/
-:not(a).transcript-extra { color: rgb(109, 255, 109); }
+   .question { font-size:30pt; }
 
-
-.comments > div{ 	font-family: "Hiragino Kaku Gothic Pro W3", Meiryo;
-                 font-size:30pt;
-                 background:black; }
-
-.expression, .reading { font-family: "Hiragino Kaku Gothic Pro W3", Meiryo;
-                        font-size: 60pt; }
-
-.english { font-size:30pt; }
-
-/* LAYOUT */
-.card { text-align: center; }
-
-.screenshot img { width: auto;
-                  height: 200pt; }
-
-.comments { margin-top:20pt;
-            display: flex;
-            justify-content: center; }
-
-.comments > div{ 	text-align:left; }
+   /*　www.japanesewithanime.com　*/
+   :not(a).transcript-extra { color: rgb(109, 255, 109); }
 
 
-.reading ruby rt { visibility: hidden; }
-/*
-.reading ruby:active rt { visibility: visible; }
-.reading ruby:hover rt { visibility: visible; }
-*/
+   .comments > div{ 	font-family: "Hiragino Kaku Gothic Pro W3", Meiryo;
+                    font-size:30pt;
+                    background:black; }
+
+   .expression, .reading { font-family: "Hiragino Kaku Gothic Pro W3", Meiryo;
+                           font-size: 60pt; }
+
+   .english { font-size:30pt; }
+
+   /* LAYOUT */
+   .screenshot img { width: auto;
+                     height: 200pt; }
+
+   .comments { margin-top:20pt;
+               display: flex;
+               justify-content: center; }
+
+   .comments > div{ 	text-align:left; }
 
 
-@font-face { font-family: "Hiragino Kaku Gothic Pro W3";
-             src: url("_hirakakyprow3.otf"); }
+   .reading ruby rt { visibility: hidden; }
+   /*
+   .reading ruby:active rt { visibility: visible; }
+   .reading ruby:hover rt { visibility: visible; }
+   */
+}

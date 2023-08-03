@@ -5,7 +5,7 @@ $colorBgKan: #f100a0;
 $colorBgVoc: #a100f1;
 $colorBgRead:#555;
 
-$colorTextReading: #ff9d17;
+$colorTextReading: $colorTextItalic;
 $colorTextMeaning: #e20096;
 
 /* Yomichan */
@@ -17,9 +17,11 @@ $colorTextMeaning: #e20096;
       .gloss-content { color:$colorTextMeaning; }
       .pronunciation {color:$colorTextReading; }
 
-      .headword-reading { color:$colorTextBold; } 
+      .inflection-list {color:$colorTextBold;}
+
+      .headword-reading { color:$colorTextReading; } 
       .headword-term { 
-         &, rt{ color:$colorTextBold; }
+         &, rt{ color:$colorTextReading; }
          .headword-kanji-link { color: $colorTextMeaning; }
       }
 

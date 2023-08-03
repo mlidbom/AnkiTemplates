@@ -1,74 +1,78 @@
 @import "_05_wanikani.scss";
 
 /* FONTS AND COLORS */
+.card #container1 #container2 { //Let's stay focused and not break other stuff
 
-.mainContent { font-size: 20px; }
+   .mainContent { font-size: 20px; }
 
-.kanji { font-size: 150px;
-         line-height: 0.8;
-         background-color: #e20096;
-         padding-top: 17pt; }
+   .kanji { font-size: 150px;
+            line-height: 0.8;
+            background-color: #e20096;
+            padding-top: 17pt; }
 
-.kanji img { position: relative;
-             bottom: -36px; }
+   .kanji img { position: relative;
+                bottom: -36px; }
 
-.primaryVocab { font-size: 50pt;
-                line-height: 1.25; }
+   .primaryVocab { font-size: 50pt;
+                   line-height: 1.25; }
 
-.meaning, .reading { font-size: 40pt;
-                     line-height: 1.1; }
+   .meaning, .reading { font-size: 40pt;
+                        line-height: 1.1; }
 
-.meaning vocab { color: white;
-                 margin-right: 10px; }
+   .meaning vocab { color: white;
+                    margin-right: 10px; }
 
-.radicals, .reading { font-size: 32px;
-                      color: $colorTextReading; }
+   .radicals, .reading { font-size: 32px;
+                         color: $colorTextReading; }
 
 
-.mnemonics.user { font-size: 25pt;
-                  line-height: unset; }
-.mnemonics.user > div { background: $colorBgDark1;
-                        white-space: pre-line; }
+   .mnemonics.user { font-size: 25pt;
+                     line-height: unset; }
+   .mnemonics.user > div { background: $colorBgDark1;
+                           white-space: pre-line;
 
-.hints { background: $colorBgDark1; }
-.referenceLink { font-size: 12px; }
-.vocabList { font-size: 30pt; }
+   }
 
-/*Yomitan import*/
-.meaning ol { list-style-type: none;
-              padding: 0;
-              margin: 0; }
-.meaning li { display: inline-block; }
-.meaning li:not(:last-child)::after { content: ", ";
-                                      margin: 0 10px 0 0; }
-.meaning li::first-letter { text-transform: uppercase; }
+   .hints { background: $colorBgDark1; }
+   .referenceLink { font-size: 12px; }
+   .vocabList { font-size: 30pt; }
 
-.vocab.list{ font-size: 20pt; }
+   /*Yomitan import*/
+   .meaning ol { list-style-type: none;
+                 padding: 0;
+                 margin: 0; }
+   .meaning li { display: inline-block; }
+   .meaning li:not(:last-child)::after { content: ", ";
+                                         margin: 0 10px 0 0; }
+   .meaning li::first-letter { text-transform: uppercase; }
 
-/* LAYOUT */
-.mainContent { display: flex;
-               flex-direction: column;
-               width: 100%;
-               align-items: center;
-               justify-content: center; }
+   .vocab.list{ font-size: 20pt; }
 
-.mainContent > div { width: 100%;
-                     max-width: 1000px;
-                     justify-content: center;
-                     text-align: left; }
+   /* LAYOUT */
+   .mainContent { display: flex;
+                  flex-direction: column;
+                  width: 100%;
+                  align-items: center;
+                  justify-content: center; }
 
-.userExplanation { margin-top: 10px; }
+   .mainContent > div { width: 100%;
+                        max-width: 1000px;
+                        justify-content: center;
+                        text-align: left; }
 
-.itemInfo { display: inline-block;
-            text-align: left;
-            margin-top: 10px;
-            margin-bottom: 20px; }
+   .userExplanation { margin-top: 10px; }
 
-.kanji { margin-bottom: 5px; }
+   .itemInfo { display: inline-block;
+               text-align: left;
+               margin-top: 10px;
+               margin-bottom: 20px; }
 
-.mnemonics.user { margin-bottom: 10pt; }
-.mnemonics { margin-top: 10px; }
-.hints { margin-top: 10pt; }
-.front-and-answer > div { text-align: center; }
-.meaning.overridden { margin-top: 5px; }
-.hints { margin-bottom: 10px; }
+   .kanji { margin-bottom: 5px; }
+
+   .mnemonics.user { margin-bottom: 10pt; }
+   .mnemonics { margin-top: 10px; }
+   .hints { margin-top: 10pt; }
+   .front-and-answer > div { text-align: center; }
+   .meaning.overridden { margin-top: 5px; }
+   .hints { margin-bottom: 10px; }
+}

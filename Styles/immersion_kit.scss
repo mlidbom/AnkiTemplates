@@ -1,38 +1,39 @@
 @import "_05_wanikani.scss";
 
-
 /*FONTS & COLORS */
-.comments {
-   > div{ background:$colorBgDark1; }
-   &.short { font-size:16pt; 
-            white-space:pre-line; }
-   &.long { font-size:16pt; }
+.card #container1 #container2 { //Let's stay focused and not break other stuff
+
+   .comments {
+      > div{ background:$colorBgDark1; }
+      &.short { font-size:16pt; 
+               white-space:pre-line; }
+      &.long { font-size:16pt; }
+   }
+
+   .expression, .reading {
+       font-size: 50pt;
+       line-height: 1;
+   }
+
+   .english { font-size:20pt; }
+
+   .vocab.list{ font-size: 20pt; }
+
+   /* LAYOUT */
+   .card { text-align: center; }
+   .screenshot img {
+       width: auto;
+       height: 200pt; }
+
+   .comments {
+      display: flex;
+      margin: 2px 2px 2px 2px;     
+      justify-content: center; 
+
+      > div { text-align:left; }
+   }
+
+   .reading ruby rt { visibility: hidden; }
 }
-
-.expression, .reading {
-    font-size: 50pt;
-    line-height: 1;
-}
-
-.english { font-size:20pt; }
-
-.vocab.list{ font-size: 20pt; }
-
-/* LAYOUT */
-.card { text-align: center; }
-.screenshot img {
-    width: auto;
-    height: 200pt; }
-
-.comments {
-   display: flex;
-   margin: 2px 2px 2px 2px;     
-   justify-content: center; 
-
-   > div { text-align:left; }
-}
-
-.reading ruby rt { visibility: hidden; }
-
 
 

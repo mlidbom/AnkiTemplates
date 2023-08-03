@@ -13,31 +13,27 @@
             <div>{{Audio_g}}{{Audio_b}}</div>
 
             {{#__override_meaning}}
-            <div class="meaning user"> # {{__override_meaning}} #</div>
+            <div class="meaning user"> # {{__override_meaning}}</div>
             {{/__override_meaning}}
-
-            {{#___explanation}}
-            <div class="userExplanation">{{___explanation}}</div>
-            {{/___explanation}}
 
             {{^__vocab1}}
             {{^__override_meaning}}
             <div class="meaning"> {{Vocab_Meaning}}</div>
             {{/__override_meaning}}
 
-            {{#__override_meaning}}
-            <div class="meaning overridden">{{Vocab_Meaning}}</div>
-            {{/__override_meaning}}
-            {{#Speech_Type}}<div class="partOfSpeech">{{Speech_Type}}</div>{{/Speech_Type}}
+            {{#Speech_Type}}
+            <div class="partOfSpeech">{{Speech_Type}}</div>
+            {{/Speech_Type}}
+            {{/__vocab1}}
 
-            <!--
-               {{#auxiliary_meanings_whitelist}}
-                  <div class="auxiliaryMeanings">Auxiliary: {{auxiliary_meanings_whitelist}}</div>
-               {{/auxiliary_meanings_whitelist}}
-            -->
+            {{#___explanation}}
+            <div class="userExplanation">{{___explanation}}</div>
+            {{/___explanation}}
 
+            {{^__vocab1}}
             <div class="reading">{{Reading}}</div>
             {{/__vocab1}}
+
             {{#__vocab1}}
             <div class="vocab list">
                <div class="vocab entry">{{__vocab1}}</div>

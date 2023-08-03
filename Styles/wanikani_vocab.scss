@@ -1,43 +1,45 @@
 @import "_05_wanikani.scss";
 
-/* FONTS & COLORS */
-.card { line-height: 1.25;
-        font-size: 20px; }
+.card #container1 #container2 { //Let's stay focused and not break other stuff
+   // FONTS & COLORS
+   line-height: 1.25;
+   font-size: 20px; 
 
-.question { font-size:80pt;
-            line-height: .9;
-            background-color:#a900fd;
-            padding-top:10pt; }
-
-
-.meaning > div { text-align:center !important;} /*hack for yomitan imported notes*/
-
-.partOfSpeech { color: $colorTextBold; }
-
-.auxiliaryMeanings { font-size:12px; }
-.referenceLink { font-size:12px; }
-
-.mnemonic.override { font-size:25pt;
-                     background:#141414;
-                     line-height: 1.6;
-                     white-space: pre-line; }
-
-.context_jp { font-size: 25pt; }
-
-.vocab.entry { font-size:20pt; }
+   .question { font-size:80pt;
+               line-height: .9;
+               background-color:#a900fd;
+               padding-top:10pt; }
 
 
-/* LAYOUT */
-.mainContent { @include flexContainerColumn; }
+   .meaning > div { text-align:center !important;} //hack for yomitan imported notes
 
-.mainContent .bottomSection  { max-width:$maxWidth; }
+   .partOfSpeech { color: $colorTextBold; }
 
-.front-and-answer { text-align: center;
-                    width: 100%; }
+   .auxiliaryMeanings { font-size:12px; }
+   .referenceLink { font-size:12px; }
 
-.itemInfo { display: inline-block;
-            text-align: left;
-            margin-top:10px;
-            margin-bottom:20px; }
+   .mnemonic.override { font-size:25pt;
+                        background:#141414;
+                        line-height: 1.6;
+                        white-space: pre-line; }
 
-.context { margin-top: 10pt;}
+   .context_jp { font-size: 25pt; }
+
+   .vocab.entry { font-size:20pt; }
+
+
+   // LAYOUT
+   .mainContent { @include flexContainerColumn; }
+
+   .mainContent .bottomSection  { max-width:$maxWidth; }
+
+   .front-and-answer { text-align: center;
+                       width: 100%; }
+
+   .itemInfo { display: inline-block;
+               text-align: left;
+               margin-top:10px;
+               margin-bottom:20px; }
+
+   .context { margin-top: 10pt;}
+}

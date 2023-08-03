@@ -1,41 +1,42 @@
 @import "_05_wanikani.scss";
+.card #container1 #container2 { //Let's stay focused and not break other stuff
+   /* FONTS AND COLORS */
+   font-size: 20pt;
 
-/* FONTS AND COLORS */
-.card { font-size: 20pt; }
+   .kanji, .kanjipopup { font-size: 50pt;
+                         line-height:1;}
 
-.kanji, .kanjipopup { font-size: 50pt;
-                      line-height:1;}
+   .kanji.user, .my-comments { background: $colorBgDark1;}
 
-.kanji.user, .my-comments { background: $colorBgDark1;}
+   /* LAYOUT */
+   .topSection { @include flexContainerColumn; 
+                 margin-bottom: 6pt; }
 
-/* LAYOUT */
-.topSection { @include flexContainerColumn; 
-              margin-bottom: 6pt; }
+   .bottomSection {
+       max-width:1000px;
+       justify-content: center;
+       text-align:left; 
+       div {
+          border-bottom: 1px groove white;
+          &.my-comments{ border-bottom:none; }
+       }
 
-.bottomSection {
-    max-width:1000px;
-    justify-content: center;
-    text-align:left; 
-    div {
-       border-bottom: 1px groove white;
-       &.my-comments{ border-bottom:none; }
-    }
+   }
 
+   .my-comments { margin-bottom: 5pt; }
+
+   .image { text-align:center;
+            width:100%; }
+
+   .image img{ height: 300px;
+               width: auto;
+               object-fit: contain; }
+
+   .kanji, .kanjipopup { text-align: center; }
+   .meaning {	text-align: center; }
+
+   /* hide furigana */
+   .kanjipopup ruby rt { visibility: hidden; }
+   .kanjipopup ruby:active rt { visibility: visible; }
+   .kanjipopup ruby:hover rt { visibility: visible; }
 }
-
-.my-comments { margin-bottom: 5pt; }
-
-.image { text-align:center;
-         width:100%; }
-
-.image img{ height: 300px;
-            width: auto;
-            object-fit: contain; }
-
-.kanji, .kanjipopup { text-align: center; }
-.meaning {	text-align: center; }
-
-/* hide furigana */
-.kanjipopup ruby rt { visibility: hidden; }
-.kanjipopup ruby:active rt { visibility: visible; }
-.kanjipopup ruby:hover rt { visibility: visible; }
