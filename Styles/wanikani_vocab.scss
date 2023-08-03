@@ -10,10 +10,12 @@
                background-color:#a900fd;
                padding-top:10pt; }
 
+   &._yomitan{
+      .meaning > div { text-align:center !important;}
+      .vocab.entry { font-size:30pt; }
+   }
 
-   .meaning > div { text-align:center !important;} //hack for yomitan imported notes
-
-   .partOfSpeech { color: $colorTextBold; }
+   .partOfSpeech { color: $colorTextBold;  }
 
    .auxiliaryMeanings { font-size:12px; }
    .referenceLink { font-size:12px; }
@@ -41,5 +43,13 @@
                margin-top:10px;
                margin-bottom:20px; }
 
+   .partOfSpeech { margin-right: 40pt;}
+
    .context { margin-top: 10pt;}
+
+   //TRICKY STUFF
+   .homophone {display:none;}
+   //Tag _homophone present
+   &._homophone .homophone { display: block;
+                             color:red; }
 }

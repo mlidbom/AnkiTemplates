@@ -1,5 +1,5 @@
 <div id="container1">
-   <div id="container2">
+   <div id="container2" class="{{Tags}} card{{Card}}">
       <!--######-->
 
       <div class="mainContent">
@@ -13,7 +13,7 @@
             <div>{{Audio_g}}{{Audio_b}}</div>
 
             {{#__override_meaning}}
-            <div class="meaning user"> # {{__override_meaning}}</div>
+            <div class="meaning user">#{{__override_meaning}}</div>
             {{/__override_meaning}}
 
             {{^__vocab1}}
@@ -21,9 +21,6 @@
             <div class="meaning"> {{Vocab_Meaning}}</div>
             {{/__override_meaning}}
 
-            {{#Speech_Type}}
-            <div class="partOfSpeech">{{Speech_Type}}</div>
-            {{/Speech_Type}}
             {{/__vocab1}}
 
             {{#___explanation}}
@@ -31,8 +28,14 @@
             {{/___explanation}}
 
             {{^__vocab1}}
-            <div class="reading">{{Reading}}</div>
+
+            <div>
+               <span class="partOfSpeech">{{Speech_Type}}</span>
+               <span class="reading">{{Reading}}</span>
+            </div>
             {{/__vocab1}}
+
+            <div class="homophone">Homophone</div>
 
             {{#__vocab1}}
             <div class="vocab list">

@@ -46,6 +46,8 @@
                                          margin: 0 10px 0 0; }
    .meaning li::first-letter { text-transform: uppercase; }
 
+   .meaning.overridden { font-size: 12pt;}
+
    .vocab.list{ font-size: 20pt; }
 
    /* LAYOUT */

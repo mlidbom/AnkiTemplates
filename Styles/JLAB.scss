@@ -4,6 +4,7 @@
    font-size: 20pt;
 
    .kanji, .kanjipopup { font-size: 50pt;
+                         padding-top: 5pt;
                          line-height:1;}
 
    .kanji.user, .my-comments { background: $colorBgDark1;}

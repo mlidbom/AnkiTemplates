@@ -17,7 +17,14 @@ $colorTextMeaning: #e20096;
       .gloss-content { color:$colorTextMeaning; }
       .pronunciation {color:$colorTextReading; }
 
-      .inflection-list {color:$colorTextBold;}
+      .inflection-list { color:$colorTextBold; }
+
+/*      [data-category="partOfSpeech"] .tag-label-content { 
+         font-size: 100%;
+      }*/
+
+      ol.entry-body-section-content.definition-list { list-style: none; 
+                                                      padding-left: 0px; }
 
       .headword-reading { color:$colorTextReading; } 
       .headword-term { 
@@ -28,6 +35,8 @@ $colorTextMeaning: #e20096;
       .headword-kanji-link, + .entry { border:none !important; }
 
       .actions,
+      div.entry-body-section[data-section-type="pronunciations"],
+      .headword-list-details,
       span.tag[data-category="dictionary"],
          .entry-current-indicator,
          .pronunciation-group-tag-list.tag-list { 
@@ -53,7 +62,7 @@ $colorTextMeaning: #e20096;
 /* FONTS & COLORS */
 primary { text-decoration: underline; }
 
-.meaning, .reading { font-size:30pt; }
+.meaning, .reading, .partOfSpeech { font-size:30pt; }
 .meaning { color:$colorTextMeaning; }
 .reading { color: $colorTextReading; }
 
