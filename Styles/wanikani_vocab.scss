@@ -25,7 +25,10 @@
                         line-height: 1.6;
                         white-space: pre-line; }
 
-   .context_jp { font-size: 25pt; }
+   .context {      
+      .context_jp { font-size: 125%; }
+      &.list:hover .context_jp { font-size: 200%; }
+   }
 
    .vocab.entry { font-size:20pt; }
 
