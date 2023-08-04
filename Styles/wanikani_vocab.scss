@@ -10,9 +10,18 @@
                background-color:#a900fd;
                padding-top:10pt; }
 
-   &._yomitan{
-      .meaning > div { text-align:center !important;}
-      .vocab.entry { font-size:30pt; }
+   .kanjiNames { font-size: 20pt; }
+
+   .meaning, .reading, .partOfSpeech { font-size:25pt; }
+   .meaning { color:$colorTextMeaning; }
+   .reading { color: $colorTextReading; }
+
+   .meaning.overridden{ font-size:12pt;  }
+
+   .userExplanation {
+         white-space: pre-line;
+         font-size: 20pt;
+         color:$colorTextMeaning;
    }
 
    .partOfSpeech { color: $colorTextBold;  }
@@ -20,14 +29,19 @@
    .auxiliaryMeanings { font-size:12px; }
    .referenceLink { font-size:12px; }
 
-   .mnemonic.override { font-size:25pt;
-                        background:#141414;
+   &._yomitan{
+      .meaning > div { text-align:center !important;}
+      .vocab.entry { font-size:30pt; }
+   }
+
+   .mnemonic.override { font-size:16pt;
+                        background:$colorBgDark1;
                         line-height: 1.6;
                         white-space: pre-line; }
 
    .context {      
-      .context_jp { font-size: 125%; }
-      &.list:hover .context_jp { font-size: 200%; }
+      .context_jp { font-size: 140%; }
+      /*&.list:hover .context_jp { font-size: 300%; }*/
    }
 
    .vocab.entry { font-size:20pt; }
@@ -40,6 +54,11 @@
 
    .front-and-answer { text-align: center;
                        width: 100%; }
+
+   .meaning div { text-align: center !important; } /* yomichan import fix */
+   .userExplanation { display: inline-block;
+                      max-width: $maxWidth;
+                      text-align: left; }
 
    .itemInfo { display: inline-block;
                text-align: left;

@@ -66,19 +66,6 @@ $colorTextMeaning: #e20096;
 /* FONTS & COLORS */
 primary { text-decoration: underline; }
 
-.meaning, .reading, .partOfSpeech { font-size:30pt; }
-.meaning { color:$colorTextMeaning; }
-.reading { color: $colorTextReading; }
-
-.meaning { line-height: 1.2; }
-
-.meaning.overridden{ font-size:12pt;  }
-
-.userExplanation {
-    white-space: pre-line;
-    font-size: 20pt;
-    color:$colorTextMeaning;
-}
 
 /* highlights */
 rad, radical, kan, kanji, read, reading, voc, vocabulary, vocab, .primaryVocab { color:white; }
@@ -92,11 +79,3 @@ rad, radical { background-color: $colorBgRad}
 kan, kanji   { background-color: $colorBgKan; }
 voc, vocabulary, vocab, .primaryVocab   { background-color: $colorBgVoc; }
 read, reading { background-color: $colorBgRead; }
-
-
-/* LAYOUT */
-.meaning div { text-align: center !important; } /* yomichan import fix */
-.userExplanation { display: inline-block;
-                   max-width: $maxWidth;
-                   text-align: left; 
-                   margin-top:10px; }
