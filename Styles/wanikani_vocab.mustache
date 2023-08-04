@@ -122,3 +122,10 @@
    document.documentElement.setAttribute('data-glossary-layout-mode', 'compact');
    document.documentElement.setAttribute('data-theme', 'dark');
 </script>
+
+
+<!-- Copy japanese sentences to clipboard on click to make reading them in yomichan a breeze -->
+<script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.11/dist/clipboard.min.js"></script>
+<script>
+   var clipboard = new ClipboardJS('.context_jp', { text: function (trigger) { return trigger.innerText; } });
+</script>
