@@ -13,15 +13,19 @@ $colorTextMeaning: #e20096;
    padding: 0px 0px 0px 0px !important;
    .entry {
       padding: 0px 0px 0px 0px !important;
+
+      .entry-header { text-align: center; }
+
       a { text-decoration: none; }
       .gloss-content { color:$colorTextMeaning; }
       .pronunciation {color:$colorTextReading; }
 
-      .inflection-list { color:$colorTextBold; }
+      .inflection-list { color:$colorTextBold; 
+                         font-size: 150%; }
 
-/*      [data-category="partOfSpeech"] .tag-label-content { 
-         font-size: 100%;
-      }*/
+      u .gloss-content { color:$colorTextUnderline; }
+      i .gloss-content { color:$colorTextItalic; }
+      b .gloss-content { color: $colorTextBold;}
 
       ol.entry-body-section-content.definition-list { list-style: none; 
                                                       padding-left: 0px; }
@@ -36,10 +40,10 @@ $colorTextMeaning: #e20096;
 
       .actions,
       div.entry-body-section[data-section-type="pronunciations"],
-      .headword-list-details,
+      div.headword-list-tag-list.tag-list,
       span.tag[data-category="dictionary"],
-         .entry-current-indicator,
-         .pronunciation-group-tag-list.tag-list { 
+      .entry-current-indicator,
+      .pronunciation-group-tag-list.tag-list { 
          display:none; 
       }
    }

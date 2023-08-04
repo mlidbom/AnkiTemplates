@@ -15,16 +15,13 @@
             <div class="primaryVocab">{{__primary_Vocab}} {{__primary_Vocab_Audio}}</div>
             {{/__primary_Vocab}}
             {{#__meaning_Override}}
-            <div class="meaning user">#{{__meaning_Override}}</div>
-            <div class="meaning overridden">{{Kanji_Meaning}}	</div>
+            <div class="meaning user">{{__meaning_Override}}</div>
             {{/__meaning_Override}}
             {{#__user_explanation}}
             <div class="userExplanation">	{{__user_explanation}}</div>
             {{/__user_explanation}}
 
             {{^__meaning_Override}}<div class="meaning">{{Kanji_Meaning}}</div>{{/__meaning_Override}}
-
-            <div class="referenceLink">{{auxiliary_meanings_whitelist}}</div>
 
             <div>
                <div class="itemInfo">

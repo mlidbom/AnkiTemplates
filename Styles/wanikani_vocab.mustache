@@ -13,7 +13,7 @@
             <div>{{Audio_g}}{{Audio_b}}</div>
 
             {{#__override_meaning}}
-            <div class="meaning user">#{{__override_meaning}}</div>
+            <div class="meaning user">{{__override_meaning}}</div>
             {{/__override_meaning}}
 
             {{^__vocab1}}
@@ -35,8 +35,6 @@
             </div>
             {{/__vocab1}}
 
-            <div class="homophone">Homophone</div>
-
             {{#__vocab1}}
             <div class="vocab list">
                <div class="vocab entry">{{__vocab1}}</div>
@@ -44,6 +42,8 @@
                <div class="vocab entry">{{__vocab3}}</div>
             </div>
             {{/__vocab1}}
+
+            <div class="homophone">Homophone</div>
 
             <div>
                <div class="itemInfo">
@@ -87,7 +87,7 @@
             </div>
             {{/__override_mnemonic}}
 
-            <div>
+            <div class="context list">
                {{#Context_jp}}
                <div class="context">
                   <div class="context_jp">{{Context_jp}}</div>
