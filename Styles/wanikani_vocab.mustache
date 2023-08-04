@@ -9,12 +9,12 @@
                   <div class="clipboard">
                      {{Vocab}}
                      {{#__similar_vocab}}!<span class="clipboard">{{__similar_vocab}}</span>{{/__similar_vocab}}
-                  </div>                  
+                  </div>
                   {{#Kanji_Name}}<div class="kanjiNames">{{Kanji_Name}}</div>{{/Kanji_Name}}
-               </div>               
+               </div>
             </div>
             <div>{{Audio_g}}{{Audio_b}}</div>
-            
+
             {{#__override_meaning}}
             <div class="meaning user">{{__override_meaning}}</div>
             {{/__override_meaning}}
@@ -34,6 +34,7 @@
 
             <div>
                <span class="partOfSpeech">{{Speech_Type}}</span>
+               <span class="_uk">uk</span>
                <span class="reading clipboard">{{Reading}}</span>
             </div>
             {{/__vocab1}}
@@ -49,6 +50,7 @@
             <div class="homophone">Homophone</div>
          </div>
          <div class="bottomSection">
+            {{#__image}}<div class="image">{{__image}}</div>{{/__image}}
             {{#__override_mnemonic}}
             <div>
                <div class="mnemonic override">{{__override_mnemonic}}</div>

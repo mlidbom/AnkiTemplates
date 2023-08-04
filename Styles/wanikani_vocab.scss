@@ -12,7 +12,12 @@
 
    .kanjiNames { font-size: 20pt; }
 
-   .meaning, .reading, .partOfSpeech { font-size:25pt; }
+   .meaning, .reading, .partOfSpeech, ._uk { font-size:25pt; }
+   
+   ._uk{ display:none;}
+   &._uk ._uk{ display:unset; }
+   ._uk {color: red;}
+
    .meaning { color:$colorTextMeaning; }
    .reading { color: $colorTextReading; }
 
@@ -57,9 +62,12 @@
                margin-top:10px;
                margin-bottom:20px; }
 
-   .partOfSpeech { margin-right: 40pt;}
+   .partOfSpeech { margin-right: 10pt;}
+   .reading { margin-left: 10pt;} 
 
    .context { margin-top: 10pt;}
+
+   .image{ text-align:center; }
 
    .tags { margin-top: 6pt; }
 
