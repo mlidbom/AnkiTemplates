@@ -26,26 +26,16 @@
 
    .partOfSpeech { color: $colorTextBold;  }
 
-   .auxiliaryMeanings { font-size:12px; }
-   .referenceLink { font-size:12px; }
-
-   &._yomitan{
-      .meaning > div { text-align:center !important;}
-      .vocab.entry { font-size:30pt; }
-   }
+   &._yomitan .vocab.entry { font-size:30pt; }
 
    .mnemonic.override { font-size:16pt;
                         background:$colorBgDark1;
                         line-height: 1.6;
                         white-space: pre-line; }
 
-   .context {      
-      .context_jp { font-size: 140%; }
-      /*&.list:hover .context_jp { font-size: 300%; }*/
-   }
+   .context .context_jp { font-size: 140%; }
 
    .vocab.entry { font-size:20pt; }
-
 
    // LAYOUT
    .mainContent { @include flexContainerColumn; }
@@ -60,6 +50,8 @@
                       max-width: $maxWidth;
                       text-align: left; }
 
+    &._yomitan .meaning > div { text-align:center !important;}
+
    .itemInfo { display: inline-block;
                text-align: left;
                margin-top:10px;
@@ -68,6 +60,8 @@
    .partOfSpeech { margin-right: 40pt;}
 
    .context { margin-top: 10pt;}
+
+   .tags { margin-top: 6pt; }
 
    //TRICKY STUFF
    .homophone {display:none;}
