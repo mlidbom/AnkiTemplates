@@ -6,10 +6,10 @@
          <div class="front-and-answer">
             <div>
                <div class="question">
-                  <div class="clipboard">
-                     {{Vocab}}
-                     {{#__ergative_twin}}~<span class="ergativeTwin">{{__ergative_twin}}</span>{{/__ergative_twin}}
-                     {{#__similar_vocab}}!<span class="clipboard similarVocab">{{__similar_vocab}}</span>{{/__similar_vocab}}
+                  <div>
+                     <span class="clipboard">{{Vocab}}</span>
+                     {{#__ergative_twin}}~<span class="ergativeTwin clipboard">{{__ergative_twin}}</span>{{/__ergative_twin}}
+                     {{#__similar_vocab}}!<span class="similarVocab clipboard">{{__similar_vocab}}</span>{{/__similar_vocab}}
                   </div>
                   {{#Kanji_Name}}<div class="kanjiNames">{{Kanji_Name}}</div>{{/Kanji_Name}}
                </div>
