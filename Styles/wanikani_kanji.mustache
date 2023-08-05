@@ -60,35 +60,35 @@
                </div>
             </div>
          </div>
+         <div class="bottomSection">
+            <div class="vocab list">
+               <div class="vocab entry">{{__vocab1}}</div>
+               <div class="vocab entry">{{__vocab2}}</div>
+               <div class="vocab entry">{{__vocab3}}</div>
+            </div>
 
-         <div class="vocab list">
-            <div class="vocab entry">{{__vocab1}}</div>
-            <div class="vocab entry">{{__vocab2}}</div>
-            <div class="vocab entry">{{__vocab3}}</div>
-         </div>
+            <div>
+               {{#__mnemonics_Override}}
+               <div class="mnemonics user">
+                  <div>{{__mnemonics_Override}}</div>
+               </div>
+               {{/__mnemonics_Override}}
 
-         <div>
-            {{#__mnemonics_Override}}
-            <div class="mnemonics user">
-               <div>{{__mnemonics_Override}}</div>
+               {{^__mnemonics_Override}}
+               <div>
+                  <div class="text">{{Meaning_Mnemonic}}</div>
+                  <div class="text hints">{{Meaning_Info}}</div>
+               </div>
+               <div>
+                  <div class="text">{{Reading_Mnemonic}}</div>
+                  <div class="text hints">{{Reading_Info}}</i></div>
+               </div>
             </div>
             {{/__mnemonics_Override}}
 
-            {{^__mnemonics_Override}}
-            <div>
-               <div class="text">{{Meaning_Mnemonic}}</div>
-               <div class="text hints">{{Meaning_Info}}</div>
-            </div>
-            <div>
-               <div class="text">{{Reading_Mnemonic}}</div>
-               <div class="text hints">{{Reading_Info}}</i></div>
-            </div>
+            {{Vocabs}}
          </div>
-         {{/__mnemonics_Override}}
-
-         {{Vocabs}}
       </div>
-
    </div>
 
    <!--######-->

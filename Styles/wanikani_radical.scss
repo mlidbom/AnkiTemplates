@@ -30,12 +30,10 @@
    /* LAYOUT */ 
    @include flexContainerColumn;
 
-   > div { width:100%;
-	        max-width:1000px;
-	        justify-content: center;
-	        text-align:left; }
+   .bottomSection  { max-width:$maxWidth; }
 
-   .front-and-answer > div { text-align: center; }
+   .front-and-answer { text-align: center;
+                       width: 100%; }
 
    .mnemonics.user > div {white-space:pre-line;}
 
