@@ -8,7 +8,40 @@ $colorBgRead:#555;
 $colorTextReading: $colorTextItalic;
 $colorTextMeaning: #e20096;
 
+/* FONTS & COLORS */
+primary { text-decoration: underline; }
+.meaning { color:$colorTextMeaning; }
+.reading { color: $colorTextReading; }
+
+/* highlights */
+rad, radical, kan, kanji, read, reading, voc, vocabulary, vocab, .primaryVocab { color:white; }
+
+rad, radical, kan, kanji, read, reading, voc, vocabulary, vocab {
+    display: inline-block;
+    line-height: 1.2;
+}
+
+rad, radical { background-color: $colorBgRad}
+kan, kanji   { background-color: $colorBgKan; }
+voc, vocabulary, vocab, .primaryVocab   { background-color: $colorBgVoc; }
+read, reading { background-color: $colorBgRead; }
+
+
 /* Yomichan */
+.vocab {
+   &.list { display: flex;
+            flex-direction:column;
+            flex-wrap: nowrap;
+            width: fit-content;
+            margin-right:auto;
+            margin-left:auto;
+   }
+   &.entry { background:$colorBgDark1;
+            margin: 2px 0px 0px 2px;
+
+   }
+}
+
 .vocab.list .vocab.entry {
    padding: 0px 0px 0px 0px !important;
    .entry {
@@ -48,34 +81,3 @@ $colorTextMeaning: #e20096;
       }
    }
 }
-
-.vocab {
-   &.list { display: flex;
-            flex-direction:column;
-            flex-wrap: nowrap;
-            width: fit-content;
-            margin-right:auto;
-            margin-left:auto;
-   }
-   &.entry { background:$colorBgDark1;
-            margin: 2px 0px 0px 2px;
-
-   }
-}
-
-/* FONTS & COLORS */
-primary { text-decoration: underline; }
-
-
-/* highlights */
-rad, radical, kan, kanji, read, reading, voc, vocabulary, vocab, .primaryVocab { color:white; }
-
-rad, radical, kan, kanji, read, reading, voc, vocabulary, vocab {
-    display: inline-block;
-    line-height: 1.2;
-}
-
-rad, radical { background-color: $colorBgRad}
-kan, kanji   { background-color: $colorBgKan; }
-voc, vocabulary, vocab, .primaryVocab   { background-color: $colorBgVoc; }
-read, reading { background-color: $colorBgRead; }

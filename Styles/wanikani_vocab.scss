@@ -5,7 +5,7 @@
    line-height: 1.25;
    font-size: 20px; 
 
-   .question { font-size:80pt;
+   .question { font-size:60pt;
                line-height: .9;
                background-color:#a900fd;
                padding-top:10pt; }
@@ -17,9 +17,6 @@
    ._uk{ display:none;}
    &._uk ._uk{ display:unset; }
    ._uk {color: red;}
-
-   .meaning { color:$colorTextMeaning; }
-   .reading { color: $colorTextReading; }
 
    .meaning.overridden{ font-size:12pt;  }
 
