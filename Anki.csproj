@@ -51,6 +51,7 @@
 
    <ItemGroup>
     <None Include="Anki.sln" />
+    <None Include="collection.media\__magnus_js.js" />
     <None Include="compilerconfig.json" />
   </ItemGroup>
 

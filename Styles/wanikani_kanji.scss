@@ -37,31 +37,12 @@
    .referenceLink { font-size: 12px; }
    .vocabList { font-size: 30pt; }
 
-   /*Yomitan import*/
-   .meaning ol { list-style-type: none;
-                 padding: 0;
-                 margin: 0; }
-   .meaning li { display: inline-block; }
-   .meaning li:not(:last-child)::after { content: ", ";
-                                         margin: 0 10px 0 0; }
-   .meaning li::first-letter { text-transform: uppercase; }
-
-   .meaning.overridden { font-size: 12pt;}
-
-   .vocab.list{ font-size: 20pt; }
-
    /* LAYOUT */
-   .mainContent { display: flex;
-                  flex-direction: column;
-                  width: 100%;
-                  align-items: center;
-                  justify-content: center; }
+   .mainContent { @include flexContainerColumn; }
 
-   .mainContent > div { width: 100%;
-                        max-width: 1000px;
-                        justify-content: center;
-                        text-align: left; }
-
+   .front-and-answer { text-align: center;
+                       width: 100%; }
+   
    .userExplanation { margin-top: 10px; }
 
    .itemInfo { display: inline-block;
@@ -74,7 +55,22 @@
    .mnemonics.user { margin-bottom: 10pt; }
    .mnemonics { margin-top: 10px; }
    .hints { margin-top: 10pt; }
-   .front-and-answer > div { text-align: center; }
+   
+
    .meaning.overridden { margin-top: 5px; }
    .hints { margin-bottom: 10px; }
+
+
+   /*Yomitan import*/
+   .meaning ol { list-style-type: none;
+                 padding: 0;
+                 margin: 0; }
+   .meaning li { display: inline-block; }
+   .meaning li:not(:last-child)::after { content: ", ";
+                                         margin: 0 10px 0 0; }
+   .meaning li::first-letter { text-transform: uppercase; }
+
+   .meaning.overridden { font-size: 12pt;}
+
+   .vocab.list{ font-size: 20pt; }
 }

@@ -20,12 +20,6 @@
 
    .meaning.overridden{ font-size:12pt;  }
 
-   .userExplanation {
-         white-space: pre-line;
-         font-size: 20pt;
-         color:$colorTextMeaning;
-   }
-
    .partOfSpeech { color: $colorTextBold;  }
 
    &._yomitan .vocab.entry { font-size:30pt; }
@@ -47,11 +41,6 @@
    .front-and-answer { text-align: center;
                        width: 100%; }
 
-   .meaning div { text-align: center !important; } /* yomichan import fix */
-   .userExplanation { display: inline-block;
-                      max-width: $maxWidth;
-                      text-align: left; }
-
     &._yomitan .meaning > div { text-align:center !important;}
 
    .itemInfo { display: inline-block;
@@ -68,9 +57,11 @@
 
    .tags { margin-top: 6pt; }
 
+      //yomichan import fix
+   .meaning div { text-align: center !important; }
+
    //TRICKY STUFF
    .homophone {display:none;}
-   //Tag _homophone present
-   &._homophone .homophone { display: block;
+   &._homophone .homophone { display: block; //Tag _homophone present
                              color:red; }
 }

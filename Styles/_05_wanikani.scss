@@ -11,6 +11,12 @@ $colorTextMeaning: #e20096;
 /* FONTS & COLORS */
 primary { text-decoration: underline; }
 .meaning { color:$colorTextMeaning; }
+
+   .userExplanation {
+         white-space: pre-line;
+         font-size: 20pt;
+         color:$colorTextMeaning; }
+
 .reading { color: $colorTextReading; }
 
 /* highlights */
@@ -26,6 +32,10 @@ kan, kanji   { background-color: $colorBgKan; }
 voc, vocabulary, vocab, .primaryVocab   { background-color: $colorBgVoc; }
 read, reading { background-color: $colorBgRead; }
 
+/*LAYOUT*/
+.userExplanation { display: inline-block;
+                   max-width: $maxWidth;
+                   text-align: left; }
 
 /* Yomichan */
 .vocab {

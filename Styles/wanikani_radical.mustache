@@ -1,5 +1,5 @@
 <div id="container1">
-   <div id="container2" class="{{Tags}} card{{Card}}">
+   <div id="container2">
       <!--######-->
 
       <div class="mainContent">
@@ -23,26 +23,22 @@
             </div>
          </div>
 
-         {{#__meaning_override}}
+         {{#__mnemonic}}
          <div class="mnemonics user" ">
-            <div class="text">{{__meaning_override}}</div>
+            <div class="text">{{__mnemonic}}</div>
          </div>
-         {{/__meaning_override}}
-         {{^__meaning_override}}
+         {{/__mnemonic}}
+         {{^__mnemonic}}
          <div class="mnemonics" ">
             <div>
                <span class="text">{{Radical_Meaning}}</span>
             </div>
          </div>
-         {{/__meaning_override}}
+         {{/__mnemonic}}
       </div>
 
       <!--######-->
    </div>
 </div>
 
-<!-- Yomichan hack to get styles working right -->
-<script>
-   document.documentElement.setAttribute('data-glossary-layout-mode', 'compact');
-   document.documentElement.setAttribute('data-theme', 'dark');
-</script>
+<script src="__magnus_js.js"></script>

@@ -107,32 +107,6 @@
    </div>
 </div>
 
-<!-- Yomichan hack to get styles working right -->
-<script>
-   document.documentElement.setAttribute('data-glossary-layout-mode', 'compact');
-   document.documentElement.setAttribute('data-theme', 'dark');
-</script>
+<script src="__magnus_js.js"></script>
 
 
-<!-- Copy japanese sentences to clipboard on click to make reading them in yomichan a breeze -->
-<script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.11/dist/clipboard.min.js"></script>
-<script>
-   function selectText(element) {
-      var range = document.createRange();
-      range.selectNodeContents(element);
-      var selection = window.getSelection();
-      selection.removeAllRanges();
-      selection.addRange(range);
-   }
-
-   function removeSelection(element) { window.getSelection().removeAllRanges(); }
-
-   var clipboard = new ClipboardJS('.clipboard', {
-      text: function (trigger) {
-         setTimeout(function () {
-            selectText(trigger);
-         }, 50);
-         return trigger.innerText;
-      }
-   });
-</script>
