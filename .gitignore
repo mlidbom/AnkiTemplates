@@ -3,6 +3,7 @@
 /backup/
 /backups/
 /collection.media/*
+!/collection.media/__magnus*.js
 /bin/
 /obj/
 /.vs/
