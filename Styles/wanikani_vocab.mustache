@@ -2,107 +2,102 @@
    <div id="container2" class="{{Tags}} card{{Card}}">
       <!--######-->
 
-      <div class="mainContent">
-         <div class="front-and-answer">
-            <div>
-               <div class="question">
-                  <div>
-                     <span class="clipboard">{{Vocab}}</span>
-                     {{#__ergative_twin}}~<span class="ergativeTwin clipboard">{{__ergative_twin}}</span>{{/__ergative_twin}}
-                     {{#__similar_vocab}}!<span class="similarVocab clipboard">{{__similar_vocab}}</span>{{/__similar_vocab}}
-                  </div>
-                  {{#Kanji_Name}}<div class="kanjiNames">{{Kanji_Name}}</div>{{/Kanji_Name}}
-               </div>
-            </div>
-            <div>{{Audio_g}}{{Audio_b}}</div>
-
-            {{#__override_meaning}}
-            <div class="meaning user">{{__override_meaning}}</div>
-            {{/__override_meaning}}
-
-            {{^__vocab1}}
-            {{^__override_meaning}}
-            <div class="meaning"> {{Vocab_Meaning}}</div>
-            {{/__override_meaning}}
-
-            {{/__vocab1}}
-
-            {{#___explanation}}
-            <div class="userExplanation">{{___explanation}}</div>
-            {{/___explanation}}
-
-            {{^__vocab1}}
-
-            <div>
-               <span class="partOfSpeech">{{Speech_Type}}</span>
-               <span class="_uk">uk</span>
-               <span class="reading clipboard">{{Reading}}</span>
-            </div>
-            {{/__vocab1}}
-
-            {{#__vocab1}}
-            <div class="vocab list">
-               <div class="vocab entry">{{__vocab1}}</div>
-               <div class="vocab entry">{{__vocab2}}</div>
-               <div class="vocab entry">{{__vocab3}}</div>
-            </div>
-            {{/__vocab1}}
-
-            <div class="homophone">Homophone</div>
-         </div>
-         <div class="bottomSection">
-            {{#__image}}<div class="image">{{__image}}</div>{{/__image}}
-            {{#__override_mnemonic}}
-            <div>
-               <div class="mnemonic override">{{__override_mnemonic}}</div>
-            </div>
-            {{/__override_mnemonic}}
-
-
-            {{^__override_mnemonic}}
-            <div>
-               {{#Meaning_Exp}}
-               <div class="mnemonic">{{Meaning_Exp}}</div>
-               {{/Meaning_Exp}}
-
-               <br>
-
-               {{#Reading_Exp}}
+      <div class="front-and-answer">
+         <div>
+            <div class="question">
                <div>
-                  <div class="mnemonic">{{Reading_Exp}}</div>
+                  <span class="clipboard">{{Vocab}}</span>
+                  {{#__ergative_twin}}~<span class="ergativeTwin clipboard">{{__ergative_twin}}</span>{{/__ergative_twin}}
+                  {{#__similar_vocab}}!<span class="similarVocab clipboard">{{__similar_vocab}}</span>{{/__similar_vocab}}
                </div>
-               {{/Reading_Exp}}
-
-               <br>
-            </div>
-            {{/__override_mnemonic}}
-
-            <div class="context list">
-               {{#Context_jp}}
-               <div class="context">
-                  <div class="context_jp clipboard">{{Context_jp}}</div>
-                  <div>{{Context_en}}</div>
-               </div>
-               {{/Context_jp}}
-
-               {{#Context_jp_2}}
-               <div class="context">
-                  <div class="context_jp clipboard">{{Context_jp_2}}</div>
-                  <div>{{Context_en_2}}</div>
-               </div>
-               {{/Context_jp_2}}
-
-               {{#Context_jp_3}}
-               <div class="context">
-                  <div class="context_jp clipboard">{{Context_jp_3}}</div>
-                  <div>{{Context_en_3}}</div>
-               </div>
-               {{/Context_jp_3}}
-
+               {{#Kanji_Name}}<div class="kanjiNames">{{Kanji_Name}}</div>{{/Kanji_Name}}
             </div>
          </div>
-         <div class="tags">{{Tags}}</div>
+         <div>{{Audio_g}}{{Audio_b}}</div>
+
+         {{#__override_meaning}}
+         <div class="meaning user">{{__override_meaning}}</div>
+         {{/__override_meaning}}
+
+         {{^__vocab1}}
+         {{^__override_meaning}}
+         <div class="meaning"> {{Vocab_Meaning}}</div>
+         {{/__override_meaning}}
+
+         {{/__vocab1}}
+
+         {{#___explanation}}
+         <div class="userExplanation">{{___explanation}}</div>
+         {{/___explanation}}
+
+         <div class="metaData">
+            <span class="_uk">uk</span>
+            <span class="_homophone">homophone</span>
+            <span class="partOfSpeech">{{Speech_Type}}</span>
+            <span class="reading clipboard">{{Reading}}</span>
+         </div>
+
+         {{#__vocab1}}
+         <div class="vocab list">
+            <div class="vocab entry">{{__vocab1}}</div>
+            <div class="vocab entry">{{__vocab2}}</div>
+            <div class="vocab entry">{{__vocab3}}</div>
+         </div>
+         {{/__vocab1}}
       </div>
+      <div class="bottomSection">
+         {{#__image}}<div class="image">{{__image}}</div>{{/__image}}
+         {{#__override_mnemonic}}
+         <div>
+            <div class="mnemonic override">{{__override_mnemonic}}</div>
+         </div>
+         {{/__override_mnemonic}}
+
+
+         {{^__override_mnemonic}}
+         <div>
+            {{#Meaning_Exp}}
+            <div class="mnemonic">{{Meaning_Exp}}</div>
+            {{/Meaning_Exp}}
+
+            <br>
+
+            {{#Reading_Exp}}
+            <div>
+               <div class="mnemonic">{{Reading_Exp}}</div>
+            </div>
+            {{/Reading_Exp}}
+
+            <br>
+         </div>
+         {{/__override_mnemonic}}
+
+         <div class="context list">
+            {{#Context_jp}}
+            <div class="context">
+               <div class="context_jp clipboard">{{Context_jp}}</div>
+               <div>{{Context_en}}</div>
+            </div>
+            {{/Context_jp}}
+
+            {{#Context_jp_2}}
+            <div class="context">
+               <div class="context_jp clipboard">{{Context_jp_2}}</div>
+               <div>{{Context_en_2}}</div>
+            </div>
+            {{/Context_jp_2}}
+
+            {{#Context_jp_3}}
+            <div class="context">
+               <div class="context_jp clipboard">{{Context_jp_3}}</div>
+               <div>{{Context_en_3}}</div>
+            </div>
+            {{/Context_jp_3}}
+
+         </div>
+      </div>
+      <div class="tags">{{Tags}}</div>
+
       <!--######-->
    </div>
 </div>

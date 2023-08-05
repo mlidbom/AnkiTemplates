@@ -1,5 +1,5 @@
 @import "_05_wanikani.scss";
-.card #container1 #container2 .mainContent{ //Let's stay focused and not break other stuff
+.card #container1 #container2 { //Let's stay focused and not break other stuff
    // FONTS & COLORS
    line-height: 1.25;
    font-size: 20px; 
@@ -9,9 +9,11 @@
                background-color:#a900fd;
                padding-top:10pt; }
 
+   .meaning, .reading { font-size:25pt; }
+
    .kanjiNames { font-size: 20pt; }
 
-   .meaning, .reading, .partOfSpeech, ._uk { font-size:25pt; }
+   .metaData { font-size:20pt; }
 
    .meaning.overridden{ font-size:12pt;  }
 
@@ -29,8 +31,6 @@
    .vocab.entry { font-size:20pt; }
 
    // LAYOUT
-   @include flexContainerColumn;
-
    .bottomSection  { max-width:$maxWidth; }
 
    .front-and-answer { text-align: center;
@@ -43,8 +43,7 @@
                margin-top:10px;
                margin-bottom:20px; }
 
-   .partOfSpeech { margin-right: 10pt;}
-   .reading { margin-left: 10pt;} 
+   .metaData span { margin-right: 10pt;}
 
    .context { margin-top: 10pt;}
 
@@ -56,13 +55,13 @@
    .meaning div { text-align: center !important; }
 
    //Stuff shown only if the appropriate tag is present.
-   .homophone, ._uk {display:none;}
-   &._homophone .homophone { display: block; //Tag _homophone present
-                             color:red; }
+   ._homophone, ._uk {display:none;}
+   
+   &._homophone ._homophone,
+   &._uk ._uk{ display: unset; 
+               color:red; }
 
-   &._uk ._uk{ display:unset; 
-               color: red; }
 
    //this would hide the list of different writings for verbs that is the whole point of some if the yomichan includes....
-   /*.vocab.list .vocab.entry .entry .entry-header { display: none; }*/
+   .vocab.list .vocab.entry .entry .entry-header { display: none; }
 }

@@ -12,10 +12,10 @@ $colorTextMeaning: #e20096;
 primary { text-decoration: underline; }
 .meaning { color:$colorTextMeaning; }
 
-   .userExplanation {
-         white-space: pre-line;
-         font-size: 20pt;
-         color:$colorTextMeaning; }
+.userExplanation {
+      white-space: pre-line;
+      font-size: 20pt;
+      color:$colorTextMeaning; }
 
 .reading { color: $colorTextReading; }
 
