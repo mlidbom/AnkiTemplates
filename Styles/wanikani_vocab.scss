@@ -62,4 +62,7 @@
 
    &._uk ._uk{ display:unset; 
                color: red; }
+
+   //this would hide the list of different writings for verbs that is the whole point of some if the yomichan includes....
+   /*.vocab.list .vocab.entry .entry .entry-header { display: none; }*/
 }
