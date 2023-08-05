@@ -1,6 +1,5 @@
 @import "_05_wanikani.scss";
-
-.card #container1 #container2 { //Let's stay focused and not break other stuff
+.card #container1 #container2 .mainContent{ //Let's stay focused and not break other stuff
    // FONTS & COLORS
    line-height: 1.25;
    font-size: 20px; 
@@ -13,10 +12,6 @@
    .kanjiNames { font-size: 20pt; }
 
    .meaning, .reading, .partOfSpeech, ._uk { font-size:25pt; }
-   
-   ._uk{ display:none;}
-   &._uk ._uk{ display:unset; }
-   ._uk {color: red;}
 
    .meaning.overridden{ font-size:12pt;  }
 
@@ -34,9 +29,9 @@
    .vocab.entry { font-size:20pt; }
 
    // LAYOUT
-   .mainContent { @include flexContainerColumn; }
+   @include flexContainerColumn;
 
-   .mainContent .bottomSection  { max-width:$maxWidth; }
+   .bottomSection  { max-width:$maxWidth; }
 
    .front-and-answer { text-align: center;
                        width: 100%; }
@@ -60,8 +55,11 @@
       //yomichan import fix
    .meaning div { text-align: center !important; }
 
-   //TRICKY STUFF
-   .homophone {display:none;}
+   //Stuff shown only if the appropriate tag is present.
+   .homophone, ._uk {display:none;}
    &._homophone .homophone { display: block; //Tag _homophone present
                              color:red; }
+
+   &._uk ._uk{ display:unset; 
+               color: red; }
 }

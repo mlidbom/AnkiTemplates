@@ -3,7 +3,7 @@
 /* FONTS AND COLORS */
 .card #container1 #container2 { //Let's stay focused and not break other stuff
 
-   .mainContent { font-size: 20px; }
+   font-size: 20px;
 
    .kanji { font-size: 150px;
             line-height: 0.8;
@@ -38,7 +38,7 @@
    .vocabList { font-size: 30pt; }
 
    /* LAYOUT */
-   .mainContent { @include flexContainerColumn; }
+   @include flexContainerColumn;
 
    .front-and-answer { text-align: center;
                        width: 100%; }

@@ -1,5 +1,6 @@
 @import "_05_wanikani.scss";
-.card #container1 #container2 { //Let's stay focused and not break other stuff
+.card #container1 #container2 .mainContent{ //Let's stay focused and not break other stuff    
+                            
    /* FONTS AND COLORS */
    font-size: 20pt;
 
@@ -27,16 +28,12 @@
    .mnemonics.user { background:$colorBgDark1; }
 
    /* LAYOUT */ 
-   .mainContent { 	display: flex;
-                  flex-direction:column;
-                  width:100%;
-                  align-items: center;
-                  justify-content: center; }
+   @include flexContainerColumn;
 
-   .mainContent > div { width:100%;
-	                      max-width:1000px;
-	                      justify-content: center;
-	                      text-align:left; }
+   > div { width:100%;
+	        max-width:1000px;
+	        justify-content: center;
+	        text-align:left; }
 
    .front-and-answer > div { text-align: center; }
 
