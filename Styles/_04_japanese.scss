@@ -7,10 +7,12 @@
 /*@import "Yomichan/search.scss";*/
 /*@import "Yomichan/structured-content.scss";*/
 
-.card { font-family: Meiryo, "Hiragino Kaku Gothic Pro W3"; }
-
 @font-face {
     font-family: "Hiragino Kaku Gothic Pro W3";
     src: url("_hirakakyprow3.otf"); }
+
+.card #container1 #container2 { 
+   font-family: Meiryo, "Hiragino Kaku Gothic Pro W3"; 
+}
 
 
