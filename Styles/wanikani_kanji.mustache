@@ -6,13 +6,13 @@
          <div class="front-and-answer">
             <div class="kanjiContainer">
                <div class="kanji">
-                  {{Kanji}}
-                  {{#__similar_Characters}}!{{__similar_Characters}}{{/__similar_Characters}}
+                  <span class="clipboard">{{Kanji}}</span>
+                  <span class="clipboard">{{#__similar_Characters}}!{{__similar_Characters}}{{/__similar_Characters}}</span>
                </div>
             </div>
 
             {{#__primary_Vocab}}
-            <div class="primaryVocab">{{__primary_Vocab}} {{__primary_Vocab_Audio}}</div>
+            <div class="primaryVocab clipboard">{{__primary_Vocab}} {{__primary_Vocab_Audio}}</div>
             {{/__primary_Vocab}}
             {{#__meaning_Override}}
             <div class="meaning user">{{__meaning_Override}}</div>
@@ -22,6 +22,12 @@
             {{/__user_explanation}}
 
             {{^__meaning_Override}}<div class="meaning">{{Kanji_Meaning}}</div>{{/__meaning_Override}}
+
+            <div class="vocab list">
+               <div class="vocab entry">{{__vocab1}}</div>
+               <div class="vocab entry">{{__vocab2}}</div>
+               <div class="vocab entry">{{__vocab3}}</div>
+            </div>
 
             <div>
                <div class="itemInfo">
@@ -50,23 +56,10 @@
                      <span class="radical_icons">{{^Radicals_Icons}}, {{Radicals_Icons}}{{/Radicals_Icons}}</span>
                      <span class="text">({{Radicals_Names}}{{#Radicals_Icons_Names}}, {{Radicals_Icons_Names}}{{/Radicals_Icons_Names}})</span>
                   </div>
-                  <div class="referenceLink">
-                     <a target="_blank" href="https://www.wanikani.com/kanji/{{Kanji}}">Wanikani</a>
-                     <a target="_blank" href="https://jisho.org/search/{{Kanji}}%20%23kanji">Jisho(kanji)</a>
-                     <a target="_blank" href="https://jisho.org/search/*{{Kanji}}*">Jisho(vocab)</a>
-                     <a target="_blank" href="https://www.immersionkit.com/dictionary?keyword={{Kanji}}&exact=true&sort=shortness">Immersion Kit</a>
-                     Tags:{{Tags}}
-                  </div>
                </div>
             </div>
          </div>
          <div class="bottomSection">
-            <div class="vocab list">
-               <div class="vocab entry">{{__vocab1}}</div>
-               <div class="vocab entry">{{__vocab2}}</div>
-               <div class="vocab entry">{{__vocab3}}</div>
-            </div>
-
             <div>
                {{#__mnemonics_Override}}
                <div class="mnemonics user">
@@ -89,9 +82,17 @@
             {{Vocabs}}
          </div>
       </div>
-   </div>
 
-   <!--######-->
+      <div class="referenceLink">
+         <a target="_blank" href="https://www.wanikani.com/kanji/{{Kanji}}">Wanikani</a>
+         <a target="_blank" href="https://jisho.org/search/{{Kanji}}%20%23kanji">Jisho(kanji)</a>
+         <a target="_blank" href="https://jisho.org/search/*{{Kanji}}*">Jisho(vocab)</a>
+         <a target="_blank" href="https://www.immersionkit.com/dictionary?keyword={{Kanji}}&exact=true&sort=shortness">Immersion Kit</a>
+         Tags:{{Tags}}
+      </div>
+
+      <!--######-->
+   </div>
 </div>
 
 <script src="__magnus_js.js"></script>

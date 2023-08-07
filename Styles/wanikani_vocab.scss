@@ -55,13 +55,24 @@
    .meaning div { text-align: center !important; }
 
    //Stuff shown only if the appropriate tag is present.
-   ._homophone, ._uk {display:none;}
+   ._homophone, ._uk, ._masustem {display:none;}
    
    &._homophone ._homophone,
+   &._masustem ._masustem,
    &._uk ._uk{ display: unset; 
                color:red; }
 
 
-   //this would hide the list of different writings for verbs that is the whole point of some if the yomichan includes....
-   .vocab.list .vocab.entry .entry .entry-header { display: none; }
+   //this would hide the list of different writings for verbs that is the whole point of some of the yomichan includes....
+   &{
+      .vocab.list .vocab.entry.replacement .entry .entry-header { 
+            display: none; 
+            rt {display: none;}}
+    
+      &._showVariations .vocab.list .vocab.entry.replacement .entry .entry-header { 
+         display: unset; 
+         rt {display: unset;}
+      }
+   }
+   
 }

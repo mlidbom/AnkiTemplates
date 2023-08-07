@@ -8,6 +8,8 @@ $colorBgRead:#555;
 $colorTextReading: $colorTextItalic;
 $colorTextMeaning: #e20096;
 
+.card #container1 #container2 {
+
 /* FONTS & COLORS */
 primary { text-decoration: underline; }
 .meaning { color:$colorTextMeaning; }
@@ -19,18 +21,20 @@ primary { text-decoration: underline; }
 
 .reading { color: $colorTextReading; }
 
+ja { color: $colorTextGreen;}
+
 /* highlights */
-rad, radical, kan, kanji, read, reading, voc, vocabulary, vocab, .primaryVocab { color:white; }
+&{ rad, radical, kan, kanji, read, reading, voc, vocabulary, vocab, .primaryVocab { color:white; }
 
-rad, radical, kan, kanji, read, reading, voc, vocabulary, vocab {
-    display: inline-block;
-    line-height: 1.2;
-}
+   rad, radical, kan, kanji, read, reading, voc, vocabulary, vocab {
+       display: inline-block;
+       line-height: 1.2;
+   }
 
-rad, radical { background-color: $colorBgRad}
-kan, kanji   { background-color: $colorBgKan; }
-voc, vocabulary, vocab, .primaryVocab   { background-color: $colorBgVoc; }
-read, reading { background-color: $colorBgRead; }
+   rad, radical { background-color: $colorBgRad}
+   kan, kanji   { background-color: $colorBgKan; }
+   voc, vocabulary, vocab, .primaryVocab   { background-color: $colorBgVoc; }
+   read, reading { background-color: $colorBgRead; } }
 
 /*LAYOUT*/
 .userExplanation { display: inline-block;
@@ -90,4 +94,4 @@ read, reading { background-color: $colorBgRead; }
          display:none; 
       }
    }
-}
+}}

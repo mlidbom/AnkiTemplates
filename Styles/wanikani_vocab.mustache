@@ -7,6 +7,7 @@
             <div class="question">
                <div>
                   <span class="clipboard">{{Vocab}}</span>
+                  {{#__derivedFrom}}&lt; <span class="derivedFrom clipboard">{{__derivedFrom}}</span>{{/__derivedFrom}}
                   {{#__ergative_twin}}~<span class="ergativeTwin clipboard">{{__ergative_twin}}</span>{{/__ergative_twin}}
                   {{#__similar_vocab}}!<span class="similarVocab clipboard">{{__similar_vocab}}</span>{{/__similar_vocab}}
                </div>
@@ -32,6 +33,7 @@
 
          <div class="metaData">
             <span class="_uk">uk</span>
+            <span class="_masustem">masu stem</span>
             <span class="_homophone">homophone</span>
             <span class="partOfSpeech">{{Speech_Type}}</span>
             <span class="reading clipboard">{{Reading}}</span>
@@ -39,9 +41,9 @@
 
          {{#__vocab1}}
          <div class="vocab list">
-            <div class="vocab entry">{{__vocab1}}</div>
-            <div class="vocab entry">{{__vocab2}}</div>
-            <div class="vocab entry">{{__vocab3}}</div>
+            <div class="vocab entry replacement">{{__vocab1}}</div>
+            <div class="vocab entry context">{{__vocab2}}</div>
+            <div class="vocab entry context">{{__vocab3}}</div>
          </div>
          {{/__vocab1}}
       </div>

@@ -13,12 +13,27 @@
 
    function removeSelection(element) { window.getSelection().removeAllRanges(); }
 
-   var clipboard = new ClipboardJS('.clipboard', {
-      text: function (trigger) {
-         setTimeout(()  => selectText(trigger));
-         return trigger.innerText;
-      }
-   });
+   document.querySelectorAll('.clipboard, ja')
+      .forEach(function (element) {
+         element.addEventListener('mousedown', function (event) {
+            if (event.button === 2) {
+               const selection = window.getSelection();
+               const selectedText = selection.toString();
+
+               if (!selectedText || !element.contains(selection.anchorNode)) {
+                  selectText(element);
+               }
+            }
+         });
+      });
+
+
+   //var clipboard = new ClipboardJS('.clipboard', {
+   //   text: function (trigger) {
+   //      setTimeout(()  => selectText(trigger));
+   //      return trigger.innerText;
+   //   }
+   //});
 });
 
 
