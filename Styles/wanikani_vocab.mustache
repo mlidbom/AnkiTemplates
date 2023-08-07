@@ -38,15 +38,16 @@
             <span class="partOfSpeech">{{Speech_Type}}</span>
             <span class="reading clipboard">{{Reading}}</span>
          </div>
-
-         {{#__vocab1}}
-         <div class="vocab list">
-            <div class="vocab entry replacement">{{__vocab1}}</div>
-            <div class="vocab entry context">{{__vocab2}}</div>
-            <div class="vocab entry context">{{__vocab3}}</div>
-         </div>
-         {{/__vocab1}}
       </div>
+
+      {{#__vocab1}}
+      <div class="vocab list">
+         <div class="vocab entry replacement">{{__vocab1}}</div>
+         <div class="vocab entry context">{{__vocab2}}</div>
+         <div class="vocab entry context">{{__vocab3}}</div>
+      </div>
+      {{/__vocab1}}
+
       <div class="bottomSection">
          {{#__image}}<div class="image">{{__image}}</div>{{/__image}}
          {{#__override_mnemonic}}
