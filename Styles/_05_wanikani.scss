@@ -63,6 +63,9 @@ ja { color: $colorTextGreen;}
 
       .entry-header { text-align: center; }
 
+      //NOTE: In some spots one wants to hide the furigana. Add this class to the outermost pasted div and the furigana goes away
+      &.hideFurigana .entry-header rt {display: none;}
+
       a { text-decoration: none; }
       .gloss-content { color:$colorTextMeaning; }
       .pronunciation {color:$colorTextReading; }
