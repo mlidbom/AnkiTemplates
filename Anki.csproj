@@ -42,6 +42,7 @@
 
   <ItemGroup>
     <Content Include="collection.media\__magnus_css_basic.css" />
+    <Content Include="collection.media\__magnus_css_iKnow.css" />
     <Content Include="collection.media\__magnus_css_immersion_kit.css" />
     <Content Include="collection.media\__magnus_css_jlab.css" />
     <Content Include="collection.media\__magnus_css_wanikani_kanji.css" />

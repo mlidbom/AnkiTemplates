@@ -2,9 +2,10 @@
 
 /*FONTS & COLORS */
 .card #container1 #container2 { //Let's stay focused and not break other stuff
+   $colorBGUser: $colorBgDark1;
 
    .comments {
-      > div{ background:$colorBgDark1; }
+      > div{ background:$colorBGUser; }
       &.short { font-size:16pt; 
                white-space:pre-line; }
       &.long { font-size:16pt; }
@@ -13,9 +14,11 @@
    .expression, .reading {
        font-size: 50pt;
        line-height: 1;
+       &.user { background: $colorBGUser; }
    }
 
-   .english { font-size:20pt; }
+   .english { font-size:20pt; 
+              &.user { background: $colorBGUser; } }
 
    .vocab.list{ font-size: 20pt; }
 
