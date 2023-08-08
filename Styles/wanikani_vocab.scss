@@ -55,10 +55,11 @@
    .meaning div { text-align: center !important; }
 
    //Stuff shown only if the appropriate tag is present.
-   ._homophone, ._uk, ._masustem {display:none;}
+   ._homophone, ._uk, ._derog, ._masustem {display:none;}
    
    &._homophone ._homophone,
    &._masustem ._masustem,
+   &._derog ._derog,
    &._uk ._uk{ display: unset; 
                color:red; }
 
@@ -70,8 +71,7 @@
             rt {display: none;}}
     
       &._showVariations .vocab.list .vocab.entry.replacement .entry .entry-header { 
-         display: unset; 
-         rt {display: unset;}
+         display: block; 
       }
    }
    

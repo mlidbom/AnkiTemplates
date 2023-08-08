@@ -13,7 +13,7 @@
 
    function removeSelection(element) { window.getSelection().removeAllRanges(); }
 
-   document.querySelectorAll('.clipboard, ja')
+   document.querySelectorAll('.clipboard, ja, .headword-term')
       .forEach(function (element) {
          element.addEventListener('mousedown', function (event) {
             if (event.button === 2) {
