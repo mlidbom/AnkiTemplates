@@ -5,53 +5,51 @@
 
    font-size: 20px;
 
-   .kanji { font-size: 150px;
-            line-height: 0.8;
-            background-color: #e20096;
-            padding-top: 17pt; }
+   .front-and-answer{
+      .kanji { font-size: 150px;
+               line-height: 0.8;
+               background-color: #e20096;
+               padding-top: 17pt; }      
 
-   .kanji img { position: relative;
-                bottom: -36px; }
+      .primaryVocab { font-size: 50pt;
+                      line-height: 1.25; }
 
-   .primaryVocab { font-size: 50pt;
-                   line-height: 1.25; }
+      .meaning, .reading { font-size: 40pt;
+                           line-height: 1.1; }
 
-   .meaning, .reading { font-size: 40pt;
-                        line-height: 1.1; }
+      .meaning vocab { color: white;
+                       margin-right: 10px; }
 
-   .meaning vocab { color: white;
-                    margin-right: 10px; }
-
-   .radicals, .reading { font-size: 32px;
-                         color: $colorTextReading; }
-
+      .radicals, .reading { font-size: 32px;
+                            color: $colorTextReading; }}
 
    .mnemonics.user { font-size: 25pt;
                      line-height: unset; }
    .mnemonics.user > div { background: $colorBgDark1;
-                           white-space: pre-line;
-
-   }
+                           white-space: pre-line; }
 
    .hints { background: $colorBgDark1; }
    .referenceLink { font-size: 12px; }
-   .vocabList { font-size: 30pt; }
+   .kanjiVocabList .kanji { font-size: 200%; }
 
    /* LAYOUT */
    @include flexContainerColumn;
 
-   .front-and-answer { text-align: center;
-                       width: 100%; }
+   .front-and-answer { 
+      text-align: center;
+      width: 100%;
+
+      .userExplanation { margin-top: 10px; }
+
+      .itemInfo { display: inline-block;
+                  text-align: left;
+                  margin-top: 10px;
+                  margin-bottom: 20px; }
+
+      .kanji { margin-bottom: 5px; 
+               img { position: relative;
+                     bottom: -36px; }}}
    
-   .userExplanation { margin-top: 10px; }
-
-   .itemInfo { display: inline-block;
-               text-align: left;
-               margin-top: 10px;
-               margin-bottom: 20px; }
-
-   .kanji { margin-bottom: 5px; }
-
    .mnemonics.user { margin-bottom: 10pt; }
    .mnemonics { margin-top: 10px; }
    .hints { margin-top: 10pt; }
