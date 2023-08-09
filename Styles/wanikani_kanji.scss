@@ -8,7 +8,7 @@
    .front-and-answer{
       .kanji { font-size: 150px;
                line-height: 0.8;
-               background-color: #e20096;
+               background-color: $colorBgKan;
                padding-top: 17pt; }      
 
       .primaryVocab { font-size: 50pt;
@@ -30,7 +30,8 @@
 
    .hints { background: $colorBgDark1; }
    .referenceLink { font-size: 12px; }
-   .kanjiVocabList .kanji { font-size: 200%; }
+   .kanjiVocabList .kanji { font-size: 200%; 
+                            line-height: 1.1;}
 
    /* LAYOUT */
    @include flexContainerColumn;
@@ -58,19 +59,18 @@
    .meaning.overridden { margin-top: 5px; }
    .hints { margin-bottom: 10px; }
 
+   .vocab.list{ font-size: 20pt; }
 
    /*Yomitan import*/
-   .meaning div { text-align: center !important; }
+   .meaning {
+      div { text-align: center !important; }
+      ol { list-style-type: none;
+                    padding: 0;
+                    margin: 0; }
+      li { display: inline-block; }
+      li:not(:last-child)::after { content: ", ";
+                                            margin: 0 10px 0 0; }
+      li::first-letter { text-transform: uppercase; }
 
-   .meaning ol { list-style-type: none;
-                 padding: 0;
-                 margin: 0; }
-   .meaning li { display: inline-block; }
-   .meaning li:not(:last-child)::after { content: ", ";
-                                         margin: 0 10px 0 0; }
-   .meaning li::first-letter { text-transform: uppercase; }
-
-   .meaning.overridden { font-size: 12pt;}
-
-   .vocab.list{ font-size: 20pt; }
+      overridden { font-size: 12pt;}}   
 }
