@@ -13,7 +13,7 @@
 
    function removeSelection(element) { window.getSelection().removeAllRanges(); }
 
-   document.querySelectorAll('.clipboard, ja, .headword-term')
+   document.querySelectorAll('.clipboard, ja, .headword-term, rad, radical, voc, vocab, kan, kanji, read, reading')
       .forEach(function (element) {
          element.addEventListener('mousedown', function (event) {
             if (event.button === 2) {

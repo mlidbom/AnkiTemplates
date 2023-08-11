@@ -41,6 +41,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Content Include="collection.media\_tinymce_custom.css" />
     <Content Include="collection.media\__magnus_css_basic.css" />
     <Content Include="collection.media\__magnus_css_iKnow.css" />
     <Content Include="collection.media\__magnus_css_immersion_kit.css" />
