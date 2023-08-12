@@ -24,7 +24,9 @@
                         line-height: 1.6;
                         white-space: pre-line; }
 
-   .context .context_jp { font-size: 140%; }
+   .context .context_jp { font-size: 140%; 
+                          .vocabInContext{
+                             background: $colorBgVoc; } }
 
    .vocab.entry { font-size:20pt; }
 

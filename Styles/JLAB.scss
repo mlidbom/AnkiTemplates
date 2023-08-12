@@ -3,11 +3,14 @@
    /* FONTS AND COLORS */
    font-size: 20pt;
 
-   .kanji, .kanjipopup { font-size: 50pt;
-                         padding-top: 5pt;
-                         line-height:1;}
+   .user { background: $colorBgDark1; }
+   .kanji { font-size: 50pt;
+            padding-top: 5pt;
+            line-height:1;
+            &.overridden { font-size: 130%; } }
 
-   .kanji.user, .my-comments { background: $colorBgDark1;}
+   
+   
 
    /* LAYOUT */
    .topSection { @include flexContainerColumn; 
@@ -33,11 +36,6 @@
                width: auto;
                object-fit: contain; }
 
-   .kanji, .kanjipopup { text-align: center; }
+   .kanji { text-align: center; }
    .meaning {	text-align: center; }
-
-   /* hide furigana */
-   .kanjipopup ruby rt { visibility: hidden; }
-   .kanjipopup ruby:active rt { visibility: visible; }
-   .kanjipopup ruby:hover rt { visibility: visible; }
 }

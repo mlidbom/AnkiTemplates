@@ -6,12 +6,12 @@
          <div class="image">{{Image}}</div>
 
          {{#__kanji}}<div class="kanji user clipboard">{{__kanji}}</div>{{/__kanji}}
-         {{^__kanji}}<div class="kanji clipboard">{{Jlab-Kanji}}</div>{{/__kanji}}
+         <div class="kanji clipboard {{#__kanji}}overridden{{/__kanji}}">{{Expression}}</div>
       </div>
 
       <div class="bottomSection">
-         {{#__comments}}<div class="my-comments">{{__comments}}</div>{{/__comments}}
-         {{#__comments_Long}}<div class="my-comments">{{__comments_Long}}</div>{{/__comments_Long}}
+         {{#__comments}}<div class="user comments">{{__comments}}</div>{{/__comments}}
+         {{#__comments_Long}}<div class="user comments">{{__comments_Long}}</div>{{/__comments_Long}}
          {{#RemarksBack}}<div>{{RemarksBack}}</div>{{/RemarksBack}}
       </div>
 
