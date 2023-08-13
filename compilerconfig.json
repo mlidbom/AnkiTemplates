@@ -9,11 +9,11 @@
       "inputFile": "Styles/japanese_sentence.scss",
       "minify": { "enabled": false }
    },
-  {
-    "outputFile": "collection.media/__magnus_css_jlab.css",
-    "inputFile": "Styles/jlab.scss",
+   {
+      "outputFile": "collection.media/__magnus_css_japanese_sentence.css",
+      "inputFile": "Styles/japanese_sentence.scss",
       "minify": { "enabled": false }
-  },
+   },
   {
     "outputFile": "collection.media/__magnus_css_wanikani_kanji.css",
     "inputFile": "Styles/wanikani_kanji.scss",
