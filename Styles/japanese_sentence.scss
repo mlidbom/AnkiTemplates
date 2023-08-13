@@ -11,13 +11,19 @@
       &.long { font-size:16pt; }
    }
 
-   .expression, .reading {
+   .expression {
        font-size: 50pt;
        line-height: 1;
        &.user { background: $colorBGUser; }
    }
 
-   .english { font-size:20pt; 
+   .expression, .reading{
+      b { font-weight:normal; }
+   }
+
+   .reading { font-size: 25pt; }
+
+   .meaning { font-size:20pt; 
               &.user { background: $colorBGUser; } }
 
    .vocab.list{ font-size: 20pt; }
