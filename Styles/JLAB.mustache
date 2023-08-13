@@ -2,13 +2,13 @@
    <div id="container2" class="{{Tags}} card{{Card}}">
       <!--######-->
       <div class="topSection">
-         <div>{{Audio}}</div>
-         <div class="image">{{Image}}</div>
-
+         <div>{{Audio Sentence}}</div>
+         <div class="image">{{Screenshot}}</div>
          {{#__expression}}<div class="kanji user clipboard">{{__expression}}</div>{{/__expression}}
          <div class="kanji clipboard {{#__expression}}overridden{{/__expression}}">{{Expression}}</div>
-         <div class="translation clipboard">{{Translation}}</div>
+         <div class="reading clipboard">{{Reading}}</div>
          <div class="translation user clipboard">{{__translation}}</div>
+         <div class="translation clipboard">{{English}}</div>
       </div>
 
       <div class="bottomSection">
@@ -21,6 +21,8 @@
          <div class="vocab entry">{{__vocab1}}</div>
          <div class="vocab entry">{{__vocab2}}</div>
          <div class="vocab entry">{{__vocab3}}</div>
+         <div class="vocab entry">{{__vocab4}}</div>
+         <div class="vocab entry">{{__vocab5}}</div>
       </div>
 
       <div class="bottomSection">
@@ -31,8 +33,6 @@
          </div>
 
          {{#References}}<div>{{References}}</div>{{/References}}
-         {{#Jlab-Remarks}}<div>Jlab-Remarks:{{Jlab-Remarks}}</div>{{/Jlab-Remarks}}
-         {{#Other-Back}}<div>Other-Back:{{Other-Back}}</div>{{/Other-Back}}
       </div>
       <!--######-->
    </div>

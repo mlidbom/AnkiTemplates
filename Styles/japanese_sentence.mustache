@@ -10,17 +10,11 @@
       <div class="meaning user">{{__translation}}</div>
       <div class="meaning">{{English}}</div>
 
-      {{#__comments}}
-      <div class="comments short">
-         <div>{{__comments}}</div>
-      </div>
-      {{/__comments}}
 
-      {{#__comments_Long}}
-      <div class="comments long">
-         <div>	{{__comments_Long}}</div>
-      </div>
-      {{/__comments_Long}}
+
+      {{#__comments}}<div class="comments short"><div>{{__comments}}</div></div>{{/__comments}}
+      {{#__comments_Long}}<div class="comments long"><div>	{{__comments_Long}}</div></div>{{/__comments_Long}}
+
 
       <div class="vocab list">
          <div class="vocab entry">{{__vocab1}}</div>
