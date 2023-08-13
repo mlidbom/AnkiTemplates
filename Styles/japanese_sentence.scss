@@ -3,8 +3,10 @@
    /* FONTS AND COLORS */
    font-size: 20pt;
 
+   $expressionFontSize: 40pt;
+
    .user { background: $colorBgDark1; }
-   .expression { font-size: 50pt;
+   .expression { font-size: $expressionFontSize;
             padding-top: 5pt;
             line-height:1;
             &.overridden { font-size: 130%; } }
@@ -15,6 +17,12 @@
       b { font-weight:normal; }
    }
    
+   #expressionAndReading {
+      .reading { visibility:hidden; }
+      &:hover .reading { visibility: visible; 
+                         font-size: $expressionFontSize;
+      }
+   }
 
    /* LAYOUT */
    .topSection { @include flexContainerColumn; 

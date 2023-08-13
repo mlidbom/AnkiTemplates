@@ -4,9 +4,13 @@
       <div class="topSection">
          <div>{{Audio Sentence}}</div>
          <div class="image">{{Screenshot}}</div>
-         {{#__expression}}<div class="expression user clipboard">{{__expression}}</div>{{/__expression}}
-         <div class="expression clipboard {{#__expression}}overridden{{/__expression}}">{{Expression}}</div>
-         <div class="reading clipboard">{{Reading}}</div>
+
+         <div id="expressionAndReading">
+            {{#__expression}}<div class="expression user clipboard">{{__expression}}</div>{{/__expression}}
+            <div class="expression clipboard {{#__expression}}overridden{{/__expression}}">{{Expression}}</div>
+            <div class="reading">{{furigana::Reading}}</div>
+         </div>
+
          <div class="meaning user clipboard">{{__english}}</div>
          <div class="meaning clipboard">{{English}}</div>
       </div>
