@@ -4,12 +4,16 @@
    font-size: 20pt;
 
    .user { background: $colorBgDark1; }
-   .kanji { font-size: 50pt;
+   .expression { font-size: 50pt;
             padding-top: 5pt;
             line-height:1;
             &.overridden { font-size: 130%; } }
 
-   .translation { font-size:25pt; }
+   .meaning { font-size:25pt; }
+
+   .expression, .reading{
+      b { font-weight:normal; }
+   }
    
 
    /* LAYOUT */
@@ -36,6 +40,6 @@
                width: auto;
                object-fit: contain; }
 
-   .kanji { text-align: center; }
+   .expression { text-align: center; }
    .meaning {	text-align: center; }
 }
