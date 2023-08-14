@@ -11,7 +11,8 @@
             line-height:1;
             &.overridden { font-size: 130%; } }
 
-   .meaning { font-size:25pt; }
+   .meaning { font-size:25pt; 
+              &.overridden { font-size: 15pt; } }
 
    .expression, .reading{
       b { font-weight:normal; }
@@ -19,9 +20,9 @@
    
    #expressionAndReading {
       .reading { visibility:hidden; }
-      &:hover .reading { visibility: visible; 
+/*      &:hover .reading { visibility: visible; 
                          font-size: $expressionFontSize;
-      }
+      }*/
    }
 
    /* LAYOUT */

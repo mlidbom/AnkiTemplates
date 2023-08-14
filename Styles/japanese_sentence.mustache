@@ -12,7 +12,7 @@
          </div>
 
          <div class="meaning user clipboard">{{__english}}</div>
-         <div class="meaning clipboard">{{English}}</div>
+         <div class="meaning clipboard {{#__english}}overridden{{/__english}}">{{English}}</div>
       </div>
 
       <div class="bottomSection">
@@ -35,7 +35,7 @@
             {{#__hinative}}<a href="{{__hinative}}">Hinative</a>{{/__hinative}}
             {{#QuestionLink}}
             {{^__feedback-link}}
-            <a href="mailto:joe@japanese-like-a-breeze.com?subject={{Version}}:{{Sequence}}">Mail feedback</a>
+            <!--<a href="mailto:joe@japanese-like-a-breeze.com?subject={{Version}}:{{Sequence}}">Mail feedback</a>-->
             {{/__feedback-link}}
             {{/QuestionLink}}
          </div>
