@@ -28,7 +28,7 @@
                           .vocabInContext{
                              background: $colorBgVoc; } }
 
-   .vocab.entry { font-size:20pt; }
+   .vocabEntry { font-size:20pt; }
 
    // LAYOUT
    .bottomSection  { max-width:$maxWidth; }
@@ -76,11 +76,11 @@
 
    //this would hide the list of different writings for verbs that is the whole point of some of the yomichan includes....
    &{
-      .vocab.list .vocab.entry.replacement .entry .entry-header { 
+      .vocabList .vocabEntry.replacement .entry .entry-header { 
             display: none; 
             rt {display: none;}}
     
-      &._showVariations .vocab.list .vocab.entry.replacement .entry .entry-header { 
+      &._showVariations .vocabList .vocabEntry.replacement .entry .entry-header { 
          display: block; 
       }
    }

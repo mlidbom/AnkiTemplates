@@ -1,11 +1,5 @@
 @import "_03_universal.scss";
-
-
-/*@import "Yomichan/material.scss";*/
-@import "Yomichan/display.scss";
-@import "Yomichan/display-pronunciation.scss";
-/*@import "Yomichan/search.scss";*/
-/*@import "Yomichan/structured-content.scss";*/
+@import "__yomichan.scss";
 
 .card { font-family: Meiryo, "Hiragino Kaku Gothic Pro W3"; }
 

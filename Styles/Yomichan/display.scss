@@ -18,7 +18,7 @@
 /* Variables */
 :root {
     /* Strings */
-    --compact-list-separator: '|';
+    --compact-list-separator: ' | ';
 
     --disambiguation-prefix: '(';
     --disambiguation-suffix: ' only)';
@@ -259,37 +259,36 @@
     background-color: transparent;
 }
 body {
-    /*overflow: hidden;*/
+    overflow: hidden;
 }
-.vocab.list .vocab.entry {
-   ol, ul {
-       margin-top: 0;
-       margin-bottom: var(--list-padding);
-   }
-   h2 {
-       font-size: var(--h2-font-size);
-       font-weight: normal;
-       margin: 0.25em 0 0;
-       border-bottom: calc(1em / (var(--font-size-no-units) * var(--h2-font-size-no-units))) solid var(--light-border-color);
-   }
-   h3 {
-       font-size: 1em;
-       font-weight: bold;
-       margin: 0.25em 0 0.375em;
-       padding: 0;
-   }
-   h5 {
-       font-size: calc(12em / var(--font-size-no-units));
-       margin: 0;
-       padding: 0;
-       font-weight: normal;
-   }
-   a {
-       color: var(--link-color);
-       text-decoration: underline;
-       cursor: pointer;
-   }
+ol, ul {
+    margin-top: 0;
+    margin-bottom: var(--list-padding);
 }
+h2 {
+    font-size: var(--h2-font-size);
+    font-weight: normal;
+    margin: 0.25em 0 0;
+    border-bottom: calc(1em / (var(--font-size-no-units) * var(--h2-font-size-no-units))) solid var(--light-border-color);
+}
+h3 {
+    font-size: 1em;
+    font-weight: bold;
+    margin: 0.25em 0 0.375em;
+    padding: 0;
+}
+h5 {
+    font-size: calc(12em / var(--font-size-no-units));
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+}
+a {
+    color: var(--link-color);
+    text-decoration: underline;
+    cursor: pointer;
+}
+
 
 /* Selection */
 #content-scroll-focus {
@@ -791,54 +790,51 @@ button.action-button:active {
 
 
 /* Entries */
-.vocab.list .vocab.entry {
-   .entry {
-       padding: var(--entry-vertical-padding) var(--entry-horizontal-padding);
-       position: relative;
-   }
-   .entry+.entry {
-       border-top: var(--thin-border-size) solid var(--light-border-color);
-   }
-   .entry-body {
-       clear: both;
-   }
-   .entry[data-definition-count='0'] .entry-body-section[data-section-type=definitions],
-   .entry[data-frequency-count='0'] .entry-body-section[data-section-type=frequencies],
-   .entry[data-pronunciation-count='0'] .entry-body-section[data-section-type=pronunciations] {
-       display: none;
-   }
-
-
-   /* Inflections */
-   .inflection-list {
-       display: inline-block;
-       color: var(--reason-text-color);
-   }
-   .inflection-list:empty {
-       display: none;
-   }
-   .inflection-list>.inflection+.inflection-separator+.inflection::before {
-       content: var(--inflection-separator);
-       padding: 0 0.25em;
-   }
-
-
-   /* Headwords */
-   .headword-list {
-       display: inline;
-       margin-right: var(--headword-list-end-space);
-   }
-   .headword {
-       --headword-current-text-color: var(--headword-text-color);
-       --headword-current-reading-text-color: var(--headword-reading-text-color);
-       --headword-current-furigana-text-color: var(--headword-furigana-text-color);
-       --headword-current-kanji-text-color: var(--headword-kanji-text-color);
-       --headword-current-kanji-border-color: var(--headword-kanji-border-color);
-
-       display: inline-block;
-   }
+.entry {
+    padding: var(--entry-vertical-padding) var(--entry-horizontal-padding);
+    position: relative;
+}
+.entry+.entry {
+    border-top: var(--thin-border-size) solid var(--light-border-color);
+}
+.entry-body {
+    clear: both;
+}
+.entry[data-definition-count='0'] .entry-body-section[data-section-type=definitions],
+.entry[data-frequency-count='0'] .entry-body-section[data-section-type=frequencies],
+.entry[data-pronunciation-count='0'] .entry-body-section[data-section-type=pronunciations] {
+    display: none;
 }
 
+
+/* Inflections */
+.inflection-list {
+    display: inline-block;
+    color: var(--reason-text-color);
+}
+.inflection-list:empty {
+    display: none;
+}
+.inflection-list>.inflection+.inflection-separator+.inflection::before {
+    content: var(--inflection-separator);
+    padding: 0 0.25em;
+}
+
+
+/* Headwords */
+.headword-list {
+    display: inline;
+    margin-right: var(--headword-list-end-space);
+}
+.headword {
+    --headword-current-text-color: var(--headword-text-color);
+    --headword-current-reading-text-color: var(--headword-reading-text-color);
+    --headword-current-furigana-text-color: var(--headword-furigana-text-color);
+    --headword-current-kanji-text-color: var(--headword-kanji-text-color);
+    --headword-current-kanji-border-color: var(--headword-kanji-border-color);
+
+    display: inline-block;
+}
 :root[data-result-output-mode=merge] .headword[data-frequency=popular] {
     --headword-current-text-color: var(--headword-text-color-popular);
     --headword-current-reading-text-color: var(--headword-reading-text-color-popular);

@@ -19,11 +19,7 @@
    }
    
    #expressionAndReading {
-      .reading { visibility:hidden; }
-/*      &:hover .reading { visibility: visible; 
-                         font-size: $expressionFontSize;
-      }*/
-   }
+      .reading { display:none; }}
 
    /* LAYOUT */
    .topSection { @include flexContainerColumn; 

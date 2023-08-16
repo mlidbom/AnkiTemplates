@@ -42,21 +42,33 @@ ja { color: $colorTextGreen; }
                    text-align: left; }
 
 /* Yomichan */
-.vocab {
-   &.list { display: flex;
+.vocabList {
+    display: flex;
             flex-direction:column;
             flex-wrap: nowrap;
             width: fit-content;
             margin-right:auto;
             margin-left:auto;
-   }
-   &.entry { background:$colorBgDark1;
+   
+   .vocabEntry { background:$colorBgDark1;
             margin: 2px 0px 0px 2px;
-
    }
 }
 
-.vocab.list .vocab.entry {
+//not-copy pasted, just the add button in yomichan
+.vocabList .vocabEntry div > ol {
+      > li {
+         > span > ul[data-sc-content="glossary"] {
+            padding-left: 0px;
+            display:inline; 
+            li { display:inline;
+                 &:not(:last-child):after { content: " | "; }
+            }
+         }
+      }
+   }
+
+.vocabList .vocabEntry {
    padding: 0px 0px 0px 0px !important;
    .entry {
       padding: 0px 0px 0px 0px !important;
@@ -67,7 +79,7 @@ ja { color: $colorTextGreen; }
       &.hideFurigana .entry-header rt {display: none;}
 
       a { text-decoration: none; }
-      .gloss-content { color:$colorTextMeaning; }
+      .gloss-sc-ul[data-sc-content="glossary"] { color:$colorTextMeaning; }
       .pronunciation {color:$colorTextReading; }
 
       .inflection-list { color:$colorTextBold; 
