@@ -23,7 +23,7 @@
                             color: $colorTextReading; } }
 
    .mnemonics{
-      .user { font-size: 25pt;
+      &.user { font-size: 25pt;
               line-height: unset; 
               > div { background: $colorBgDark1;
                       white-space: pre-line; } } }
