@@ -79,7 +79,9 @@ ja { color: $colorTextGreen; }
       &.hideFurigana .entry-header rt {display: none;}
 
       a { text-decoration: none; }
-      .gloss-sc-ul[data-sc-content="glossary"] { color:$colorTextMeaning; }
+      .gloss-sc-ul[data-sc-content="glossary"],
+      .gloss-content:not(.structured-content)
+      { color:$colorTextMeaning; }
       .pronunciation {color:$colorTextReading; }
 
       .inflection-list { color:$colorTextBold; 
@@ -101,6 +103,7 @@ ja { color: $colorTextGreen; }
       .headword-kanji-link, + .entry { border:none !important; }
 
       .actions,
+      .definition-item-expansion-button-icon,
       div.entry-body-section[data-section-type="pronunciations"],
       div.headword-list-tag-list.tag-list,
       span.tag[data-category="dictionary"],

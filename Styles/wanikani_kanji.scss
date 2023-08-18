@@ -14,20 +14,19 @@
       .primaryVocab { font-size: 50pt;
                       line-height: 1.25; }
 
-      .meaning, .reading { font-size: 40pt;
-                           line-height: 1.1; }
-
-      .meaning vocab { color: white;
-                       margin-right: 10px; }
+      .meaning { font-size: 30pt;
+                 line-height: 1.1; 
+                 vocab { color: white;
+                       margin-right: 10px; } }
 
       .radicals, .reading { font-size: 32px;
-                            color: $colorTextReading; }
-   }
+                            color: $colorTextReading; } }
 
-   .mnemonics.user { font-size: 25pt;
-                     line-height: unset; }
-   .mnemonics.user > div { background: $colorBgDark1;
-                           white-space: pre-line; }
+   .mnemonics{
+      .user { font-size: 25pt;
+              line-height: unset; 
+              > div { background: $colorBgDark1;
+                      white-space: pre-line; } } }
 
    .hints { background: $colorBgDark1; }
    .referenceLink { font-size: 12px; }
@@ -35,9 +34,7 @@
       .kanji { font-size: 200%;
                line-height: 1.1;}      
       .vocabReading{ font-size: 130%;
-                     .kanjiReading{ color: $colorTextReading; }
-      }
-   }
+                     .kanjiReading{ color: $colorTextReading; } } }
 
    /* LAYOUT */
    @include flexContainerColumn;
@@ -53,16 +50,16 @@
 
       .kanji { margin-bottom: 5px; 
                img { position: relative;
-                     bottom: -36px; }}}
+                     bottom: -36px; } } }
    
-   .mnemonics.user { margin-top: 0px;
-                     margin-bottom: 10pt; }
-   .mnemonics { margin-top: 10px; }
-   .hints { margin-top: 10pt; }
-   
+   .mnemonics { margin-top: 10px; 
+                user { margin-top: 0px;
+                     margin-bottom: 10pt; } }
 
-   .meaning.overridden { margin-top: 5px; }
-   .hints { margin-bottom: 10px; }
+   .hints { margin-top: 10pt; 
+            margin-bottom: 10px;
+            &.overridden { margin-top: 5px; } }
+   
 
    .vocabList{ font-size: 20pt; }
 
@@ -77,5 +74,5 @@
                                             margin: 0 10px 0 0; }
       li::first-letter { text-transform: uppercase; }
 
-      overridden { font-size: 12pt;}}   
+      overridden { font-size: 12pt;}}  
 }
