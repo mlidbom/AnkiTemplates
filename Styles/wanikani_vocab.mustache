@@ -17,20 +17,10 @@
          </div>
          <div>{{Audio_g}}{{Audio_b}}</div>
 
-         {{#__override_meaning}}
-         <div class="meaning user">{{__override_meaning}}</div>
-         {{/__override_meaning}}
+         {{#__override_meaning}}<div class="meaning user">{{__override_meaning}}</div>{{/__override_meaning}}
+         {{^__override_meaning}}<div class="meaning"> {{Vocab_Meaning}}</div>{{/__override_meaning}}
 
-         {{^__vocab1}}
-         {{^__override_meaning}}
-         <div class="meaning"> {{Vocab_Meaning}}</div>
-         {{/__override_meaning}}
-
-         {{/__vocab1}}
-
-         {{#___explanation}}
-         <div class="userExplanation">{{___explanation}}</div>
-         {{/___explanation}}
+         {{#___explanation}}<div class="userExplanation">{{___explanation}}</div>{{/___explanation}}
 
          <div class="metaData">
             <span class="_derog">derog</span>
@@ -62,9 +52,7 @@
 
          {{^__override_mnemonic}}
          <div>
-            {{#Meaning_Exp}}
-            <div class="mnemonic">{{Meaning_Exp}}</div>
-            {{/Meaning_Exp}}
+            {{#Meaning_Exp}}<div class="mnemonic">{{Meaning_Exp}}</div>{{/Meaning_Exp}}
 
             <br>
 

@@ -9,24 +9,24 @@
                background-color:#a900fd;
                padding-top:10pt; }
 
-   .meaning, .reading { font-size:25pt; }
+   .meaning { font-size:25pt; 
+              &.overridden{ font-size:12pt;  } }
+
+   .reading { font-size:25pt; }
 
    .kanjiNames { font-size: 20pt; }
 
    .metaData { font-size:20pt; }
 
-   .meaning.overridden{ font-size:12pt;  }
-
    .partOfSpeech { color: $colorTextBold;  }
    
-   .mnemonic.override { font-size:16pt;
+   .mnemonic.override { font-size:20pt;
                         background:$colorBgDark1;
-                        line-height: 1.6;
+                        line-height: 1.3;
                         white-space: pre-line; }
 
    .context .context_jp { font-size: 140%; 
-                          .vocabInContext{
-                             background: $colorBgVoc; } }
+                          .vocabInContext{ background: $colorBgVoc; } }
 
    .vocabEntry { font-size:20pt; }
 
@@ -35,14 +35,15 @@
 
    #homophonesDiv {
       color:$colorTextWarningRed;
-   .homophone {
-      color:$colorTextBold;
-      display: inline;
-      list-style-type: none;
-      padding: 0;
-      margin: 0;
-      li { display: inline;
-           &:not(:last-child):after { content: " | "; } } } }
+      .homophone {
+         color:$colorTextBold;
+         display: inline;
+         font-size: 40pt;
+         list-style-type: none;
+         padding: 0;
+         margin: 0;
+         li { display: inline;
+              &:not(:last-child):after { content: " | "; } } } }
 
    .front-and-answer { text-align: center;
                        width: 100%; }
