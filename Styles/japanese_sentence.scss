@@ -5,7 +5,10 @@
 
    $expressionFontSize: 40pt;
 
-   .user { background: $colorBgDark1; }
+   .user { background: $colorBgDark1; 
+           &.comments.short{
+              white-space: pre-line; } }
+
    .expression { font-size: $expressionFontSize;
             padding-top: 5pt;
             line-height:1;
@@ -31,12 +34,9 @@
        text-align:left; 
        div {
           border-bottom: 1px groove white;
-          &.my-comments{ border-bottom:none; }
        }
 
    }
-
-   .my-comments { margin-bottom: 5pt; }
 
    .image { text-align:center;
             width:100%; }
