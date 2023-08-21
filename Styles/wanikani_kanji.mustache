@@ -11,9 +11,11 @@
                </div>
             </div>
 
-            {{#__primary_Vocab}}
-            <div class="primaryVocab clipboard">{{__primary_Vocab}} {{__primary_Vocab_Audio}}</div>
-            {{/__primary_Vocab}}
+            {{#__primary_Vocab}}<div class="primaryVocab clipboard">{{__primary_Vocab}}</div>{{/__primary_Vocab}}
+            {{#__audio}}<div class="primaryVobabAudio">{{__audio}}</div>{{/__audio}}
+
+            {{#__referenceURL}}<div class="reference_url"><a href="{{__referenceURL}}">Reference</a></div>{{/__referenceURL}}
+
             {{#__meaning_Override}}
             <div class="meaning user">{{__meaning_Override}}</div>
             {{/__meaning_Override}}
@@ -74,7 +76,7 @@
                </div>
                <div>
                   <div class="text">{{Reading_Mnemonic}}</div>
-                  <div class="text hints">{{Reading_Info}}</i></div>
+                  <div class="text hints">{{Reading_Info}}</div>
                </div>
             </div>
             {{/__mnemonics_Override}}

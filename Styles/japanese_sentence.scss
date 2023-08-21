@@ -7,7 +7,10 @@
 
    .user { background: $colorBgDark1; 
            &.comments.short{
-              white-space: pre-line; } }
+              white-space: pre-line; } 
+           read { background-color: unset;
+                  color: $colorTextReading; }
+   }
 
    .expression { font-size: $expressionFontSize;
             padding-top: 5pt;
