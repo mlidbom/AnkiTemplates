@@ -15,13 +15,11 @@
                {{#Kanji_Name}}<div class="kanjiNames">{{Kanji_Name}}</div>{{/Kanji_Name}}
             </div>
          </div>
-         {{#ReferenceURL}}<div class="referenceLink"><a href="{{ReferenceURL}}">Reference</a></div>{{/ReferenceURL}}
+         {{#__references}}<div class="referenceLink">{{__references}}</div>{{/__references}}
          <div>{{Audio_g}}{{Audio_b}}</div>
 
          {{#__override_meaning}}<div class="meaning user">{{__override_meaning}}</div>{{/__override_meaning}}
          {{^__override_meaning}}<div class="meaning"> {{Vocab_Meaning}}</div>{{/__override_meaning}}
-
-         {{#___explanation}}<div class="userExplanation">{{___explanation}}</div>{{/___explanation}}
 
          <div class="metaData">
             <span class="_derog">derog</span>
@@ -33,6 +31,7 @@
          {{#Homophones}}<div id="homophonesDiv">Homophones: {{Homophones}} </div>{{/Homophones}}
       </div>
 
+
       {{#__vocab1}}
       <div class="vocabList">
          <div class="vocabEntry replacement">{{__vocab1}}</div>
@@ -42,6 +41,9 @@
       {{/__vocab1}}
 
       <div class="bottomSection">
+         {{#___explanation}}<div class="user userExplanation">{{___explanation}}</div>{{/___explanation}}
+         {{#___explanation_long}}<div class="user ___explanation_long">{{___explanation_long}}</div>{{/___explanation_long}}
+
          {{#__image}}<div class="image">{{__image}}</div>{{/__image}}
          {{#Image}}<div class="image">{{Image}}</div>{{/Image}}
          {{#__override_mnemonic}}
@@ -98,5 +100,3 @@
 </div>
 
 <script src="__magnus_js.js"></script>
-
-
