@@ -1,5 +1,10 @@
 <div id="container1">
-   <div id="container2" class="{{Tags}} card{{Card}}">
+   <div id="container2" class="
+        {{Tags}}
+        card{{Card}}
+        {{#__explanation}}has__explanation{{/__explanation}}
+        {{#__explanation_long}}has__explanation_long{{/__explanation_long}}
+        ">
       <!--######-->
 
       <div class="front-and-answer">
@@ -41,8 +46,8 @@
       {{/__vocab1}}
 
       <div class="bottomSection">
-         {{#___explanation}}<div class="user userExplanation">{{___explanation}}</div>{{/___explanation}}
-         {{#___explanation_long}}<div class="user ___explanation_long">{{___explanation_long}}</div>{{/___explanation_long}}
+         {{#__explanation}}<div id="__explanation" class="user">{{__explanation}}</div>{{/__explanation}}
+         {{#__explanation_long}}<div id="__explanation_long" class="user">{{__explanation_long}}</div>{{/__explanation_long}}
 
          {{#__image}}<div class="image">{{__image}}</div>{{/__image}}
          {{#Image}}<div class="image">{{Image}}</div>{{/Image}}

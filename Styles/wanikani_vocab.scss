@@ -13,12 +13,29 @@
               &.overridden{ font-size:12pt;  } }
 
    .reading { font-size:25pt; }
-
    .kanjiNames { font-size: 20pt; }
-
    .metaData { font-size:20pt; }
 
+   #homophonesDiv {
+   color:$colorTextWarningRed;
+   .homophone {
+      color:$colorTextBold;
+      display: inline;
+      font-size: 40pt;
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+      li { display: inline;
+            &:not(:last-child):after { content: " | "; } } } }
+
    .partOfSpeech { color: $colorTextBold;  }
+
+   .user { background: $colorBgDark2; 
+           padding: 0 5pt 0 5pt; }
+
+   #__explanation { white-space: pre-line;
+                    font-size: 20pt;
+                    color:$colorTextMeaning; }
    
    .mnemonic.override { font-size:20pt;
                         background:$colorBgDark1;
@@ -33,22 +50,10 @@
    // LAYOUT
    .bottomSection  { max-width:$maxWidth; }
 
-   #homophonesDiv {
-      color:$colorTextWarningRed;
-      .homophone {
-         color:$colorTextBold;
-         display: inline;
-         font-size: 40pt;
-         list-style-type: none;
-         padding: 0;
-         margin: 0;
-         li { display: inline;
-              &:not(:last-child):after { content: " | "; } } } }
-
    .front-and-answer { text-align: center;
                        width: 100%; }
 
-   .user { text-align: left; }
+   #__explanation { text-align: left; }
 
     &._yomitan .meaning > div { text-align:center !important;}
 
@@ -67,6 +72,8 @@
 
       //yomichan import fix
    .meaning div { text-align: center !important; }
+
+   &.has__explanation #__explanation_long { margin-top: 5pt; }
 
    //Stuff shown only if the appropriate tag is present.
    ._uk, ._derog, ._masustem {display:none;}
