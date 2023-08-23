@@ -4,6 +4,8 @@
    line-height: 1.25;
    font-size: 20px; 
 
+   > div { margin-bottom: 10pt; }
+
    .question { font-size:60pt;
                line-height: .9;
                background-color:#a900fd;
@@ -33,7 +35,8 @@
    .user { background: $colorBgDark2; 
            padding: 0 5pt 0 5pt; }
 
-   #__explanation { white-space: pre-line;
+   #__explanation { text-align: left;
+                    white-space: pre-line;
                     font-size: 20pt;
                     color:$colorTextMeaning; }
    
@@ -53,8 +56,6 @@
    .front-and-answer { text-align: center;
                        width: 100%; }
 
-   #__explanation { text-align: left; }
-
     &._yomitan .meaning > div { text-align:center !important;}
 
    .itemInfo { display: inline-block;
@@ -72,8 +73,6 @@
 
       //yomichan import fix
    .meaning div { text-align: center !important; }
-
-   &.has__explanation #__explanation_long { margin-top: 5pt; }
 
    //Stuff shown only if the appropriate tag is present.
    ._uk, ._derog, ._masustem {display:none;}

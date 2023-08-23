@@ -23,8 +23,8 @@
          {{#__references}}<div class="referenceLink">{{__references}}</div>{{/__references}}
          <div>{{Audio_g}}{{Audio_b}}</div>
 
-         {{#__override_meaning}}<div class="meaning user">{{__override_meaning}}</div>{{/__override_meaning}}
-         {{^__override_meaning}}<div class="meaning"> {{Vocab_Meaning}}</div>{{/__override_meaning}}
+         {{#__meaning}}<div class="meaning user">{{__meaning}}</div>{{/__meaning}}
+         {{^__meaning}}<div class="meaning"> {{Vocab_Meaning}}</div>{{/__meaning}}
 
          <div class="metaData">
             <span class="_derog">derog</span>
@@ -34,6 +34,7 @@
             <span class="reading clipboard">{{Reading}}</span>
          </div>
          {{#Homophones}}<div id="homophonesDiv">Homophones: {{Homophones}} </div>{{/Homophones}}
+         {{#__explanation}}<div id="__explanation" class="user">{{__explanation}}</div>{{/__explanation}}
       </div>
 
 
@@ -46,19 +47,18 @@
       {{/__vocab1}}
 
       <div class="bottomSection">
-         {{#__explanation}}<div id="__explanation" class="user">{{__explanation}}</div>{{/__explanation}}
          {{#__explanation_long}}<div id="__explanation_long" class="user">{{__explanation_long}}</div>{{/__explanation_long}}
 
          {{#__image}}<div class="image">{{__image}}</div>{{/__image}}
          {{#Image}}<div class="image">{{Image}}</div>{{/Image}}
-         {{#__override_mnemonic}}
+         {{#__mnemonic}}
          <div>
-            <div class="mnemonic override">{{__override_mnemonic}}</div>
+            <div class="mnemonic override">{{__mnemonic}}</div>
          </div>
-         {{/__override_mnemonic}}
+         {{/__mnemonic}}
 
 
-         {{^__override_mnemonic}}
+         {{^__mnemonic}}
          <div>
             {{#Meaning_Exp}}<div class="mnemonic">{{Meaning_Exp}}</div>{{/Meaning_Exp}}
 
@@ -72,7 +72,7 @@
 
             <br>
          </div>
-         {{/__override_mnemonic}}
+         {{/__mnemonic}}
 
          <div class="context list">
             {{#Context_jp}}

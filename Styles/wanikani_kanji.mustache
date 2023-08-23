@@ -16,14 +16,14 @@
 
             {{#__references}}<div class="reference_url">{{__references}}</div>{{/__references}}
 
-            {{#__meaning_Override}}
-            <div class="meaning user">{{__meaning_Override}}</div>
-            {{/__meaning_Override}}
-            {{#__user_explanation}}
-            <div class="userExplanation">	{{__user_explanation}}</div>
-            {{/__user_explanation}}
+            {{#__meaning}}
+            <div class="meaning user">{{__meaning}}</div>
+            {{/__meaning}}
+            {{#__explanation}}
+            <div class="userExplanation">	{{__explanation}}</div>
+            {{/__explanation}}
 
-            {{^__meaning_Override}}<div class="meaning">{{Kanji_Meaning}}</div>{{/__meaning_Override}}
+            {{^__meaning}}<div class="meaning">{{Kanji_Meaning}}</div>{{/__meaning}}
 
             <div class="vocabList">
                <div class="vocabEntry">{{__vocab1}}</div>
@@ -63,13 +63,13 @@
          </div>
          <div class="bottomSection">
             <div>
-               {{#__mnemonics_Override}}
+               {{#__mnemonic}}
                <div class="mnemonics user">
-                  <div>{{__mnemonics_Override}}</div>
+                  <div>{{__mnemonic}}</div>
                </div>
-               {{/__mnemonics_Override}}
+               {{/__mnemonic}}
 
-               {{^__mnemonics_Override}}
+               {{^__mnemonic}}
                <div>
                   <div class="text">{{Meaning_Mnemonic}}</div>
                   <div class="text hints">{{Meaning_Info}}</div>
@@ -79,7 +79,7 @@
                   <div class="text hints">{{Reading_Info}}</div>
                </div>
             </div>
-            {{/__mnemonics_Override}}
+            {{/__mnemonic}}
 
             {{Vocabs}}
          </div>
@@ -98,4 +98,3 @@
 </div>
 
 <script src="__magnus_js.js"></script>
-
