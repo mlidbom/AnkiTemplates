@@ -6,13 +6,13 @@
          <div class="image">{{Screenshot}}</div>
 
          <div id="expressionAndReading">
-            {{#__expression}}<div class="expression user clipboard">{{__expression}}</div>{{/__expression}}
-            <div class="expression clipboard {{#__expression}}overridden{{/__expression}}">{{Q}}</div>
+            {{#__question}}<div class="expression user clipboard">{{__question}}</div>{{/__question}}
+            <div class="expression clipboard {{#__question}}overridden{{/__question}}">{{source_question}}</div>
             <div class="reading">{{furigana::Reading}}</div>
          </div>
 
-         <div class="meaning user clipboard">{{__english}}</div>
-         <div class="meaning clipboard {{#__english}}overridden{{/__english}}">{{A}}</div>
+         <div class="meaning user clipboard">{{__answer}}</div>
+         <div class="meaning clipboard {{#__answer}}overridden{{/__answer}}">{{source_answer}}</div>
       </div>
 
       <div class="bottomSection">
