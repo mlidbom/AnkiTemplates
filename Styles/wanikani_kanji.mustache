@@ -6,7 +6,7 @@
          <div class="front-and-answer">
             <div class="kanjiContainer">
                <div class="kanji">
-                  <span class="clipboard">{{Kanji}}</span>
+                  <span class="clipboard">{{Q}}</span>
                   <span class="clipboard">{{#__similar_Characters}}!{{__similar_Characters}}{{/__similar_Characters}}</span>
                </div>
             </div>
@@ -23,7 +23,7 @@
             <div class="userExplanation">	{{__explanation}}</div>
             {{/__explanation}}
 
-            {{^__meaning}}<div class="meaning">{{Kanji_Meaning}}</div>{{/__meaning}}
+            {{^__meaning}}<div class="meaning">{{A}}</div>{{/__meaning}}
 
             <div class="vocabList">
                <div class="vocabEntry">{{__vocab1}}</div>
@@ -86,10 +86,10 @@
       </div>
 
       <div class="referenceLink">
-         <a target="_blank" href="https://www.wanikani.com/kanji/{{Kanji}}">Wanikani</a>
-         <a target="_blank" href="https://jisho.org/search/{{Kanji}}%20%23kanji">Jisho(kanji)</a>
-         <a target="_blank" href="https://jisho.org/search/*{{Kanji}}*">Jisho(vocab)</a>
-         <a target="_blank" href="https://www.immersionkit.com/dictionary?keyword={{Kanji}}&exact=true&sort=shortness">Immersion Kit</a>
+         <a target="_blank" href="https://www.wanikani.com/kanji/{{Q}}">Wanikani</a>
+         <a target="_blank" href="https://jisho.org/search/{{Q}}%20%23kanji">Jisho(kanji)</a>
+         <a target="_blank" href="https://jisho.org/search/*{{Q}}*">Jisho(vocab)</a>
+         <a target="_blank" href="https://www.immersionkit.com/dictionary?keyword={{Q}}&exact=true&sort=shortness">Immersion Kit</a>
          Tags:{{Tags}}
       </div>
 
@@ -98,3 +98,4 @@
 </div>
 
 <script src="__magnus_js.js"></script>
+
