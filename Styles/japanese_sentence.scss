@@ -13,9 +13,9 @@
    }
 
    .expression { font-size: $expressionFontSize;
-            padding-top: 5pt;
-            line-height:1;
-            &.overridden { font-size: 130%; } }
+                 padding-bottom: 5pt;
+                 line-height:1;
+                 &.overridden { font-size: 130%; } }
 
    .meaning { font-size:25pt; 
               &.overridden { font-size: 15pt; } }
@@ -48,6 +48,4 @@
                width: auto;
                object-fit: contain; }
 
-   .expression { text-align: center; }
-   .meaning {	text-align: center; }
 }
