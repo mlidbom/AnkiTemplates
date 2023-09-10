@@ -7,10 +7,11 @@
 
          <div id="expressionAndReading">
             {{#__question}}<div class="expression user clipboard">{{__question}}</div>{{/__question}}
-            <div class="expression clipboard {{#__question}}overridden{{/__question}}">{{source_question}}</div>
+            <div id="answer" class="expression clipboard {{#__question}}overridden{{/__question}}">{{source_question}}</div>
             <div class="reading">{{furigana::Reading}}</div>
          </div>
 
+         <div class="meaning user analysis clipboard">{{__answer_analysis}}</div>
          <div class="meaning user clipboard">{{__answer}}</div>
          <div class="meaning clipboard {{#__answer}}overridden{{/__answer}}">{{source_answer}}</div>
       </div>
