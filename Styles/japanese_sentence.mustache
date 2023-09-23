@@ -7,7 +7,7 @@
 
          <div id="expressionAndReading">
             {{#__question}}<div class="expression user clipboard">{{__question}}</div>{{/__question}}
-            <div id="answer" class="expression clipboard {{#__question}}overridden{{/__question}}">{{source_question}}</div>
+            <div class="expression clipboard {{#__question}}overridden{{/__question}}">{{source_question}}</div>
             <div class="reading">{{furigana::Reading}}</div>
          </div>
 
@@ -22,6 +22,10 @@
          {{#Comments}}<div>{{Comments}}</div>{{/Comments}}
       </div>
 
+      <div class="breakdown">
+         {{BreakDown}}
+      </div>
+
       <div class="vocabList">
          <div class="vocabEntry">{{__vocab1}}</div>
          <div class="vocabEntry">{{__vocab2}}</div>
@@ -31,12 +35,12 @@
       </div>
 
       <div class="bottomSection">
+         {{#__references}}{{__references}}{{/__references}}
          <div>
             {{#__feedback-link}}<a href="{{__feedback-link}}">Sent feedback</a>{{/__feedback-link}}
-            {{#__hinative}}<a href="{{__hinative}}">Hinative</a>{{/__hinative}}
             {{#QuestionLink}}
             {{^__feedback-link}}
-            <!--<a href="mailto:joe@japanese-like-a-breeze.com?subject={{Version}}:{{Sequence}}">Mail feedback</a>-->
+            <a href="mailto:joe@japanese-like-a-breeze.com?subject={{Version}}:{{Sequence}}">Mail feedback</a>
             {{/__feedback-link}}
             {{/QuestionLink}}
          </div>

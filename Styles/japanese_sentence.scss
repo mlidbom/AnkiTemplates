@@ -22,6 +22,37 @@
    .expression, .reading{
       b { font-weight:normal; }
    }
+
+   .sentenceVocabList {
+      padding-left : 0px;
+      ul { padding-left: 20px;
+           margin-left: 0px; }
+      list-style: none;
+      &.depth1 { background:$colorBgDark1; } 
+      ul.depth2 { background: $colorBgCard;}
+      ul.depth3 { background: $colorBgDark1; 
+                  padding-left: 0px;
+                  margin-left: 20px; }
+      ul.depth4 { background: $colorBgCard;}
+
+         
+
+      margin-top: 5pt;
+      margin-bottom: 5pt;
+      .sentenceVocabEntry{
+         .vocabQuestion{
+            font-size: 30pt;
+            line-height: .8;
+            color: $colorTextReading;
+         }         
+
+         &.word_priority_low .vocabQuestion { color: $colorTextGreen; }
+
+         .vocabAnswer{
+            color: $colorTextMeaning
+         }
+      }
+   }
    
    #expressionAndReading {
       .reading { display:none; }}
