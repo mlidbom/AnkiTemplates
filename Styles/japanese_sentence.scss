@@ -38,22 +38,27 @@
 
       li { line-height:1; }
       .sentenceVocabEntry{
-         .vocabQuestion{ font-size: 30pt; }
+         div.sentenceVocabEntryDiv { display: flex; 
+                                     align-items: center; }
+
+         .vocabQuestion{ font-size: 30pt;
+                         white-space:nowrap; }
+         .vocabAnswer{ margin-left: 10pt; }
          
-         &.word_priority_very_low { & > .vocabQuestion{ color: darken(darkgrey, 20%); } 
-                                    & > .vocabAnswer { color: darken(darkgrey, 20%); } }
+         &.word_priority_very_low { & > div > .vocabQuestion{ color: darken(darkgrey, 20%); } 
+                                    & > div > .vocabAnswer { color: darken(darkgrey, 20%); } }
          
-         &.word_priority_low { & > .vocabQuestion{ color: darken(whitesmoke, 20%); } 
-                               & > .vocabAnswer { color: darken(whitesmoke, 20%); } }
+         &.word_priority_low { & > div > .vocabQuestion{ color: darken(whitesmoke, 20%); } 
+                               & > div > .vocabAnswer { color: darken(whitesmoke, 20%); } }
 
-         &.word_priority_medium { & > .vocabQuestion{ color: darken($colorTextReading, 10%); } 
-                                  & > .vocabAnswer { color: $colorTextMeaning; } }
+         &.word_priority_medium { & > div > .vocabQuestion{ color: darken($colorTextReading, 10%); } 
+                                  & > div > .vocabAnswer { color: $colorTextMeaning; } }
 
-         &.word_priority_high { & > .vocabQuestion{ color: $colorTextReading; } 
-                                & > .vocabAnswer { color: darken($colorTextMeaning, 20%); } }
+         &.word_priority_high { & > div > .vocabQuestion{ color: $colorTextReading; } 
+                                & > div > .vocabAnswer { color: darken($colorTextMeaning, 20%); } }
 
-         &.word_priority_very_high { & > .vocabQuestion{ color: $colorTextBold; } 
-                                     & > .vocabAnswer { color: $colorTextBold; } }
+         &.word_priority_very_high { & > div > .vocabQuestion{ color: $colorTextBold; } 
+                                     & > div > .vocabAnswer { color: $colorTextBold; } }
 
       }
    }
