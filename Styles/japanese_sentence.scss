@@ -40,17 +40,26 @@
       margin-top: 5pt;
       margin-bottom: 5pt;
       .sentenceVocabEntry{
-         .vocabQuestion{
-            font-size: 30pt;
-            line-height: .8;
-            color: $colorTextReading;
-         }         
+         .vocabQuestion{ font-size: 30pt;
+                         line-height: .8; }         
 
-         &.word_priority_low .vocabQuestion { color: $colorTextGreen; }
 
-         .vocabAnswer{
-            color: $colorTextMeaning
-         }
+         
+         &.word_priority_very_low { & > .vocabQuestion{ color: darken(darkgrey, 20%); } 
+                                    & > .vocabAnswer { color: darken(darkgrey, 20%); } }
+         
+         &.word_priority_low { .vocabQuestion{ color: darken(whitesmoke, 20%); } 
+                               .vocabAnswer { color: darken(whitesmoke, 20%); } }
+
+         &.word_priority_medium { & > .vocabQuestion{ color: darken($colorTextReading, 10%); } 
+                                  & > .vocabAnswer { color: $colorTextMeaning; } }
+
+         &.word_priority_high { & > .vocabQuestion{ color: $colorTextReading; } 
+                                & > .vocabAnswer { color: darken($colorTextMeaning, 20%); } }
+
+         &.word_priority_very_high { & > .vocabQuestion{ color: $colorTextBold; } 
+                                     & > .vocabAnswer { color: $colorTextBold; } }
+
       }
    }
    
