@@ -35,15 +35,10 @@
                   margin-left: 20px; }
       ul.depth4 { background: $colorBgCard;}
 
-         
 
-      margin-top: 5pt;
-      margin-bottom: 5pt;
+      li { line-height:1; }
       .sentenceVocabEntry{
-         .vocabQuestion{ font-size: 30pt;
-                         line-height: .8; }         
-
-
+         .vocabQuestion{ font-size: 30pt; }
          
          &.word_priority_very_low { & > .vocabQuestion{ color: darken(darkgrey, 20%); } 
                                     & > .vocabAnswer { color: darken(darkgrey, 20%); } }
