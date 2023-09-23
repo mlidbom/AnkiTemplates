@@ -48,8 +48,8 @@
          &.word_priority_very_low { & > .vocabQuestion{ color: darken(darkgrey, 20%); } 
                                     & > .vocabAnswer { color: darken(darkgrey, 20%); } }
          
-         &.word_priority_low { .vocabQuestion{ color: darken(whitesmoke, 20%); } 
-                               .vocabAnswer { color: darken(whitesmoke, 20%); } }
+         &.word_priority_low { & > .vocabQuestion{ color: darken(whitesmoke, 20%); } 
+                               & > .vocabAnswer { color: darken(whitesmoke, 20%); } }
 
          &.word_priority_medium { & > .vocabQuestion{ color: darken($colorTextReading, 10%); } 
                                   & > .vocabAnswer { color: $colorTextMeaning; } }
