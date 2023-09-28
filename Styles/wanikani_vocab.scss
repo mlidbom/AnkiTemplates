@@ -2,7 +2,7 @@
 .card #container1 #container2 { //Let's stay focused and not break other stuff
    // FONTS & COLORS
    line-height: 1.25;
-   font-size: 20px; 
+   font-size: 20pt; 
 
    > div { margin-bottom: 10pt; }
 
@@ -39,6 +39,35 @@
                     white-space: pre-line;
                     font-size: 20pt;
                     color:$colorTextMeaning; }
+
+   #kanji_list {
+      line-height: 1;
+      .kanji_item {
+         display:flex;
+         align-items: center;
+         .kanji_kanji { font-size: 40pt;
+                        color: $colorTextGreen;
+         }
+         .kanji_readings{ margin-left: 10pt;
+                          font-size: 30pt;
+                          white-space: nowrap;
+                          color: $colorTextReading;
+         }
+         .kanji_answer { margin-left: 10pt;
+                         white-space: nowrap;
+                         font-size: 20pt;
+                         color: $colorTextMeaning;
+         }
+      }
+
+      .kanji_mnemonic {
+         margin-left: 20pt;
+         margin-top: 5pt;
+         line-height: 1.1;
+         background: $colorBgDark1;
+         white-space: pre-line
+      }
+   }
    
    .mnemonic.override { font-size:20pt;
                         background:$colorBgDark1;

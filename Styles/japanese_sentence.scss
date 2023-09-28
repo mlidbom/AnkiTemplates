@@ -23,18 +23,51 @@
       b { font-weight:normal; }
    }
 
-   .sentenceVocabList {
+
+   #kanji_list {
+      line-height: 1;
+      .kanji_item {
+         display:flex;
+         align-items: center;
+         .kanji_kanji { font-size: 40pt;
+                        color: $colorTextGreen;
+         }
+         .kanji_readings{ margin-left: 10pt;
+                          font-size: 30pt;
+                          color: $colorTextReading;
+         }
+         .kanji_answer { margin-left: 10pt;
+                         font-size: 20pt;
+                         color: $colorTextMeaning;
+         }
+      }
+
+      .kanji_mnemonic {
+         margin-left: 20pt;
+         margin-top: 5pt;
+         line-height: 1.1;
+         background: $colorBgDark1;
+         white-space: pre-line
+      }
+   }
+
+   .sentenceVocabList {     
       padding-left : 0px;
       ul { padding-left: 20px;
-           margin-left: 0px; }
+           margin-left: 0px; 
+           background: $colorBgCard;
+      }
       list-style: none;
-      background:$colorBgDark1;
+      
+      li { background:$colorBgDark1; }
+
 /*      &.depth1 { background:$colorBgDark1; } 
       ul.depth2 { background: $colorBgCard;}*/
       ul.depth3 { 
                   //background: $colorBgDark1; 
-                  padding-left: 0px;
-                  margin-left: 20px; }
+                  padding-left: 20px;
+                  //margin-left: 20px;
+                  }
 /*      ul.depth4 { background: $colorBgCard;}*/
 
 
@@ -73,8 +106,11 @@
    .expression { margin-bottom: 5pt; }
    .user { margin-bottom: 3pt; }
    
-   .topSection { @include flexContainerColumn; 
-                 margin-bottom: 6pt; }
+   .topSection { @include flexContainerColumn; }
+
+   .sentenceVocabList { margin-top: 0pt; }
+
+   #kanji_list{ margin-bottom: 5pt;}
 
    .bottomSection {
        max-width:1000px;
