@@ -22,6 +22,28 @@
       .radicals, .reading { font-size: 32px;
                             color: $colorTextReading; } }
 
+   #dependencies_list{
+      .dependency{
+         .dependency_heading{
+            text-align: left;
+            div { display: inline-block;}
+            .dependency_name{ font-size: 25pt; }
+         }
+
+         .dependency_character{
+            font-size: 30pt;
+            color: $colorTextReading;
+         }
+
+         .dependency_mnemonic{
+            background: $colorBgDark1;
+            white-space: pre-line;
+            font-size: 20pt;
+            text-align: left;
+         }
+      }
+   }
+
    .mnemonics{
       &.user { font-size: 25pt;
               line-height: unset; 
@@ -51,6 +73,17 @@
       .kanji { margin-bottom: 5px; 
                img { position: relative;
                      bottom: -36px; } } }
+
+   .bottomSection{
+      margin-left: 10pt;
+      margin-right: 10pt;
+      max-width: 1000px;
+   }
+
+   #dependencies_list{
+      margin-left: 30pt;
+      margin-bottom: 20pt;
+   }
    
    .mnemonics { margin-top: 10px; 
                 user { margin-top: 0px;

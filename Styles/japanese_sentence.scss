@@ -105,10 +105,12 @@
 
    .expression { margin-bottom: 5pt; }
    .user { margin-bottom: 3pt; }
+
+   .breakdown > ul { margin-bottom: 10pt; }
    
    .topSection { @include flexContainerColumn; }
 
-   .sentenceVocabList { margin-top: 0pt; }
+   .sentenceVocabList { margin-bottom: 0pt; }
 
    #kanji_list{ margin-bottom: 5pt;}
 

@@ -4,19 +4,26 @@
    /* FONTS AND COLORS */
    font-size: 20pt;
 
-   .kanji { font-size:180px;
+   .radical_heading { 
+            font-size:180px;
             line-height: 0.9;
-            padding-bottom: 10pt;
-            background:$colorBgRad;}
+            background:$colorBgRad;
+            display: flex;
+            flex-direction: column;
+            align-content: center;
 
-   .radicon { color:white;
-              font-size:180px; }
+            div{  display: flex;
+                  align-self: center;
+                  align-content: center; }
 
-   .kanji > span { position:relative; 
-				   bottom: -18px; }
+   }
 
-   .kanji > img { position:absolute; 
-                  bottom:-16px; }
+
+   .radical_heading_svg svg {
+      height: 180px;
+      width: 180px !important;
+      display: inline-block !important;
+   }
 
    .radicalName { color:#0a9ce6;
                   font-weight:bold;

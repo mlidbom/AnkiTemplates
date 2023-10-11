@@ -5,10 +5,20 @@
       <div class="mainContent">
          <div class="front-and-answer">
             <div>
-               <div class="kanji">
-                  {{Q}}<span class="radicon">{{Radical_Icon}}</span>
+               {{#Q}}
+               <div class="radical_heading">
+                  {{Q}}
                   {{#Similar_Radicals}} !{{Similar_Radicals}} {{/Similar_Radicals}}
                </div>
+               {{/Q}}
+               {{^Q}}
+               <div class="radical_heading radical_heading_svg">
+                  <div>
+                     <div>{{Radical_Icon}}</div>
+                     <div>{{#Similar_Radicals}} !{{Similar_Radicals}} {{/Similar_Radicals}}</div>
+                  </div>
+               </div>
+               {{/Q}}
             </div>
 
             <div>
