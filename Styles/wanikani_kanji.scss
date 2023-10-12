@@ -24,18 +24,20 @@
 
    #dependencies_list{
       .dependency{
-         .dependency_heading{
+         .dependency_heading {
+            display: flex;
+            align-content: center;
             text-align: left;
-            div { display: inline-block;}
-            .dependency_name{ font-size: 25pt; }
-         }
+            .dependency_name{ font-size: 25pt;
+                              margin-left: 10pt;
+                              color: $colorTextMeaning; }}
 
-         .dependency_character{
+         .dependency_character {
             font-size: 30pt;
             color: $colorTextReading;
          }
 
-         .dependency_mnemonic{
+         .dependency_mnemonic {
             background: $colorBgDark1;
             white-space: pre-line;
             font-size: 20pt;
