@@ -74,10 +74,17 @@
       li { line-height:1.2; }
       .sentenceVocabEntry{
          div.sentenceVocabEntryDiv { display: flex; 
-                                     align-items: center; }
+                                     align-items: center; 
 
-         .vocabQuestion{ font-size: 30pt;
-                         white-space:nowrap; }
+                                     .vocabLookupForm {color: lighten($colorTextGreen, 0%);
+                                                       margin-left: 5pt; }
+
+                                     .vocabHitForm { color: darkgrey; 
+                                                     margin-left: 5pt; }
+         }
+
+         .vocabQuestion, .vocabLookupForm, .vocabHitForm { font-size: 30pt; 
+                                                           white-space:nowrap; }
          .vocabAnswer{ margin-left: 10pt; }
          
          &.word_priority_very_low { & > div > .vocabQuestion{ color: darken(darkgrey, 0%); } 
