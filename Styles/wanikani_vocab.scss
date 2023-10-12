@@ -80,7 +80,15 @@
    .vocabEntry { font-size:20pt; }
 
    // LAYOUT
+   .middleSection  {
+      width: 100%;
+      max-width:$maxWidth; 
+
+   }
    .bottomSection  { max-width:$maxWidth; }
+
+   #kanji_list { margin-top: 10pt; 
+                 margin-left: 30pt; }
 
    .front-and-answer { text-align: center;
                        width: 100%; }
@@ -92,6 +100,8 @@
                margin-top:10px;
                margin-bottom:20px; }
 
+   .mnemonic.override, #__explanation { margin-top: 10pt; }
+
    .metaData span { margin-right: 10pt;}
 
    .context { margin-top: 10pt;}
@@ -101,7 +111,7 @@
    .tags { margin-top: 6pt; }
 
       //yomichan import fix
-   .meaning div { text-align: center !important; }
+   .meaning, .meaning div { text-align: center !important; }
 
    //Stuff shown only if the appropriate tag is present.
    ._uk, ._derog, ._masustem {display:none;}
