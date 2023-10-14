@@ -51,6 +51,12 @@
       }
    }
 
+   #debug_output{
+      white-space:pre;
+      font-size: 12pt;
+      font-family: Consolas;
+   }
+
    .sentenceVocabList {     
       padding-left : 0px;
       ul { padding-left: 20px;
@@ -81,10 +87,13 @@
 
                                      .vocabHitForm { color: darkgrey; 
                                                      margin-left: 5pt; }
+
+                                     .vocabHitReadings { color: $colorTextReading;
+                                                         margin-left: 5pt;}
          }
 
-         .vocabQuestion, .vocabLookupForm, .vocabHitForm { font-size: 30pt; 
-                                                           white-space:nowrap; }
+         .vocabQuestion, .vocabLookupForm, .vocabHitForm, .vocabHitReadings { font-size: 30pt; 
+                                                                              white-space:nowrap; }
          .vocabAnswer{ margin-left: 10pt; }
          
          &.word_priority_very_low { & > div > .vocabQuestion{ color: darken(darkgrey, 0%); } 
@@ -93,10 +102,10 @@
          &.word_priority_low { & > div > .vocabQuestion{ color: darken(darkgrey, 0%); } 
                                & > div > .vocabAnswer { color: darken(darkgrey, 0%); } }
 
-         &.word_priority_medium { & > div > .vocabQuestion{ color: $colorTextReading; } 
+         &.word_priority_medium { & > div > .vocabQuestion{ color: lighten($colorTextReading, 20%); } 
                                   & > div > .vocabAnswer { color: $colorTextMeaning; } }
 
-         &.word_priority_high { & > div > .vocabQuestion{ color: $colorTextReading; } 
+         &.word_priority_high { & > div > .vocabQuestion{ color: lighten($colorTextReading, 20%); } 
                                 & > div > .vocabAnswer { color: $colorTextMeaning; } }
 
          &.word_priority_very_high { & > div > .vocabQuestion{ color: $colorTextBold; } 
