@@ -37,6 +37,12 @@
             color: $colorTextReading;
          }
 
+         .dependency_icon svg {
+            .a { stroke: $colorTextReading; }
+
+            height: 35pt;
+         }
+
          .dependency_mnemonic {
             background: $colorBgDark1;
             white-space: pre-line;
