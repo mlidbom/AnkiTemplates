@@ -37,9 +37,14 @@
             color: $colorTextReading;
          }
 
+         .dependency_readings {
+            margin-left: 10pt;
+            font-size: 30pt;
+            color: $colorTextReading;
+         }
+
          .dependency_icon svg {
             .a { stroke: $colorTextReading; }
-
             height: 35pt;
          }
 
@@ -61,6 +66,11 @@
    .hints { background: $colorBgDark1; }
    .referenceLink { font-size: 12px; }
    .kanjiVocabList {
+      .priority_maximum .kanji{ color: $colorTextBold; }
+      .priority_high .kanji{ color: $colorTextReading; }
+      .priority_medium .kanji{ color: $colorTextGreen; }
+      .priority_very_low .kanji{ color: darkgrey; }
+
       .kanji { font-size: 200%;
                line-height: 1.1;}      
       .vocabReading{ font-size: 130%;
