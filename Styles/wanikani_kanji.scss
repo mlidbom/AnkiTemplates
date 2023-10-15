@@ -44,7 +44,7 @@
          }
 
          .dependency_icon svg {
-            .a { stroke: $colorTextReading; }
+            .a, .b { stroke: $colorTextReading !important; }
             height: 35pt;
          }
 
