@@ -66,6 +66,8 @@
    .hints { background: $colorBgDark1; }
    .referenceLink { font-size: 12px; }
    .kanjiVocabList {
+      div.primary_vocab { background: $colorBgDark1; }
+
       .priority_maximum .kanji{ color: $colorTextBold; }
       .priority_high .kanji{ color: $colorTextReading; }
       .priority_medium .kanji{ color: $colorTextGreen; }
