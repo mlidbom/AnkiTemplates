@@ -40,6 +40,17 @@
                     font-size: 20pt;
                     color:$colorTextMeaning; }
 
+   .vocabCompoundList {
+      font-size: 25pt;
+      li{ list-style-type: none; }
+      .vocabCompound{
+         .vocabCompoundQuestion { color: $colorTextGreen; }
+         .vocabCompoundHitForm{ color: $colorTextGreen; }
+         .vocabHitReadings { color: $colorTextReading; }
+         .vocabAnswer { color: $colorTextMeaning; }
+      }
+   }
+
    #kanji_list {
       line-height: 1;
       .kanji_item {
