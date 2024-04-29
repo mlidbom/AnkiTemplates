@@ -3,7 +3,7 @@
 	<s:String x:Key="/Default/CodeStyle/CodeFormatting/CssFormatter/DECLARATIONS_STYLE/@EntryValue">SEPARATE_LINES_FOR_NONSINGLE</s:String>
 	<s:Int64 x:Key="/Default/CodeStyle/CodeFormatting/CssFormatter/MIN_BLANK_LINES_BETWEEN_DECLARATIONS/@EntryValue">0</s:Int64>
 	<s:String x:Key="/Default/CodeStyle/CodeFormatting/CssFormatter/PROPERTIES_STYLE/@EntryValue">SEPARATE_LINES_FOR_NONSINGLE</s:String>
-	<s:String x:Key="/Default/Environment/Highlighting/HighlightingSourceSnapshotLocation/@EntryValue">C:\Users\magnu\AppData\Local\Temp\JetBrains\ReSharperPlatformVs17\vAny_9a7dd03c\CoverageData\_Anki.1284142500\Snapshot\snapshot.utdcvr</s:String>
+	
 	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=a4cf79fc_002D2d63_002D4b89_002D8f9b_002D96e87bbdc33c/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="All tests from Solution" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
   &lt;Solution /&gt;&#xD;
 &lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>
