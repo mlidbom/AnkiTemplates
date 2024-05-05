@@ -51,17 +51,15 @@ ja, tag { color: $colorTextGreen; }
 }
 
 //not-copy pasted, just the add button in yomichan
-.vocabList .vocabEntry div > ol {
-      > li {
-         > span > ul[data-sc-content="glossary"] {
-            padding-left: 0px;
-            display:inline; 
-            li { display:inline;
-                 &:not(:last-child):after { content: " | "; }
-            }
-         }
+.vocabList .vocabEntry div {
+   ul[data-sc-content="glossary"] {
+      padding-left: 0px;
+      display:inline; 
+      li { display:inline;
+            &:not(:last-child):after { content: " | "; }
       }
    }
+}
 
 .vocabList .vocabEntry {
    padding: 0px 0px 0px 0px !important;
