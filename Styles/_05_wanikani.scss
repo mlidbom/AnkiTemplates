@@ -61,6 +61,19 @@ ja, tag { color: $colorTextGreen; }
    }
 }
 
+.vocab_tag_list{
+   display:inline;
+   .vocab_tag
+   {
+      display:inline;
+      color: $colorTextWarningRed;
+      &:not(:last-child):after { 
+         content: "|"; 
+         color:darkgray;
+      }
+   }
+}
+
 .vocabList .vocabEntry {
    padding: 0px 0px 0px 0px !important;
    .entry {
