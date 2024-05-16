@@ -7,7 +7,12 @@
 
    .user { background: $colorBgDark1;
            &.comments.short{
-              white-space: pre-line; } 
+              white-space: pre-line; 
+              margin-top:20px;
+              margin-bottom:20px;
+              border:solid;
+              border-color:lightblue;
+           }
            read { background-color: unset;
                   color: $colorTextReading; }
    }
@@ -132,12 +137,9 @@
    #kanji_list{ margin-bottom: 5pt;}
 
    .bottomSection {
-       max-width:1000px;
+       max-width:1400px;
        justify-content: center;
        text-align:left; 
-       div {
-          border-bottom: 1px groove white;
-       }
 
    }
 

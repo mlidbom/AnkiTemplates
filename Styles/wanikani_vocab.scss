@@ -118,7 +118,10 @@
    
    .context { margin-top: 10pt;}
 
-   .image{ text-align:center; }
+   .image{ 
+      text-align:center; 
+      img{ max-height:500px;}
+   }
 
    .tags { margin-top: 6pt; }
 

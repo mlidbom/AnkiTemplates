@@ -66,11 +66,17 @@ ja, tag { color: $colorTextGreen; }
    .vocab_tag
    {
       display:inline;
-      color: $colorTextWarningRed;
+      color: $colorTextGreen;
       &:not(:last-child):after { 
          content: "|"; 
          color:darkgray;
       }
+
+      &.vocab_tag_uk { color: $colorTextWarningRed; }
+      &.vocab_tag_in_no_sentences { color: $colorTextWarningRed; }
+      &.vocab_tag_in_sentences { color: darkgray; }
+      &.in_studying_sentences { color: $colorTextGreen; }
+
    }
 }
 
