@@ -75,8 +75,13 @@
       .priority_medium .kanji{ color: $colorTextGreen; }
       .priority_very_low .kanji{ color: darkgrey; }
 
+      .kanjiVocabEntry.is_studying { 
+         border-bottom:solid; 
+         border-color:lightsteelblue;
+      }
+
       .kanji { font-size: 200%;
-               line-height: 1.1;}      
+               line-height: 1.1;}
       .vocabReading{ font-size: 130%;
                      .kanjiReading{ color: $colorTextReading; } } }
 
