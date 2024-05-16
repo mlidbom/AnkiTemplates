@@ -76,8 +76,8 @@
       .priority_very_low .kanji{ color: darkgrey; }
 
       .kanjiVocabEntry.is_studying { 
-         border-bottom:solid; 
-         border-color:lightsteelblue;
+         border-left:solid; 
+         border-color:$colorTextGreen;
       }
 
       .kanji { font-size: 200%;
