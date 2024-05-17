@@ -85,6 +85,20 @@
 
       li { line-height:1.2; }
       .sentenceVocabEntry{
+         &.is_studying_reading { 
+            border-left:solid; 
+            border-color:white;
+         }
+         &.is_studying_listening { 
+            border-left:solid; 
+            border-color:$colorTextReading;
+         }
+
+         &.is_studying_listening.is_studying_reading { 
+            border-left:solid; 
+            border-color:$colorTextGreen;
+         }
+
          div.sentenceVocabEntryDiv { display: flex; 
                                      align-items: center; 
 
