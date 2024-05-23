@@ -5,8 +5,13 @@
 
    $expressionFontSize: 40pt;
 
+   .comments{
+      max-width:1420px;
+   }
+
    .user { background: $colorBgDark1;
            &.comments.short{
+              padding:0px 5px 0px 5px;
               white-space: pre-line; 
               margin-top:20px;
               margin-bottom:20px;
@@ -85,16 +90,16 @@
 
       li { line-height:1.2; }
       .sentenceVocabEntry{
-         &.is_studying_reading { 
+         &.is_studying_reading .vocabQuestion { 
+            border-left:solid;
+            border-color:$colorTextReading;
+         }
+         &.is_studying_listening .vocabQuestion { 
             border-left:solid; 
             border-color:white;
          }
-         &.is_studying_listening { 
-            border-left:solid; 
-            border-color:$colorTextReading;
-         }
 
-         &.is_studying_listening.is_studying_reading { 
+         &.is_studying_listening.is_studying_reading .vocabQuestion  { 
             border-left:solid; 
             border-color:$colorTextGreen;
          }
@@ -151,7 +156,8 @@
    #kanji_list{ margin-bottom: 5pt;}
 
    .bottomSection {
-       max-width:1400px;
+       margin-left:10px;
+       margin-right:10px;
        justify-content: center;
        text-align:left; 
 
