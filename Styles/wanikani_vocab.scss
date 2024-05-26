@@ -19,16 +19,36 @@
    .metaData { font-size:20pt; }
 
    #homophonesDiv {
-   color:$colorTextWarningRed;
-   .homophone {
-      color:$colorTextBold;
-      display: inline;
-      font-size: 40pt;
-      list-style-type: none;
-      padding: 0;
-      margin: 0;
-      li { display: inline;
-            &:not(:last-child):after { content: " | "; } } } }
+      color:$colorTextWarningRed;
+      .homophone {
+         .question{
+            color:$colorTextBold;
+            background-color:inherit;
+            font-size:30pt;
+         }
+
+         .vocab_tag_list, .meaning{
+            font-size:20pt;
+         }
+
+         &.is_studying_reading .question { 
+            border-left:solid;
+            border-color:$colorTextReading;
+         }
+         &.is_studying_listening .question { 
+            border-left:solid; 
+            border-color:white;
+         }
+
+         &.is_studying_listening.is_studying_reading .question  { 
+            border-left:solid; 
+            border-color:$colorTextGreen;
+         }
+      }
+      ol{
+         padding-left:0px;
+      }
+   }
 
    .partOfSpeech { color: $colorTextBold;  }
 
@@ -94,8 +114,9 @@
    .middleSection  {
       width: 100%;
       max-width:$maxWidth; 
-
+      margin: 0px 20px 0px 20px;
    }
+
    .bottomSection  { max-width:$maxWidth; }
 
    #kanji_list { margin-top: 10pt; 
