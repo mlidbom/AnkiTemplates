@@ -43,7 +43,7 @@
                         color: $colorTextGreen;
          }
          .kanji_readings{ margin-left: 10pt;
-                          font-size: 30pt;
+                          font-size: 25pt;
                           color: $colorTextReading;
          }
          .kanji_answer { margin-left: 10pt;
@@ -114,11 +114,12 @@
                                                      margin-left: 5pt; }
 
                                      .vocabHitReadings { color: $colorTextReading;
+                                                         font-size: 25pt;
                                                          margin-left: 5pt;}
          }
 
-         .vocabQuestion, .vocabLookupForm, .vocabHitForm, .vocabHitReadings { font-size: 30pt; 
-                                                                              white-space:nowrap; }
+         .vocabQuestion, .vocabLookupForm, .vocabHitForm { font-size: 30pt; 
+                                                           white-space:nowrap; }
          .vocabAnswer{ margin-left: 10pt; }
          
          &.word_priority_very_low { & > div > .vocabQuestion{ color: darken(darkgrey, 0%); } 
