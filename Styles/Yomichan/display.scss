@@ -1,4 +1,5 @@
 /*
+ * Copyright (C) 2023-2024  Yomitan Authors
  * Copyright (C) 2016-2022  Yomichan Authors
  *
  * This program is free software: you can redistribute it and/or modify
@@ -287,6 +288,12 @@ a {
     color: var(--link-color);
     text-decoration: underline;
     cursor: pointer;
+    text-underline-offset: calc(4em / var(--font-size-no-units));
+    text-decoration-thickness: calc(1em / var(--font-size-no-units));
+}
+a:has(rt) {
+    text-decoration: none;
+    border-bottom: solid calc(1em / var(--font-size-no-units)) var(--link-color);
 }
 
 
@@ -662,6 +669,13 @@ button.action-button:active {
 .icon[data-icon=view-note]      { background-image: url('/images/view-note.svg'); }
 .icon[data-icon=add-term-kanji] { background-image: url('/images/add-term-kanji.svg'); }
 .icon[data-icon=add-term-kana]  { background-image: url('/images/add-term-kana.svg'); }
+.icon[data-icon=add-kanji]  { background-image: url('/images/add-term-kanji.svg'); }
+.icon[data-icon=overwrite-term-kanji] { background-image: url('/images/overwrite-term-kanji.svg'); }
+.icon[data-icon=overwrite-term-kana]  { background-image: url('/images/overwrite-term-kana.svg'); }
+.icon[data-icon=overwrite-kanji]  { background-image: url('/images/overwrite-term-kanji.svg'); }
+.icon[data-icon=add-duplicate-term-kanji] { background-image: url('/images/add-duplicate-term-kanji.svg'); }
+.icon[data-icon=add-duplicate-term-kana]  { background-image: url('/images/add-duplicate-term-kana.svg'); }
+.icon[data-icon=add-duplicate-kanji]  { background-image: url('/images/add-duplicate-term-kanji.svg'); }
 .icon[data-icon=play-audio]     { background-image: url('/images/play-audio.svg'); }
 .icon[data-icon=source-term]    { background-image: url('/images/source-term.svg'); }
 .icon[data-icon=entry-current]  { background-image: url('/images/entry-current.svg'); }
@@ -808,16 +822,41 @@ button.action-button:active {
 
 
 /* Inflections */
-.inflection-list {
-    display: inline-block;
+.inflection-rule-chains {
+    padding-inline-start: 0;
+    list-style-type: none;
+}
+.inflection-rule-chain {
     color: var(--reason-text-color);
 }
-.inflection-list:empty {
+.inflection-rule-chain:empty {
     display: none;
 }
-.inflection-list>.inflection+.inflection-separator+.inflection::before {
+.inflection-rule-chain>.inflection+.inflection-separator+.inflection::before {
     content: var(--inflection-separator);
     padding: 0 0.25em;
+}
+.inflection-source-icon {
+    display: inline-block;
+    white-space: nowrap;
+    text-align: center;
+    width: 1.4em;
+    margin-right: 0.2em;
+}
+.inflection-source-icon[data-inflection-source='dictionary']::after {
+    content: '📖';
+}
+.inflection-source-icon[data-inflection-source='algorithm']::after {
+    content: '🧩';
+}
+.inflection-source-icon[data-inflection-source='both'] {
+    width: 2.8em;
+}
+.inflection-source-icon[data-inflection-source='both']::after {
+    content: '🧩📖';
+}
+.inflection[title] {
+    cursor: pointer;
 }
 
 
@@ -916,7 +955,8 @@ button.action-button:active {
 :root[data-term-display-mode=term-and-reading] .headword[data-reading-is-same=true] .headword-reading-outer {
     display: none;
 }
-:root[data-term-display-mode=term-and-reading] .headword-term>ruby>rt {
+:root[data-term-display-mode=term-and-reading] .headword-term>ruby>rt,
+:root[data-term-display-mode=term-only] .headword-term>ruby>rt {
     display: none;
 }
 
@@ -1465,7 +1505,7 @@ button.definition-item-expansion-button:focus:focus-visible+.definition-item-con
     position: relative;
 }
 .kanji-glyph {
-    font-family: kanji-stroke-orders, sans-serif;
+    font-family: sans-serif;
     font-size: 8.5em;
     line-height: 1;
     padding: 0.01em;
@@ -1888,7 +1928,7 @@ button.footer-notification-close-button {
     display: none;
 }
 :root[data-anki-enabled=false] .action-button[data-action=view-note],
-:root[data-anki-enabled=false] .action-button[data-action=add-note] {
+:root[data-anki-enabled=false] .action-button[data-action=save-note] {
     display: none;
 }
 :root[data-audio-enabled=false] .action-button[data-action=play-audio] {
