@@ -56,7 +56,10 @@ ja, tag { color: $colorTextGreen; }
       padding-left: 0px;
       display:inline; 
       li { display:inline;
-            &:not(:last-child):after { content: " | "; }
+            &:not(:first-child):before { 
+               content: " | "; 
+               color:darkgray;
+            }
       }
    }
 }
