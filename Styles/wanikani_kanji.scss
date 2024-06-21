@@ -82,11 +82,11 @@
       .kanjiVocabEntry { 
          &.is_studying_reading { 
             border-left:solid; 
-            border-color:white;
+            border-color:$colorTextReading;
          }
          &.is_studying_listening { 
             border-left:solid; 
-            border-color:$colorTextReading;
+            border-color:white;
          }
 
          &.is_studying_listening.is_studying_reading { 
