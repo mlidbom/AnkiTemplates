@@ -16,12 +16,17 @@
 
             {{#__references}}<div class="reference_url">{{__references}}</div>{{/__references}}
 
+            <div id="userImage">
+               {{_image}}
+            </div>
+
             {{#__answer}}
             <div class="meaning user">{{__answer}}</div>
             {{/__answer}}
             {{#__explanation}}
             <div class="userExplanation">	{{__explanation}}</div>
             {{/__explanation}}
+
 
             {{^__answer}}<div class="meaning">{{source_answer}}</div>{{/__answer}}
 
@@ -59,9 +64,6 @@
                      <span class="text">({{Radicals_Names}}{{#Radicals_Icons_Names}}, {{Radicals_Icons_Names}}{{/Radicals_Icons_Names}})</span>
                   </div>
 
-               </div>
-               <div id="userImage">
-                  {{_image}}
                </div>
             </div>
          </div>

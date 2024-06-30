@@ -19,6 +19,10 @@
                </div>
                <div class="kanjiNames">##KANJI_NAMES##</div>
             </div>
+            <div>
+               {{#__image}}<div class="image">{{__image}}</div>{{/__image}}
+               {{#Image}}<div class="image">{{Image}}</div>{{/Image}}
+            </div>
          </div>
       </div>
 
@@ -45,10 +49,6 @@
 
       <div class="bottomSection">
          {{#__explanation}}<div id="__explanation" class="user">{{__explanation}}</div>{{/__explanation}}
-
-         {{#__image}}<div class="image">{{__image}}</div>{{/__image}}
-         {{#Image}}<div class="image">{{Image}}</div>{{/Image}}
-
 
          {{#__explanation_long}}<div id="__explanation_long" class="user">{{__explanation_long}}</div>{{/__explanation_long}}
          {{#__mnemonic}}
