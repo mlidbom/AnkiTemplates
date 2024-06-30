@@ -12,11 +12,17 @@ $colorTextMeaning: #ff72bc;
 
 /* FONTS & COLORS */
 primary { text-decoration: underline; }
+obsolete { text-decoration: line-through; }
 .meaning { color:$colorTextMeaning; }
 
 .reading { color: $colorTextReading; }
 
 ja, tag { color: $colorTextGreen; }
+
+//The tags that we the right click to select: 
+.clipboard, ja, .headword-term, rad, radical, voc, vocab, kan, kanji, read, reading {
+   &:hover{ cursor:pointer; }
+}
 
 /* highlights */
 &{ rad, radical, kan, kanji, read, reading, voc, vocabulary, vocab, .primaryVocab { color:white; }
