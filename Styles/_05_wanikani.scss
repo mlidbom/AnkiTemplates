@@ -1,4 +1,4 @@
-@import "_04_japanese.scss";
+﻿@import "_04_japanese.scss";
 
 $colorBgRad: #00a0f1;
 $colorBgKan: #f100a0;
@@ -21,7 +21,7 @@ ja, tag { color: $colorTextGreen; }
 
 //The tags that we the right click to select: 
 .clipboard, ja, .headword-term, rad, radical, voc, vocab, kan, kanji, read, reading {
-   &:hover{ cursor:pointer; }
+   &:hover { cursor:pointer; }
 }
 
 /* highlights */
@@ -101,8 +101,7 @@ ja, tag { color: $colorTextGreen; }
 
       a { text-decoration: none; }
       .gloss-sc-ul[data-sc-content="glossary"],
-      .gloss-content:not(.structured-content)
-      { color:$colorTextMeaning; }
+      .gloss-content:not(.structured-content) { color:$colorTextMeaning; }
       .pronunciation {color:$colorTextReading; }
 
       .inflection-list { color:$colorTextBold; 
@@ -127,10 +126,14 @@ ja, tag { color: $colorTextGreen; }
       .definition-item-expansion-button-icon,
       div.entry-body-section[data-section-type="pronunciations"],
       div.headword-list-tag-list.tag-list,
-      span.tag[data-category="dictionary"],
       .entry-current-indicator,
       .pronunciation-group-tag-list.tag-list { 
          display:none; 
+      }
+
+      li[data-dictionary="新和英"], li[data-dictionary="研究社　新和英大辞典　第５版"]{
+         .gloss-content {color : white; }
+
       }
    }
 }}
