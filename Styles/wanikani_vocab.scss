@@ -117,11 +117,7 @@
    .vocabEntry { font-size:20pt; }
 
    // LAYOUT
-   .middleSection  {
-      width: 100%;
-      max-width:$maxWidth; 
-      margin: 0px 20px 0px 20px;
-   }
+   #middleSection  { @include flexContainerColumn }
 
    .bottomSection  { max-width:$maxWidth; }
 
