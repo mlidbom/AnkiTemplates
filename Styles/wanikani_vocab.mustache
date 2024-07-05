@@ -19,10 +19,6 @@
                </div>
                <div class="kanjiNames">##KANJI_NAMES##</div>
             </div>
-            <div>
-               {{#__image}}<div class="image">{{__image}}</div>{{/__image}}
-               {{#Image}}<div class="image">{{Image}}</div>{{/Image}}
-            </div>
          </div>
       </div>
 
@@ -34,13 +30,17 @@
          {{#__answer}}<div class="meaning user">{{__answer}}</div>{{/__answer}}
          {{^__answer}}<div class="meaning"> {{source_answer}}</div>{{/__answer}}
 
-
          <div class="metaData">
             <span class="_derog">derog</span>
             <span class="_uk" title="usually kana only">uk</span>
             <span class="_masustem">masu stem</span>
             <span class="partOfSpeech">{{Speech_Type}}</span>
             <span class="reading clipboard">{{Reading}}</span>
+         </div>
+
+         <div>
+            {{#__image}}<div class="image">{{__image}}</div>{{/__image}}
+            {{#Image}}<div class="image">{{Image}}</div>{{/Image}}
          </div>
 
          ##HOMOPHONES_LIST##
