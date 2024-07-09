@@ -1,7 +1,5 @@
 @import "_02_mixins.scss";
 
-body {margin: 0px 10px 0px 10px;}
-
 /* FONTS & COLORS */
 .card { background:$colorBgCard !important;
         color:$colorTextCard !important;
@@ -12,7 +10,11 @@ body {margin: 0px 10px 0px 10px;}
       b,strong { color: $colorTextBold;}
 
       a:hover { cursor: pointer !important; }
+   }
+   
+   /* LAYOUT */
+   #container2 { @include flexContainerColumn }
 
-      /* LAYOUT */
-      @include flexContainerColumn }   
+   #container1 {  margin-right:10pt;
+                  margin-left:10pt; }
 }
