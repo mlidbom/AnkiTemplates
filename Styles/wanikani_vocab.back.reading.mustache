@@ -25,7 +25,7 @@
 
       <div id="middleSection">
          {{#__references}}<div class="referenceLink">{{__references}}</div>{{/__references}}
-        
+
          {{#__answer}}<div class="meaning user">{{__answer}}</div>{{/__answer}}
          {{^__answer}}<div class="meaning"> {{source_answer}}</div>{{/__answer}}
 
@@ -47,73 +47,70 @@
       </div>
 
       <!--<div class="bottomSection">-->
-         {{#__explanation}}<div id="__explanation" class="user">{{__explanation}}</div>{{/__explanation}}
+      {{#__explanation}}<div id="__explanation" class="user">{{__explanation}}</div>{{/__explanation}}
 
-         {{#__explanation_long}}<div id="__explanation_long" class="user">{{__explanation_long}}</div>{{/__explanation_long}}
-         {{#__mnemonic}}
+      {{#__explanation_long}}<div id="__explanation_long" class="user">{{__explanation_long}}</div>{{/__explanation_long}}
+      {{#__mnemonic}}
+      <div>
+         <div class="mnemonic override">{{__mnemonic}}</div>
+      </div>
+      {{/__mnemonic}}
+
+
+      ##VOCAB_COMPOUNDS##
+
+      ##KANJI_LIST##
+
+      <div class="vocabList">
+         {{#__vocab1}}<div class="vocabEntry replacement">{{__vocab1}}</div>{{/__vocab1}}
+         {{#__vocab2}}<div class="vocabEntry context">{{__vocab2}}</div>{{/__vocab2}}
+         {{#__vocab3}}<div class="vocabEntry context">{{__vocab3}}</div>{{/__vocab3}}
+         {{#__vocab4}}<div class="vocabEntry context">{{__vocab4}}</div>{{/__vocab4}}
+         {{#__vocab5}}<div class="vocabEntry context">{{__vocab5}}</div>{{/__vocab5}}
+      </div>
+
+
+      {{^__mnemonic}}
+      <div>
+         {{#Meaning_Exp}}<div class="mnemonic">{{Meaning_Exp}}</div>{{/Meaning_Exp}}
+
+         <br>
+
+         {{#Reading_Exp}}
          <div>
-            <div class="mnemonic override">{{__mnemonic}}</div>
+            <div class="mnemonic">{{Reading_Exp}}</div>
          </div>
-         {{/__mnemonic}}
+         {{/Reading_Exp}}
 
+         <br>
+      </div>
+      {{/__mnemonic}}
 
-         ##VOCAB_COMPOUNDS##
-
-         ##KANJI_LIST##
-
-         <div class="vocabList">
-            {{#__vocab1}}<div class="vocabEntry replacement">{{__vocab1}}</div>{{/__vocab1}}
-            {{#__vocab2}}<div class="vocabEntry context">{{__vocab2}}</div>{{/__vocab2}}
-            {{#__vocab3}}<div class="vocabEntry context">{{__vocab3}}</div>{{/__vocab3}}
-            {{#__vocab4}}<div class="vocabEntry context">{{__vocab4}}</div>{{/__vocab4}}
-            {{#__vocab5}}<div class="vocabEntry context">{{__vocab5}}</div>{{/__vocab5}}
+      <div class="context list">
+         {{#Context_jp}}
+         <div class="context">
+            <div class="context_jp clipboard">{{Context_jp}}</div>
+            <div>{{Context_en}}</div>
          </div>
+         {{/Context_jp}}
 
-
-         {{^__mnemonic}}
-         <div>
-            {{#Meaning_Exp}}<div class="mnemonic">{{Meaning_Exp}}</div>{{/Meaning_Exp}}
-
-            <br>
-
-            {{#Reading_Exp}}
-            <div>
-               <div class="mnemonic">{{Reading_Exp}}</div>
-            </div>
-            {{/Reading_Exp}}
-
-            <br>
+         {{#Context_jp_2}}
+         <div class="context">
+            <div class="context_jp clipboard">{{Context_jp_2}}</div>
+            <div>{{Context_en_2}}</div>
          </div>
-         {{/__mnemonic}}
+         {{/Context_jp_2}}
 
-         <div class="context list">
-            {{#Context_jp}}
-            <div class="context">
-               <div class="context_jp clipboard">{{Context_jp}}</div>
-               <div>{{Context_en}}</div>
-            </div>
-            {{/Context_jp}}
-
-            {{#Context_jp_2}}
-            <div class="context">
-               <div class="context_jp clipboard">{{Context_jp_2}}</div>
-               <div>{{Context_en_2}}</div>
-            </div>
-            {{/Context_jp_2}}
-
-            {{#Context_jp_3}}
-            <div class="context">
-               <div class="context_jp clipboard">{{Context_jp_3}}</div>
-               <div>{{Context_en_3}}</div>
-            </div>
-            {{/Context_jp_3}}
-
+         {{#Context_jp_3}}
+         <div class="context">
+            <div class="context_jp clipboard">{{Context_jp_3}}</div>
+            <div>{{Context_en_3}}</div>
          </div>
+         {{/Context_jp_3}}
+
+      </div>
       <!--</div>-->
-
-
-      <div class="tags">{{Tags}}</div>
-
+      <!--<div class="tags">{{Tags}}</div>-->
       <!--######-->
    </div>
 </div>
