@@ -61,11 +61,14 @@
                     color:$colorTextMeaning; }
 
    .vocabCompoundList {
-      font-size: 25pt;
+      background-color:$colorBgDark1;
+      
       li{ list-style-type: none; }
       .vocabCompound{
-         .vocabCompoundQuestion { color: $colorTextGreen; }
-         .vocabCompoundHitForm{ color: $colorTextGreen; }
+         .vocabCompoundQuestion { font-size: 25pt;
+                                  color: $colorTextGreen; }
+         .vocabCompoundHitForm{ font-size: 25pt;
+                                color: $colorTextGreen; }
          .vocabHitReadings { color: $colorTextReading; }
          .vocabAnswer { color: $colorTextMeaning; }
       }
@@ -117,7 +120,7 @@
    // LAYOUT
    #middleSection  { @include flexContainerColumn }
 
-   .bottomSection  { max-width:$maxWidth; }
+   //.bottomSection  { max-width:$maxWidth; }
 
    #kanji_list { margin-top: 10pt; 
                  margin-left: 30pt; }
