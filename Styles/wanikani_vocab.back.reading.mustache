@@ -26,13 +26,13 @@
       <div id="middleSection">
          {{#__references}}<div class="referenceLink">{{__references}}</div>{{/__references}}
 
-         ##ANSWER##
+         {{#__answer}}<div class="meaning user">{{__answer}}</div>{{/__answer}}
+         {{^__answer}}<div class="meaning"> {{source_answer}}</div>{{/__answer}}
 
-         <div class="metaData">
+         <div id="metaData" class="##VOCAB_CLASSES##">
+            ##VOCAB_META_TAGS_HTML##
             <span class="_derog">derog</span>
-            <span class="_uk" title="usually kana only">uk</span>
             <span class="_masustem">masu stem</span>
-            <span class="partOfSpeech">{{Speech_Type}}</span>
             <span class="reading clipboard">{{Reading}}</span>
          </div>
 

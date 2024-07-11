@@ -14,26 +14,27 @@
 
    .reading { font-size:25pt; }
    .kanjiNames { font-size: 20pt; }
-   .metaData { font-size:20pt; }
 
    #forms { text-align:center; }
 
-   #answer {
-         ol{ padding-left:2px; }
+   #metaData { 
+      font-size:20pt; 
 
-         &.is_studying_reading { 
-            border-left:solid;
-            border-color:$colorTextReading;
-         }
-         &.is_studying_listening { 
-            border-left:solid; 
-            border-color:white;
-         }
+      ol{ padding-left:2px; }
 
-         &.is_studying_listening.is_studying_reading { 
-            border-left:solid; 
-            border-color:$colorTextGreen;
-         }
+      &.is_studying_reading { 
+         border-left:solid;
+         border-color:$colorTextReading;
+      }
+      &.is_studying_listening { 
+         border-left:solid; 
+         border-color:white;
+      }
+
+      &.is_studying_listening.is_studying_reading { 
+         border-left:solid; 
+         border-color:$colorTextGreen;
+      }
    }
 
    #homophonesDiv {
@@ -154,7 +155,7 @@
 
    .mnemonic.override, #__explanation, .vocabList { margin-top: 10pt; }
 
-   .metaData span { margin-right: 10pt;}
+   #metaData span { margin-right: 10pt;}
 
    
    .context { margin-top: 10pt;}
