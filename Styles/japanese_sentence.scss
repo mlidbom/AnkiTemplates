@@ -5,19 +5,18 @@
 
    $expressionFontSize: 40pt;
 
-   .comments{
+   .comments {
       max-width:1420px;
+      padding:0px 5px 0px 5px;
+      white-space: pre-line; 
+      margin-top:20px;
+      margin-bottom:20px;
+      border:solid;
+      border-color:dimgrey;
    }
 
    .user { background: $colorBgDark1;
-           &.comments.short{
-              padding:0px 5px 0px 5px;
-              white-space: pre-line; 
-              margin-top:20px;
-              margin-bottom:20px;
-              border:solid;
-              border-color:lightblue;
-           }
+           &.comments.short{ border-color:$colorTextBold; }
            read { background-color: unset;
                   color: $colorTextReading; }
    }

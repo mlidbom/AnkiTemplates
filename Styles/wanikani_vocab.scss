@@ -18,6 +18,24 @@
 
    #forms { text-align:center; }
 
+   #answer {
+         ol{ padding-left:2px; }
+
+         &.is_studying_reading { 
+            border-left:solid;
+            border-color:$colorTextReading;
+         }
+         &.is_studying_listening { 
+            border-left:solid; 
+            border-color:white;
+         }
+
+         &.is_studying_listening.is_studying_reading { 
+            border-left:solid; 
+            border-color:$colorTextGreen;
+         }
+   }
+
    #homophonesDiv {
       color:$colorTextWarningRed;
       .homophone {
@@ -45,9 +63,7 @@
             border-color:$colorTextGreen;
          }
       }
-      ol{
-         padding-left:0px;
-      }
+      ol{ padding-left:2px; }
    }
 
    .partOfSpeech { color: $colorTextBold;  }

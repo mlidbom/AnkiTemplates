@@ -22,41 +22,42 @@
          {{#__comments_Long}}<div class="user comments long">{{__comments_Long}}</div>{{/__comments_Long}}
          {{#Comments}}<div class="comments">{{Comments}}</div>{{/Comments}}
       </div>
-      <div class="bottomSection">
-         <div class="vocabList">
-            <div class="vocabEntry">{{__vocab1}}</div>
-            <div class="vocabEntry">{{__vocab2}}</div>
-            <div class="vocabEntry">{{__vocab3}}</div>
-            <div class="vocabEntry">{{__vocab4}}</div>
-            <div class="vocabEntry">{{__vocab5}}</div>
-         </div>
 
-         <div class="breakdown">
-            ##USER_EXTRA_VOCAB##
-         </div>
 
-         <div class="kanji_list">
-            ##KANJI_LIST##
-         </div>
-
-         <div class="breakdown">
-            ##VOCAB_BREAKDOWN##
-         </div>
-
-         {{#__references}}{{__references}}{{/__references}}
-         <div>
-            {{#__feedback-link}}<a href="{{__feedback-link}}">Sent feedback</a>{{/__feedback-link}}
-            {{#QuestionLink}}
-            {{^__feedback-link}}
-            <a href="mailto:joe@japanese-like-a-breeze.com?subject={{Version}}:{{Sequence}}">Mail feedback</a>
-            {{/__feedback-link}}
-            {{/QuestionLink}}
-         </div>
-
-         {{#References}}<div>{{References}}</div>{{/References}}
+      <div class="vocabList">
+         <div class="vocabEntry">{{__vocab1}}</div>
+         <div class="vocabEntry">{{__vocab2}}</div>
+         <div class="vocabEntry">{{__vocab3}}</div>
+         <div class="vocabEntry">{{__vocab4}}</div>
+         <div class="vocabEntry">{{__vocab5}}</div>
       </div>
-      <!--######-->
+
+      <div class="breakdown">
+         ##USER_EXTRA_VOCAB##
+      </div>
+
+      <div class="kanji_list">
+         ##KANJI_LIST##
+      </div>
+
+      <div class="breakdown">
+         ##VOCAB_BREAKDOWN##
+      </div>
+
+      {{#__references}}{{__references}}{{/__references}}
+      <div>
+         {{#__feedback-link}}<a href="{{__feedback-link}}">Sent feedback</a>{{/__feedback-link}}
+         {{#QuestionLink}}
+         {{^__feedback-link}}
+         <a href="mailto:joe@japanese-like-a-breeze.com?subject={{Version}}:{{Sequence}}">Mail feedback</a>
+         {{/__feedback-link}}
+         {{/QuestionLink}}
+      </div>
+
+      {{#References}}<div>{{References}}</div>{{/References}}
    </div>
+   <!--######-->
+
 </div>
 
 <script src="__magnus_js.js"></script>
