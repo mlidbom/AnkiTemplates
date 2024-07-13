@@ -8,9 +8,7 @@
    .comments {
       max-width:1420px;
       padding:0px 5px 0px 5px;
-      white-space: pre-line; 
-      margin-top:20px;
-      margin-bottom:20px; }
+      white-space: pre-line; }
 
    .user { background: $colorBgDark1;
            &.comments.short{ border-color:$colorTextBold; }

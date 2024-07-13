@@ -38,6 +38,8 @@
    }
 
    #homophonesDiv {
+      border-color: darken($colorTextBold, 30%);
+      .page_section_title { color: $colorTextBold; }
       .homophone {
          .question{
             color:$colorTextBold;
