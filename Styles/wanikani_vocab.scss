@@ -17,6 +17,12 @@
 
    #forms { text-align:center; }
 
+   .context.list, #kanji_list, #homophonesDiv  {
+      border:solid;
+      border-width:1px;
+      border-color:dimgrey;
+   }
+
    #metaData { 
       font-size:20pt; 
 
@@ -158,7 +164,7 @@
    #metaData span { margin-right: 10pt;}
 
    
-   .context { margin-top: 10pt;}
+   .context.list .context:not(:first-of-type) { margin-top: 10pt;}
 
    .image{ 
       text-align:center; 

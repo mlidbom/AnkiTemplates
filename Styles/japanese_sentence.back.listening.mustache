@@ -12,8 +12,8 @@
             <div class="reading">{{furigana::Reading}}</div>
          </div>
 
-         <div class="meaning user analysis clipboard">{{__answer_analysis}}</div>
-         <div class="meaning user clipboard">{{__answer}}</div>
+         {{#__answer_analysis}}<div class="meaning user analysis clipboard">{{__answer_analysis}}</div>{{/__answer_analysis}}
+         {{#__answer}}<div class="meaning user clipboard">{{__answer}}</div>{{/__answer}}
          <div class="meaning clipboard {{#__answer}}overridden{{/__answer}}">{{source_answer}}</div>
       </div>
 
@@ -25,11 +25,11 @@
 
 
       <div class="vocabList">
-         <div class="vocabEntry">{{__vocab1}}</div>
-         <div class="vocabEntry">{{__vocab2}}</div>
-         <div class="vocabEntry">{{__vocab3}}</div>
-         <div class="vocabEntry">{{__vocab4}}</div>
-         <div class="vocabEntry">{{__vocab5}}</div>
+         {{#__vocab1}}<div class="vocabEntry">{{__vocab1}}</div>{{/__vocab1}}
+         {{#__vocab2}}<div class="vocabEntry">{{__vocab2}}</div>{{/__vocab2}}
+         {{#__vocab3}}<div class="vocabEntry">{{__vocab3}}</div>{{/__vocab3}}
+         {{#__vocab4}}<div class="vocabEntry">{{__vocab4}}</div>{{/__vocab4}}
+         {{#__vocab5}}<div class="vocabEntry">{{__vocab5}}</div>{{/__vocab5}}
       </div>
 
       <div class="breakdown">

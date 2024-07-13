@@ -5,32 +5,33 @@
 
    $expressionFontSize: 40pt;
 
+   .comments, #kanji_list, .breakdown  {
+      border:solid;
+      border-width:1px;
+      border-color:dimgrey; }
+
    .comments {
       max-width:1420px;
       padding:0px 5px 0px 5px;
       white-space: pre-line; 
       margin-top:20px;
-      margin-bottom:20px;
-      border:solid;
-      border-color:dimgrey;
-   }
+      margin-bottom:20px; }
 
    .user { background: $colorBgDark1;
            &.comments.short{ border-color:$colorTextBold; }
            read { background-color: unset;
-                  color: $colorTextReading; }
-   }
+                  color: $colorTextReading; } }
 
    .expression { font-size: $expressionFontSize;
                  line-height:1;
                  &.overridden { font-size: 130%; } }
 
-   .meaning { font-size:25pt; 
+   .meaning { font-size:25pt;
+              line-height: 1;
               &.overridden { font-size: 15pt; } }
 
    .expression, .reading{
-      b { font-weight:normal; }
-   }
+      b { font-weight:normal; } }
 
 
    #kanji_list {
@@ -39,32 +40,25 @@
          display:flex;
          align-items: center;
          .kanji_kanji { font-size: 40pt;
-                        color: $colorTextGreen;
-         }
+                        color: $colorTextGreen; }
          .kanji_readings{ margin-left: 10pt;
                           font-size: 25pt;
-                          color: $colorTextReading;
-         }
+                          color: $colorTextReading; }
          .kanji_answer { margin-left: 10pt;
                          font-size: 20pt;
-                         color: $colorTextMeaning;
-         }
-      }
+                         color: $colorTextMeaning; } }
 
       .kanji_mnemonic {
          margin-left: 20pt;
          margin-top: 5pt;
          line-height: 1.1;
          background: $colorBgDark1;
-         white-space: pre-line
-      }
-   }
+         white-space: pre-line } }
 
-   #debug_output{
+   #debug_output {
       white-space:pre;
       font-size: 12pt;
-      font-family: Consolas;
-   }
+      font-family: Consolas; }
 
    .sentenceVocabList {     
       padding-left : 0px;
@@ -76,14 +70,7 @@
       
       li { background:$colorBgDark1; }
 
-/*      &.depth1 { background:$colorBgDark1; } 
-      ul.depth2 { background: $colorBgCard;}*/
-      ul.depth3 { 
-                  //background: $colorBgDark1; 
-                  padding-left: 20px;
-                  //margin-left: 20px;
-                  }
-/*      ul.depth4 { background: $colorBgCard;}*/
+      ul.depth3 { padding-left: 20px; }
 
       .vocab_tag_list{ padding-left: 10px; }
 
@@ -139,29 +126,15 @@
       }
    }
    
-   #expressionAndReading {
-      .reading { display:none; }}
+   #expressionAndReading { .reading { display:none; } }
 
    /* LAYOUT */
-
-   .expression { margin-bottom: 5pt; }
-   .user { margin-bottom: 3pt; }
-
-   .breakdown > ul { margin-bottom: 10pt; }
-   
    .topSection { @include flexContainerColumn; }
 
-   .sentenceVocabList { margin-bottom: 0pt; }
+   .comments, #kanji_list, .breakdown, sentenceVocabList, .expression, .user  { margin-top: 5pt; }
 
-   #kanji_list{ margin-bottom: 5pt;}
-
-   .bottomSection {
-       margin-left:10px;
-       margin-right:10px;
-       justify-content: center;
-       text-align:left; 
-
-   }
+   .bottomSection { justify-content: center;
+                    text-align:left; }
 
    .image { text-align:center;
             width:100%; }
