@@ -11,10 +11,27 @@
 
       a:hover { cursor: pointer !important; }
    }
-   
-   /* LAYOUT */
-   #container2 { @include flexContainerColumn }
+}
 
-   #container1 {  margin-right:10pt;
-                  margin-left:10pt; }
+//Style sections
+.card #container1 #container2{
+
+   .page_section {
+      position:relative;
+      .page_section_title { position: absolute;
+                            font-size: 15pt;
+                            background-color:$colorBgCard;
+                            color:$colorTextGreen;
+                            top: -0.7em;
+                            left: 10px; }}
+}
+
+//layout
+.card #container1 {
+      margin-right:10pt;
+      margin-left:10pt; 
+      
+      #container2 { @include flexContainerColumn }
+      
+      .page_section{ padding-top: 5pt; }
 }
