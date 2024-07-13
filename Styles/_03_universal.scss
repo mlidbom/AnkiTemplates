@@ -20,11 +20,12 @@
       position:relative;
       .page_section_title { position: absolute;
                             font-size: 10pt;
+                            line-height:1;
                             background-color:$colorBgCard;
                             text-transform: lowercase;
-                            padding:0 2pt 0 2pt;
+                            padding:0 2px 0 2px;
                             color:dimgrey;
-                            top: -0.8em;
+                            top: -8px;
                             left: 10px; }
       padding-top: 5pt;
       border:solid;
