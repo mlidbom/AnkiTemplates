@@ -126,8 +126,6 @@
    /* LAYOUT */
    .topSection { @include flexContainerColumn; }
 
-   .comments, #kanji_list, .breakdown, sentenceVocabList, .expression, .user  { margin-top: 5pt; }
-
    .bottomSection { justify-content: center;
                     text-align:left; }
 

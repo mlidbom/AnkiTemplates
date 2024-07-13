@@ -21,9 +21,12 @@
       .page_section_title { position: absolute;
                             font-size: 10pt;
                             background-color:$colorBgCard;
+                            text-transform: lowercase;
+                            padding:0 2pt 0 2pt;
                             color:dimgrey;
                             top: -0.7em;
                             left: 10px; }
+      padding-top: 5pt;
       border:solid;
       border-width:1px;
       border-color:dimgrey;
@@ -35,7 +38,9 @@
       margin-right:10pt;
       margin-left:10pt; 
       
-      #container2 { @include flexContainerColumn }
-      
-      .page_section{ padding-top: 5pt; }
+      #container2 { 
+         @include flexContainerColumn;
+
+         .page_section {margin-top: 6pt;}
+      }
 }
