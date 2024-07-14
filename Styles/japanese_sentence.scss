@@ -11,7 +11,7 @@
       white-space: pre-line; }
 
    .user { background: $colorBgDark1;
-           &.comments.short{ border-color:$colorTextBold; }
+           &.comments.short{ border-color:mix($colorBgCard, $colorTextBold, 50%); }
            read { background-color: unset;
                   color: $colorTextReading; } }
 

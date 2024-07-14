@@ -18,7 +18,8 @@
 
    .page_section {
       position:relative;
-      .page_section_title { position: absolute;
+      .page_section_title { display:none;
+                            position: absolute;
                             font-size: 10pt;
                             line-height:1;
                             background-color:$colorBgCard;
