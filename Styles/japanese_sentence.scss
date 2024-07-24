@@ -85,6 +85,8 @@
          div.sentenceVocabEntryDiv { display: flex; 
                                      align-items: center; 
 
+                                     .vocabLookupForm, .vocabHitForm, .vocabHitReadings { white-space: nowrap; }
+                                     
                                      .vocabLookupForm {color: lighten($colorTextGreen, 0%);
                                                        margin-left: 5pt; }
 

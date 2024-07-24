@@ -10,17 +10,21 @@
     <Compile Remove="backups\**" />
     <Compile Remove="backup\**" />
     <Compile Remove="collection.media\**" />
+    <Compile Remove="_malm_natsume_images_original\**" />
     <Compile Remove="_ReSharper.Caches\**" />
     <Content Remove="backups\**" />
     <Content Remove="backup\**" />
     <Content Remove="collection.media\**" />
+    <Content Remove="_malm_natsume_images_original\**" />
     <Content Remove="_ReSharper.Caches\**" />
     <EmbeddedResource Remove="backups\**" />
     <EmbeddedResource Remove="backup\**" />
     <EmbeddedResource Remove="collection.media\**" />
+    <EmbeddedResource Remove="_malm_natsume_images_original\**" />
     <EmbeddedResource Remove="_ReSharper.Caches\**" />
     <None Remove="backups\**" />
     <None Remove="backup\**" />
+    <None Remove="_malm_natsume_images_original\**" />
     <None Remove="collection.media\**" />
     <None Remove="_ReSharper.Caches\**" />
   </ItemGroup>
