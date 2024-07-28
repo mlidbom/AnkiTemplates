@@ -100,7 +100,9 @@
 
          .vocabQuestion, .vocabLookupForm, .vocabHitForm { font-size: 30pt; 
                                                            white-space:nowrap; }
-         .vocabAnswer{ margin-left: 10pt; }
+         .vocabAnswer{ margin-left: 10pt; 
+                       white-space: pre-line;
+         }
          
          &.word_priority_very_low { & > div > .vocabQuestion{ color: darken(darkgrey, 0%); } 
                                     & > div > .vocabAnswer { color: darken(darkgrey, 0%); } }

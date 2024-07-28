@@ -80,7 +80,10 @@
       .priority_medium .kanji{ color: $colorTextGreen; }
       .priority_very_low .kanji{ color: darkgrey; }
 
-      .kanjiVocabEntry { 
+      .kanjiVocabEntry {
+         .meaning { display: inline-block; 
+                    white-space: pre-line;}
+
          &.is_studying_reading { 
             border-left:solid; 
             border-color:$colorTextReading;

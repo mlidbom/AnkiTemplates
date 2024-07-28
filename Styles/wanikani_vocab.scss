@@ -10,6 +10,8 @@
                padding-bottom:10pt; }
 
    .meaning { font-size:25pt; 
+              white-space: pre-line;
+              text-align:left;
               &.overridden{ font-size:12pt;  } }
 
    .reading { font-size:25pt; }
@@ -163,9 +165,6 @@
    }
 
    .tags { margin-top: 6pt; }
-
-      //yomichan import fix
-   .meaning, .meaning div { text-align: center !important; }
 
    //Stuff shown only if the appropriate tag is present.
    ._uk, ._derog, ._masustem {display:none;}
