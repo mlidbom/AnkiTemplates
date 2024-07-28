@@ -9,7 +9,9 @@
       i,em { color:$colorTextItalic; }
       b,strong { color: $colorTextBold;}
 
+      /* LINKS */
       a:hover { cursor: pointer !important; }
+      a { text-decoration:none; }
    }
 }
 
