@@ -64,7 +64,8 @@
 
       ul.depth3 { padding-left: 20px; }
 
-      .vocab_tag_list{ padding-left: 10px; }
+      .vocab_tag_list{ white-space:nowrap;
+                       padding-left: 10px; }
 
       li { line-height:1.2; }
       .sentenceVocabEntry{
@@ -112,7 +113,7 @@
 
          &.word_priority_medium { & > div > .vocabQuestion{ color: lighten($colorTextReading, 20%); } 
                                   & > div > .vocabAnswer { color: $colorTextMeaning; } }
-
+         vocab_tag_lit
          &.word_priority_high { & > div > .vocabQuestion{ color: lighten($colorTextReading, 20%); } 
                                 & > div > .vocabAnswer { color: $colorTextMeaning; } }
 
