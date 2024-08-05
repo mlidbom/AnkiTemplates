@@ -17,6 +17,7 @@
 
    .expression { font-size: $expressionFontSize;
                  line-height:1;
+                 white-space:pre-line;
                  &.overridden { font-size: 130%; } }
 
    .meaning { font-size:25pt;
