@@ -7,7 +7,8 @@
             <div class="kanjiContainer">
                <div class="kanji">
                   <span class="clipboard">{{Q}}</span>
-                  <span class="clipboard">{{#__similar_Characters}}!{{__similar_Characters}}{{/__similar_Characters}}</span>
+                  {{#__confused_with}} !<span class="clipboard">{{__confused_with}}</span>{{/__confused_with}}
+                  {{#__near_identical_onyomi_and_meaning}}=<span class="clipboard">{{__near_identical_onyomi_and_meaning}}</span>{{/__near_identical_onyomi_and_meaning}}
                </div>
             </div>
 
