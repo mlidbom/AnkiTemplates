@@ -100,6 +100,11 @@
                                                          margin-left: 5pt;}
          }
 
+         div.sentenceVocabEntryMnemonic {
+            padding-left: 15px;
+            white-space:pre-line;
+         }
+
          .vocabQuestion, .vocabLookupForm, .vocabHitForm { font-size: 30pt; 
                                                            white-space:nowrap; }
          .vocabAnswer{ margin-left: 10pt; 
@@ -114,7 +119,7 @@
 
          &.word_priority_medium { & > div > .vocabQuestion{ color: lighten($colorTextReading, 20%); } 
                                   & > div > .vocabAnswer { color: $colorTextMeaning; } }
-         vocab_tag_lit
+
          &.word_priority_high { & > div > .vocabQuestion{ color: lighten($colorTextReading, 20%); } 
                                 & > div > .vocabAnswer { color: $colorTextMeaning; } }
 
