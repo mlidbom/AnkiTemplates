@@ -26,6 +26,15 @@
    .expression, .reading{
       b { font-weight:normal; } }
 
+   .references{
+      a {
+        display: inline-block; /* or block */
+        width: 800px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+   }
 
    #kanji_list {
       line-height: 1;
