@@ -91,7 +91,10 @@
          .vocabCompoundHitForm{ font-size: 25pt;
                                 color: $colorTextGreen; }
          .vocabHitReadings { color: $colorTextReading; }
-         .vocabAnswer { color: $colorTextMeaning; }
+         .vocabAnswer {
+            color: $colorTextMeaning; 
+            white-space:pre-line;
+         }
       }
    }
 
