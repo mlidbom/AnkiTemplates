@@ -43,13 +43,20 @@
       border-color: darken($colorTextBold, 30%);
       .page_section_title { color: $colorTextBold; }
       .homophone {
+         display:flex;
          .question{
+            white-space: nowrap;
+            margin-right:10px;
             color:$colorTextBold;
             background-color:inherit;
             font-size:30pt;
          }
 
-         .vocab_tag_list, .meaning{
+         .vocab_tag_list { 
+            margin-right:10px;
+            white-space: nowrap; }
+
+         .vocab_tag_list, .meaning{            
             font-size:20pt;
          }
 
