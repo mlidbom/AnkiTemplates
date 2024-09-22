@@ -86,11 +86,15 @@
       
       li{ list-style-type: none; }
       .vocabCompound{
+         .vocabCompoundDiv{ display:flex; }
          .vocabCompoundQuestion { font-size: 25pt;
+                                  margin-right: 10px;
                                   color: $colorTextGreen; }
          .vocabCompoundHitForm{ font-size: 25pt;
+                                margin-right: 10px;
                                 color: $colorTextGreen; }
-         .vocabHitReadings { color: $colorTextReading; }
+         .vocabHitReadings { color: $colorTextReading; 
+                             margin-right: 10px; }
          .vocabAnswer {
             color: $colorTextMeaning; 
             white-space:pre-line;
