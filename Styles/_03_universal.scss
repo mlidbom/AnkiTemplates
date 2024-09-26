@@ -20,17 +20,15 @@
 
    .page_section {
       position:relative;
-      .page_section_title { display:none;
-                            position: absolute;
+      .page_section_title { position: absolute;
                             font-size: 10pt;
                             line-height:1;
                             background-color:$colorBgCard;
                             text-transform: lowercase;
                             padding:0 2px 0 2px;
                             color:grey;
-                            top: -5pt;
-                            left: 50%;
-                            transform: translateX(-50%);}
+                            top: -12px;
+                            left: 10px;}
       //padding-top: 5pt;
       border:solid;
       border-width:1px;

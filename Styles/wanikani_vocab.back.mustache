@@ -25,6 +25,9 @@
       <div id="middleSection">
          {{#__references}}<div class="referenceLink">{{__references}}</div>{{/__references}}
 
+
+         {{^Audio_b}}{{^Audio_g}} <span class="reading clipboard noaudio">{{Reading}}</span>{{/Audio_g}}{{/Audio_b}}
+
          {{#__answer}}<div class="meaning user">{{__answer}}</div>{{/__answer}}
          {{^__answer}}<div class="meaning"> {{source_answer}}</div>{{/__answer}}
 
