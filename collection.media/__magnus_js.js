@@ -27,15 +27,37 @@
          });
       });
 
-
-   //var clipboard = new ClipboardJS('.clipboard', {
-   //   text: function (trigger) {
-   //      setTimeout(()  => selectText(trigger));
-   //      return trigger.innerText;
-   //   }
-   //});
+   setupAudioPlayers()
 });
 
+
+function setupAudioPlayers() {
+   var audioElements = document.getElementsByTagName('audio');
+    
+   for (var i = 0; i < audioElements.length; i++) {
+      var audio = audioElements[i];
+      var button = document.createElement('a');
+      button.innerHTML = '▶';
+      button.className = 'play-button';
+        
+      button.addEventListener('click', function() {
+         var audioElement = this.previousElementSibling;
+         if (audioElement.paused) {
+               audioElement.play();
+               this.innerHTML = '⏸';
+         } else {
+               audioElement.pause();
+               this.innerHTML = '▶';
+         }
+      });
+        
+      audio.parentNode.insertBefore(button, audio.nextSibling);
+        
+      audio.addEventListener('ended', function() {
+         this.nextElementSibling.innerHTML = '▶';
+      });
+   }
+}
 
 function loadScripts(urls, callback) {
    let index = 0;
