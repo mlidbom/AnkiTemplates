@@ -38,7 +38,7 @@ function setupAudioPlayers() {
    for (var i = 0; i < audioElements.length; i++) {
       var audio = audioElements[i];
       var button = audio.nextElementSibling
-      if (button && button.classList.contains('play-button') && !button.classList.contains(initializedClassName)) {
+      if (button && audio.currentSrc && button.classList.contains('play-button') && !button.classList.contains(initializedClassName)) {
          button.classList.add(initializedClassName)
          button.innerHTML = '▶';
         
