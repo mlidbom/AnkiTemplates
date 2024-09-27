@@ -177,7 +177,8 @@
 
       .highlightedSentence{
          .sentenceQuestion{ 
-            font-size: 140%; 
+            font-size: 140%;
+            white-space:pre-line;
             .vocabInContext{ 
                background: $colorBgVoc; }
          }
