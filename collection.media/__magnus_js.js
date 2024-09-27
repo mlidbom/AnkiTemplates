@@ -36,6 +36,8 @@ function setupAudioPlayers() {
     
    for (var i = 0; i < audioElements.length; i++) {
       var audio = audioElements[i];
+      if (audio.nextElementSibling && audio.nextElementSibling.className === 'play-button') { continue; }
+
       var button = document.createElement('a');
       button.innerHTML = '▶';
       button.className = 'play-button';
