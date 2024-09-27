@@ -171,8 +171,7 @@
 
    #highlightedSentencesList {
       padding-right: 5px;
-      .highlightedSentence:not(:nth-of-type(1)) { margin-top: 10px; }
-      .highlightedSentence:last-of-type { margin-bottom: 3px; }
+      .highlightedSentenceDiv:not(:nth-of-type(1)) { margin-top: 10px; }
 
       .highlightedSentenceDiv { 
          display: flex;
