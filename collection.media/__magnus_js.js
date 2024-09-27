@@ -32,32 +32,33 @@
 
 
 function setupAudioPlayers() {
+   const initializedClassName = "initialized"
    var audioElements = document.getElementsByTagName('audio');
     
    for (var i = 0; i < audioElements.length; i++) {
       var audio = audioElements[i];
-      if (audio.nextElementSibling && audio.nextElementSibling.className === 'play-button') { continue; }
-
-      var button = document.createElement('a');
-      button.innerHTML = '▶';
-      button.className = 'play-button';
+      var button = audio.nextElementSibling
+      if (button && button.classList.contains('play-button') && !button.classList.contains(initializedClassName)) {
+         button.classList.add(initializedClassName)
+         button.innerHTML = '▶';
         
-      button.addEventListener('click', function() {
-         var audioElement = this.previousElementSibling;
-         if (audioElement.paused) {
-               audioElement.play();
-               this.innerHTML = '⏸';
-         } else {
-               audioElement.pause();
-               this.innerHTML = '▶';
-         }
-      });
+         button.addEventListener('click', function() {
+            var audioElement = this.previousElementSibling;
+            if (audioElement.paused) {
+                  audioElement.play();
+                  this.innerHTML = '⏸';
+            } else {
+                  audioElement.pause();
+                  this.innerHTML = '▶';
+            }
+         });
         
-      audio.parentNode.insertBefore(button, audio.nextSibling);
+         audio.parentNode.insertBefore(button, audio.nextSibling);
         
-      audio.addEventListener('ended', function() {
-         this.nextElementSibling.innerHTML = '▶';
-      });
+         audio.addEventListener('ended', function() {
+            this.nextElementSibling.innerHTML = '▶';
+         });
+      }
    }
 }
 
