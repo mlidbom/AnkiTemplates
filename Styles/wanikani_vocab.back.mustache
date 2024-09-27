@@ -15,8 +15,6 @@
                   <span class="clipboard">{{Q}}</span>
                   {{#__derivedFrom}}&lt; <span class="derivedFrom clipboard">{{__derivedFrom}}</span>{{/__derivedFrom}}
                   {{#__ergative_twin}}~<span class="ergativeTwin clipboard">{{__ergative_twin}}</span>{{/__ergative_twin}}
-                  {{#__confused_with}}!<span class="similarVocab clipboard">{{__confused_with}}</span>{{/__confused_with}}
-                  {{#__similar_meaning}}:<span class="similarMeaning clipboard">{{__similar_meaning}}</span>{{/__similar_meaning}}
                </div>
             </div>
          </div>
@@ -38,6 +36,12 @@
             <span class="reading clipboard">{{Reading}}</span>
          </div>
 
+         {{#__mnemonic}}
+         <div>
+            <div class="mnemonic override">{{__mnemonic}}</div>
+         </div>
+         {{/__mnemonic}}
+
 
          ##VOCAB_COMPOUNDS##
 
@@ -56,11 +60,6 @@
 
       <!--<div class="bottomSection">-->
       {{#__explanation_long}}<div id="__explanation_long" class="user">{{__explanation_long}}</div>{{/__explanation_long}}
-      {{#__mnemonic}}
-      <div>
-         <div class="mnemonic override">{{__mnemonic}}</div>
-      </div>
-      {{/__mnemonic}}
 
       ##HOMOPHONES_LIST##
 
@@ -78,22 +77,6 @@
       </div>
       {{/__vocab1}}
 
-
-      {{^__mnemonic}}
-      <div>
-         {{#source_mnemonic}}<div class="mnemonic">{{source_mnemonic}}</div>{{/source_mnemonic}}
-
-         <br>
-
-         {{#source_reading_mnemonic}}
-         <div>
-            <div class="mnemonic">{{source_reading_mnemonic}}</div>
-         </div>
-         {{/source_reading_mnemonic}}
-
-         <br>
-      </div>
-      {{/__mnemonic}}
 
       {{#Context_jp}}
       <div class="context list page_section">
