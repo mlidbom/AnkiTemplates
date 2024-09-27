@@ -181,8 +181,9 @@
          .sentenceQuestion{ 
             font-size: 140%;
             white-space:pre-line;
-            .vocabInContext{ 
-               background: $colorBgVoc; }
+            .vocabInContext { 
+               &.primaryForm { background-color: $colorBgVoc; }
+               &.secondaryForm { background-color: $colorBgRad; } }
          }
          .sentenceAnswer{ color: $colorTextMeaning;
                           line-height: 1;}
