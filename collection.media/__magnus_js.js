@@ -1,4 +1,4 @@
-﻿loadScripts(['https://cdn.jsdelivr.net/npm/clipboard@2.0.11/dist/clipboard.min.js'], function () {
+﻿loadScripts(['https://cdn.jsdelivr.net/npm/clipboard@2.0.11/dist/clipboard.min.js'], () => {
    document.documentElement.setAttribute('data-glossary-layout-mode', 'compact');
    document.documentElement.setAttribute('data-theme', 'dark');
 
@@ -15,7 +15,7 @@
 
    document.querySelectorAll('.clipboard, ja, .headword-term, rad, radical, voc, vocab, kan, kanji, read, reading')
       .forEach(function (element) {
-         element.addEventListener('mousedown', function (event) {
+         element.addEventListener('mousedown', event => {
             if (event.button === 2) {
                const selection = window.getSelection();
                const selectedText = selection.toString();
@@ -42,11 +42,11 @@ function setupAudioPlayers() {
          button.classList.add(initializedClassName)
          button.innerHTML = '▶';
         
-         button.addEventListener('click', function() {
+         button.addEventListener('click', () => {
             var audioElement = this.previousElementSibling;
             if (audioElement.paused) {
                   audioElement.play();
-                  this.innerHTML = '⏸';
+                  this.innerHTML = '⏸︎';
             } else {
                   audioElement.pause();
                   this.innerHTML = '▶';
@@ -55,9 +55,7 @@ function setupAudioPlayers() {
         
          audio.parentNode.insertBefore(button, audio.nextSibling);
         
-         audio.addEventListener('ended', function() {
-            this.nextElementSibling.innerHTML = '▶';
-         });
+         audio.addEventListener('ended', () => { this.nextElementSibling.innerHTML = '▶'; });
       }
    }
 }
