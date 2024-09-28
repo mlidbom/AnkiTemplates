@@ -42,7 +42,7 @@ function setupAudioPlayers() {
          button.classList.add(initializedClassName)
          button.innerHTML = '▶';
         
-         button.addEventListener('click', () => {
+         button.addEventListener('click', function() {
             var audioElement = this.previousElementSibling;
             if (audioElement.paused) {
                   audioElement.play();
@@ -55,7 +55,7 @@ function setupAudioPlayers() {
         
          audio.parentNode.insertBefore(button, audio.nextSibling);
         
-         audio.addEventListener('ended', () => { this.nextElementSibling.innerHTML = '▶'; });
+         audio.addEventListener('ended', function() { this.nextElementSibling.innerHTML = '▶'; });
       }
    }
 }
