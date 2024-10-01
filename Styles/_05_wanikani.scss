@@ -1,9 +1,10 @@
 ﻿@import "_04_japanese.scss";
 
+$darkeningPercentageSmallBackgrounds : 10%;
 $colorBgRad: darken(#00a0f1, $darkeningPercentageSmallBackgrounds);
 $colorBgKan: darken(#f100a0, $darkeningPercentageSmallBackgrounds);
 $colorBgVoc: darken(#a100f1, $darkeningPercentageSmallBackgrounds);
-$colorBgRead: darken(#cc7d12, $darkeningPercentageSmallBackgrounds);
+$colorBgRead: darken(#cc7d12, 0%);
 
 $colorTextReading: $colorTextItalic;
 $colorTextMeaning: darken(#c563bd, 0%);
