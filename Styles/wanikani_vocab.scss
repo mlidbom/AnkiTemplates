@@ -40,10 +40,24 @@
       }
    }
 
-   #homophonesDiv {
-      border-color: darken($colorTextBold, 30%);
-      .page_section_title { color: $colorTextBold; }
-      .homophone {
+   .relatedVocabListDiv {
+      &.compound_parts, &.derived_from, &.ergative_twin {
+         border-color: lighten($colorTextMeaning, 0%);
+         border-style:inset;
+         .page_section_title { color: $colorTextMeaning; }
+      }
+
+      &.similar{
+         //border-color: $colorTextGreen;
+         //.page_section_title { color: $colorTextGreen; }
+      }
+
+      &.homophones, &.confused_with {
+         border-color: darken($colorTextBold, 30%);
+         .page_section_title { color: $colorTextBold; }
+      }
+
+      .relatedVocab {
          display:flex;
          .question{
             white-space: nowrap;
@@ -52,6 +66,8 @@
             background-color:inherit;
             font-size:30pt;
          }
+
+         .vocabReading{ color: $colorTextReading; }
 
          .vocab_tag_list { 
             margin-right:10px;
