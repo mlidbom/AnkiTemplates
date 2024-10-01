@@ -1,12 +1,12 @@
 ﻿@import "_04_japanese.scss";
 
-$colorBgRad: #00a0f1;
-$colorBgKan: #f100a0;
-$colorBgVoc: #a100f1;
-$colorBgRead:#cc7d12;
+$colorBgRad: darken(#00a0f1, $darkeningPercentageSmallBackgrounds);
+$colorBgKan: darken(#f100a0, $darkeningPercentageSmallBackgrounds);
+$colorBgVoc: darken(#a100f1, $darkeningPercentageSmallBackgrounds);
+$colorBgRead: darken(#cc7d12, $darkeningPercentageSmallBackgrounds);
 
 $colorTextReading: $colorTextItalic;
-$colorTextMeaning: #ff72bc;
+$colorTextMeaning: darken(#c563bd, 0%);
 
 .card #container1 #container2 {
 

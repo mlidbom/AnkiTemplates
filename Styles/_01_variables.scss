@@ -1,7 +1,11 @@
+
+$darkeningPercentageSmallBackgrounds : 10%;
+$darkeningPercentageLargeBackgrounds : 20%;
+
 $colorTextGreen: #57a64a;
 
 $colorTextUnderline: #bbb1ff;
-$colorTextItalic: #ff9d17;
+$colorTextItalic: darken(#ff9d17, 0%);
 $colorTextBold: #f15034;
 $colorTextWarningRed : red;
 
@@ -9,6 +13,6 @@ $colorBgDark1: #1b1d1e;
 $colorBgDark2: #1f2122;
 $colorBgDark3: #202223;
 $colorBgCard: #282828;
-$colorTextCard: #c6c6c6;
+$colorTextCard: darken(white, 25%);// #c6c6c6;
 
 $maxWidth: 1000px;

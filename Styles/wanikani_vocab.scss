@@ -6,8 +6,8 @@
 
    .question { font-size:60pt;
                line-height: .9;
-               color: lighten($colorTextCard, 15%);
-               background-color:#a900fd;
+               color: lighten($colorTextCard, 2%);
+               background-color:darken(#a900fd, 20%);
                padding-bottom:10pt; }
 
    .meaning { font-size:25pt; 
