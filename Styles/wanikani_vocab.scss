@@ -185,42 +185,50 @@
 
    #metaData span { margin-right: 10pt;}
 
-   #highlightedSentencesList {
-      padding-right: 5px;
-      .highlightedSentenceDiv:not(:nth-of-type(1)) { margin-top: 10px; }
-
-      .highlightedSentenceDiv { 
-         display: flex;
-         align-items: center;
+   #highlightedSentencesSection{
+      .studing_sentence_count{ color: $colorTextGreen;}
+      &.no_studying_sentences{
+         border-color:$colorTextBold;
+         .studing_sentence_count{ color: $colorTextBold;}
       }
-      .highlightedSentence{
-         width:100%;
-         .sentenceQuestion{ 
-            font-size: 140%;
-            white-space:pre-line;
-            width:100%;
-            .deck_indicator{
-               color:dimgrey;
-               margin-right: 10px;
-               font-size: 25px;
-            }
 
-            .vocabInContext { 
-               &.primaryForm { background-color: $colorBgVoc; }
-               &.secondaryForm { background-color: $colorBgRad; } }
-         }
-         .sentenceAnswer{ color: $colorTextMeaning;
-                          line-height: 1;}
+      #highlightedSentencesList {
+         padding-right: 5px;
+         .highlightedSentenceDiv:not(:nth-of-type(1)) { margin-top: 10px; }
 
-         &.highlighted{
+         .highlightedSentenceDiv { 
+            display: flex;
+            align-items: center;
             border-left:solid;
-            border-color:$colorTextGreen;
+            border-color:$colorTextItalic;
+            &.studying { border-color:$colorTextGreen; }
+            &.highlighted .highlightedSentence{
+                  border-left:solid;
+                  border-color:$colorTextGreen; }
+
+            .highlightedSentence{
+               width:100%;         
+               border-left:solid;
+               border-color:$colorTextItalic;
+
+               .sentenceQuestion{ 
+                  font-size: 140%;
+                  white-space:pre-line;
+                  width:100%;
+                  .deck_indicator{
+                     color:dimgrey;
+                     margin-right: 10px;
+                     font-size: 25px;
+                  }
+
+                  .vocabInContext { 
+                     &.primaryForm { background-color: $colorBgVoc; }
+                     &.secondaryForm { background-color: $colorBgRad; } }
+               }
+               .sentenceAnswer{ color: $colorTextMeaning;
+                                line-height: 1;}
+            }
          }
-
-         &.studying { border-left:solid; }
-         &.any { border-left:solid; 
-                 border-color:$colorTextItalic; }
-
       }
    }
 
