@@ -187,7 +187,7 @@
 
    #highlightedSentencesSection{
       .studing_sentence_count{ color: $colorTextGreen;}
-      &.no_studying_sentences{
+      &.no_studying_sentences{ 
          border-color:$colorTextBold;
          .studing_sentence_count{ color: $colorTextBold;}
       }
@@ -198,18 +198,24 @@
 
          .highlightedSentenceDiv { 
             display: flex;
-            align-items: center;
-            border-left:solid;
-            border-color:$colorTextItalic;
-            &.studying { border-color:$colorTextGreen; }
-            &.highlighted .highlightedSentence{
-                  border-left:solid;
-                  border-color:$colorTextGreen; }
+            align-items: center;           
+            
+            &.is_studying_reading {  border-left:solid; 
+                                     border-color:$colorTextReading; }
+            &.is_studying_listening { border-left:solid; 
+                                      border-color:white; }
+            &.is_studying_listening.is_studying_reading { border-left:solid; 
+                                                          border-color:$colorTextGreen; }
+
+            &.low_priority .highlightedSentence .sentenceQuestion .deck_indicator { color:$colorTextItalic; }
+            &.tts_audio .highlightedSentence .sentenceQuestion .deck_indicator { color:$colorTextBold; }
+            &.high_priority .highlightedSentence .sentenceQuestion .deck_indicator { color:$colorTextGreen; }
+
+            &.highlighted .highlightedSentence{ border-left:solid; 
+                                                border-color:$colorTextGreen; }
 
             .highlightedSentence{
                width:100%;         
-               border-left:solid;
-               border-color:$colorTextItalic;
 
                .sentenceQuestion{ 
                   font-size: 140%;
