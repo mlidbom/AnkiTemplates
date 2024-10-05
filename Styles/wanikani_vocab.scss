@@ -194,9 +194,17 @@
          align-items: center;
       }
       .highlightedSentence{
+         width:100%;
          .sentenceQuestion{ 
             font-size: 140%;
             white-space:pre-line;
+            width:100%;
+            .deck_indicator{
+               color:dimgrey;
+               margin-right: 10px;
+               font-size: 25px;
+            }
+
             .vocabInContext { 
                &.primaryForm { background-color: $colorBgVoc; }
                &.secondaryForm { background-color: $colorBgRad; } }
