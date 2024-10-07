@@ -98,10 +98,10 @@
 
                                      .vocabLookupForm, .vocabHitForm, .vocabHitReadings { white-space: nowrap; }
                                      
-                                     .vocabLookupForm {color: lighten($colorTextGreen, 0%);
+                                     .vocabLookupForm {color: darkgrey;
                                                        margin-left: 5pt; }
 
-                                     .vocabHitForm { color: darkgrey; 
+                                     .vocabHitForm { color: lighten($colorTextGreen, 0%); 
                                                      margin-left: 5pt; }
 
                                      .vocabHitReadings { color: $colorTextReading;
