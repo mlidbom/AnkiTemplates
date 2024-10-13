@@ -4,8 +4,12 @@
    /* FONTS AND COLORS */
    font-size: 20pt;
 
-   $expressionFontSize: 40pt;
-
+  .expression { font-size: 40pt;
+    line-height:1;
+    color: color.adjust($colorTextCard, $lightness: -20%);
+    white-space:pre-line;
+    &.overridden { font-size: 130%; } }
+  
    .comments {
       max-width:1420px;
       padding:0 5px 0 5px;
@@ -15,12 +19,6 @@
            &.comments.short{ border-color: color.mix($colorBgCard, $colorTextBold, 50%); }
            read { background-color: unset;
                   color: $colorTextReading; } }
-
-   .expression { font-size: $expressionFontSize;
-                 line-height:1;
-                 color: color.adjust($colorTextCard, $lightness: -20%);
-                 white-space:pre-line;
-                 &.overridden { font-size: 130%; } }
 
    .meaning { font-size:25pt;
               &.overridden { font-size: 15pt; } }
