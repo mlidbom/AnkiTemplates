@@ -3,7 +3,7 @@
 @import "Yomichan/display-pronunciation.scss";
 @import "Yomichan/structured-content.scss";
 @import "Yomichan/search.scss";
-@import "_032_japanese_variables.scss";
+@import "030_universal";
 
 //Restore some stuff that Yomitan css files mess up
 body{ overflow: unset;}
