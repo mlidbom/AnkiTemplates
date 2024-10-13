@@ -1,5 +1,5 @@
 @use "sass:color";
-@import "../../Styles/_05_wanikani.scss";
+@import "../../Styles/_040_japanese.scss";
 .card #container1 #container2 { //Let's stay focused and not break other stuff
    // FONTS & COLORS
    line-height: 1.25;
@@ -8,6 +8,7 @@
    .question { font-size:60pt;
                line-height: .9;
                background-color: $colorBgCard;
+               color: color.adjust($colorTextCard, $lightness: -20%);
                padding-bottom:10pt; }
 
    .meaning { font-size:25pt; 

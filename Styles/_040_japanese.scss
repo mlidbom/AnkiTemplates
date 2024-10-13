@@ -1,0 +1,61 @@
+@import "035_yomichan";
+
+.card {
+    font-family: "Meiryo UI", "Hiragino Kaku Gothic Pro W3", serif; }
+
+@font-face {
+    font-family: "Hiragino Kaku Gothic Pro W3";
+    src: url("../collection.media/_hirakakyprow3.otf"); }
+
+.card #container1 #container2 {
+
+/* FONTS & COLORS */
+primary { text-decoration: underline; }
+obsolete { text-decoration: line-through; }
+.meaning { color:$colorTextMeaning; }
+
+.reading { color: $colorTextReading; }
+
+ja, tag { color: $colorTextGreen; }
+
+//The tags that we the right click to select: 
+.clipboard, ja, .headword-term, rad, radical, voc, vocab, kan, kanji, read, reading {
+   &:hover { cursor:pointer; }
+}
+
+/* highlights */
+&{ rad, radical, kan, kanji, read, reading, voc, vocabulary, vocab, .primaryVocab { color:white; }
+
+   rad, radical, kan, kanji, read, reading, voc, vocabulary, vocab {
+       display: inline-block;
+       line-height: 1;
+   }
+
+   rad, radical { background-color: $colorBgRad}
+   kan, kanji   { background-color: $colorBgKan; }
+   voc, vocabulary, vocab, .primaryVocab   { background-color: $colorBgVoc; }
+   read, reading { background-color: $colorBgRead; } }
+
+/*LAYOUT*/
+.userExplanation { display: inline-block;
+                   max-width: $maxWidth;
+                   text-align: left; }
+
+.vocab_tag_list{
+   display:inline;
+   .vocab_tag
+   {
+      display:inline;
+      color: $colorTextGreen;
+      &:not(:last-child):after { 
+         content: "|"; 
+         color:darkgray;
+      }
+
+      &.vocab_tag_uk { color: $colorTextWarningRed; }
+      &.vocab_tag_in_no_sentences { color: $colorTextWarningRed; }
+      &.vocab_tag_in_sentences { color: darkgray; }
+      &.in_studying_sentences { color: $colorTextGreen; }
+
+   }
+}}

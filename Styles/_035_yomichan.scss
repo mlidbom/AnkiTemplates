@@ -1,48 +1,15 @@
-﻿@import "_04_japanese.scss";
+﻿@import "Yomichan/material.scss";
+@import "Yomichan/display.scss";
+@import "Yomichan/display-pronunciation.scss";
+@import "Yomichan/structured-content.scss";
+@import "Yomichan/search.scss";
+@import "_032_japanese_variables.scss";
 
-$colorBgRad: #00a0f1;
-$colorBgKan: #f100a0;
-$colorBgVoc: #a100f1;
-$colorBgRead:#cc7d12;
+//Restore some stuff that Yomitan css files mess up
+body{ overflow: unset;}
 
-$colorTextReading: $colorTextItalic;
-$colorTextMeaning: #ff72bc;
 
-.card #container1 #container2 {
-
-/* FONTS & COLORS */
-primary { text-decoration: underline; }
-obsolete { text-decoration: line-through; }
-.meaning { color:$colorTextMeaning; }
-
-.reading { color: $colorTextReading; }
-
-ja, tag { color: $colorTextGreen; }
-
-//The tags that we the right click to select: 
-.clipboard, ja, .headword-term, rad, radical, voc, vocab, kan, kanji, read, reading {
-   &:hover { cursor:pointer; }
-}
-
-/* highlights */
-&{ rad, radical, kan, kanji, read, reading, voc, vocabulary, vocab, .primaryVocab { color:white; }
-
-   rad, radical, kan, kanji, read, reading, voc, vocabulary, vocab {
-       display: inline-block;
-       line-height: 1;
-   }
-
-   rad, radical { background-color: $colorBgRad}
-   kan, kanji   { background-color: $colorBgKan; }
-   voc, vocabulary, vocab, .primaryVocab   { background-color: $colorBgVoc; }
-   read, reading { background-color: $colorBgRead; } }
-
-/*LAYOUT*/
-.userExplanation { display: inline-block;
-                   max-width: $maxWidth;
-                   text-align: left; }
-
-/* Yomichan */
+/* Yomitan */
 .vocabList {
     display: flex;
             flex-direction:column;
@@ -56,7 +23,7 @@ ja, tag { color: $colorTextGreen; }
    }
 }
 
-//not-copy pasted, just the add button in Yomithan
+//not-copy pasted, just the add button in Yomitan
 .vocabList .vocabEntry div {
    ul[data-sc-content="glossary"] {
       padding-left: 0;
@@ -67,25 +34,6 @@ ja, tag { color: $colorTextGreen; }
                color:darkgray;
             }
       }
-   }
-}
-
-.vocab_tag_list{
-   display:inline;
-   .vocab_tag
-   {
-      display:inline;
-      color: $colorTextGreen;
-      &:not(:last-child):after { 
-         content: "|"; 
-         color:darkgray;
-      }
-
-      &.vocab_tag_uk { color: $colorTextWarningRed; }
-      &.vocab_tag_in_no_sentences { color: $colorTextWarningRed; }
-      &.vocab_tag_in_sentences { color: darkgray; }
-      &.in_studying_sentences { color: $colorTextGreen; }
-
    }
 }
 
@@ -136,4 +84,4 @@ ja, tag { color: $colorTextGreen; }
 
       }
    }
-}}
+}
