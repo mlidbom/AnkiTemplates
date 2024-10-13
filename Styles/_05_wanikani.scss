@@ -52,14 +52,14 @@ ja, tag { color: $colorTextGreen; }
             margin-left:auto;
    
    .vocabEntry { background:$colorBgDark1;
-            margin: 2px 0px 0px 2px;
+            margin: 2px 0 0 2px;
    }
 }
 
-//not-copy pasted, just the add button in yomichan
+//not-copy pasted, just the add button in Yomithan
 .vocabList .vocabEntry div {
    ul[data-sc-content="glossary"] {
-      padding-left: 0px;
+      padding-left: 0;
       display:inline; 
       li { display:inline;
             &:not(:first-child):before { 
@@ -90,9 +90,9 @@ ja, tag { color: $colorTextGreen; }
 }
 
 .vocabList .vocabEntry {
-   padding: 0px 0px 0px 0px !important;
+   padding: 0 0 0 0 !important;
    .entry {
-      padding: 0px 0px 0px 0px !important;
+      padding: 0 0 0 0 !important;
 
       .entry-header { text-align: center; }
 
@@ -112,7 +112,7 @@ ja, tag { color: $colorTextGreen; }
       b .gloss-content { color: $colorTextBold;}
 
       ol.entry-body-section-content.definition-list { list-style: none; 
-                                                      padding-left: 0px; }
+                                                      padding-left: 0; }
 
       .headword-reading { color:$colorTextReading; } 
       .headword-term { 

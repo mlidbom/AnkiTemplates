@@ -1,3 +1,4 @@
+@use "sass:color";
 @import "_02_mixins.scss";
 
 /* FONTS & COLORS */
@@ -30,9 +31,7 @@
                             top: -12px;
                             left: 10px;}
       //padding-top: 5pt;
-      border:solid;
-      border-width:1px;
-      border-color:lighten($colorBgCard, 15%);
+     border: 1px solid color.adjust($colorBgCard, $lightness: 15%);
    }
 }
 

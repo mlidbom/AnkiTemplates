@@ -63,7 +63,7 @@
       height: 500px;
    }
 
-   .vocab_tag_list{ padding-left: 0px; }
+   .vocab_tag_list{ padding-left: 0; }
 
    .mnemonics{
       &.user { font-size: 25pt;
@@ -127,7 +127,7 @@
    }
    
    .mnemonics { margin-top: 10px; 
-                user { margin-top: 0px;
+                user { margin-top: 0;
                      margin-bottom: 10pt; } }
 
    .hints { margin-top: 10pt; 

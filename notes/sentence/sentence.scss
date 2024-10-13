@@ -1,3 +1,4 @@
+@use "sass:color";
 @import "../../Styles/_05_wanikani.scss";
 .card #container1 #container2 { //Let's stay focused and not break other stuff
    /* FONTS AND COLORS */
@@ -7,11 +8,11 @@
 
    .comments {
       max-width:1420px;
-      padding:0px 5px 0px 5px;
+      padding:0 5px 0 5px;
       white-space: pre-line; }
 
    .user { background: $colorBgDark1;
-           &.comments.short{ border-color:mix($colorBgCard, $colorTextBold, 50%); }
+           &.comments.short{ border-color: color.mix($colorBgCard, $colorTextBold, 50%); }
            read { background-color: unset;
                   color: $colorTextReading; } }
 
@@ -60,12 +61,12 @@
    #debug_output {
       white-space:pre;
       font-size: 12pt;
-      font-family: Consolas; }
+     font-family: Consolas, serif; }
 
    .sentenceVocabList {     
-      padding-left : 0px;
+      padding-left : 0;
       ul { padding-left: 20px;
-           margin-left: 0px; 
+           margin-left: 0; 
            background: $colorBgCard;
       }
       list-style: none;
@@ -101,7 +102,7 @@
                                      .vocabLookupForm {color: darkgrey;
                                                        margin-left: 5pt; }
 
-                                     .vocabHitForm { color: lighten($colorTextGreen, 0%); 
+                                     .vocabHitForm { color: color.adjust($colorTextGreen, $lightness: 0%); 
                                                      margin-left: 5pt; }
 
                                      .vocabHitReadings { color: $colorTextReading;
@@ -120,16 +121,16 @@
                        white-space: pre-line;
          }
          
-         &.word_priority_very_low { & > div > .vocabQuestion{ color: darken(darkgrey, 0%); } 
-                                    & > div > .vocabAnswer { color: darken(darkgrey, 0%); } }
+         &.word_priority_very_low { & > div > .vocabQuestion{ color: color.adjust(darkgrey, $lightness: -0%); } 
+                                    & > div > .vocabAnswer { color: color.adjust(darkgrey, $lightness: -0%); } }
          
-         &.word_priority_low { & > div > .vocabQuestion{ color: darken(darkgrey, 0%); } 
-                               & > div > .vocabAnswer { color: darken(darkgrey, 0%); } }
+         &.word_priority_low { & > div > .vocabQuestion{ color: color.adjust(darkgrey, $lightness: -0%); } 
+                               & > div > .vocabAnswer { color: color.adjust(darkgrey, $lightness: -0%); } }
 
-         &.word_priority_medium { & > div > .vocabQuestion{ color: lighten($colorTextReading, 20%); } 
+         &.word_priority_medium { & > div > .vocabQuestion{ color: color.adjust($colorTextReading, $lightness: 20%); } 
                                   & > div > .vocabAnswer { color: $colorTextMeaning; } }
 
-         &.word_priority_high { & > div > .vocabQuestion{ color: lighten($colorTextReading, 20%); } 
+         &.word_priority_high { & > div > .vocabQuestion{ color: color.adjust($colorTextReading, $lightness: 20%); } 
                                 & > div > .vocabAnswer { color: $colorTextMeaning; } }
 
          &.word_priority_very_high { & > div > .vocabQuestion{ color: $colorTextBold; } 

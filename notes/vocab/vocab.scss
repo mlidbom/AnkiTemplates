@@ -1,3 +1,4 @@
+@use "sass:color";
 @import "../../Styles/_05_wanikani.scss";
 .card #container1 #container2 { //Let's stay focused and not break other stuff
    // FONTS & COLORS
@@ -42,7 +43,7 @@
 
    .relatedVocabListDiv {
       &.compound_parts, &.derived_from, &.ergative_twin {
-         border-color: lighten($colorTextMeaning, 0%);
+         border-color: color.adjust($colorTextMeaning, $lightness: 0%);
          border-style:inset;
          .page_section_title { color: $colorTextMeaning; }
       }
@@ -53,7 +54,7 @@
       }
 
       &.homophones, &.confused_with {
-         border-color: darken($colorTextBold, 30%);
+         border-color: color.adjust($colorTextBold, $lightness: -30%);
          .page_section_title { color: $colorTextBold; }
       }
 
@@ -252,13 +253,13 @@
    //Stuff shown only if the appropriate tag is present.
    ._uk, ._derog, ._masustem {display:none;}
    
-   &._masustem ._masustem,
    &._derog ._derog,
+   &._masustem ._masustem,
    &._uk ._uk{ display: unset; 
                color:$colorTextWarningRed; }
 
 
-   //this would hide the list of different writings for verbs that is the whole point of some of the yomichan includes....
+   //this would hide the list of different writings for verbs that is the whole point of some of the Yomitan includes....
    &{
       .vocabList .vocabEntry.replacement .entry .entry-header { 
             display: none; 
