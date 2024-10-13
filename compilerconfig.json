@@ -9,24 +9,19 @@
       "inputFile": "Styles/japanese_sentence.scss",
       "minify": { "enabled": false }
    },
-   {
-      "outputFile": "collection.media/__magnus_css_japanese_sentence.css",
-      "inputFile": "Styles/japanese_sentence.scss",
-      "minify": { "enabled": false }
-   },
   {
-    "outputFile": "collection.media/__magnus_css_wanikani_kanji.css",
-    "inputFile": "Styles/wanikani_kanji.scss",
+    "outputFile": "collection.media/__magnus_css_kanji.css",
+    "inputFile": "Styles/kanji.scss",
       "minify": { "enabled": false }
   },
   {
-    "outputFile": "collection.media/__magnus_css_wanikani_radical.css",
-    "inputFile": "Styles/wanikani_radical.scss",
+    "outputFile": "collection.media/__magnus_css_radical.css",
+    "inputFile": "Styles/radical.scss",
       "minify": { "enabled": false }
   },
   {
-    "outputFile": "collection.media/__magnus_css_wanikani_vocab.css",
-    "inputFile": "Styles/wanikani_vocab.scss",
+    "outputFile": "collection.media/__magnus_css_vocab.css",
+    "inputFile": "Styles/vocab.scss",
       "minify": { "enabled": false }
   }
 ]

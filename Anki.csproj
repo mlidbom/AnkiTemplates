@@ -55,9 +55,9 @@
     <Content Include="collection.media\__magnus_css_immersion_kit.css" />
     <Content Include="collection.media\__magnus_css_japanese_sentence.css" />
     <Content Include="collection.media\__magnus_css_jlab.css" />
-    <Content Include="collection.media\__magnus_css_wanikani_kanji.css" />
-    <Content Include="collection.media\__magnus_css_wanikani_radical.css" />
-    <Content Include="collection.media\__magnus_css_wanikani_vocab.css" />
+    <Content Include="collection.media\__magnus_css_kanji.css" />
+    <Content Include="collection.media\__magnus_css_radical.css" />
+    <Content Include="collection.media\__magnus_css_vocab.css" />
   </ItemGroup>
 
    <ItemGroup>
