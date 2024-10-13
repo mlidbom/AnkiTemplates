@@ -1,27 +1,27 @@
 ﻿[
   {
     "outputFile": "collection.media/__magnus_css_basic.css",
-    "inputFile": "Styles/basic.scss",
+    "inputFile": "notes/basic/basic.scss",
       "minify": { "enabled": false }
   },
    {
-      "outputFile": "collection.media/__magnus_css_japanese_sentence.css",
-      "inputFile": "Styles/japanese_sentence.scss",
+      "outputFile": "collection.media/__magnus_css_sentence.css",
+      "inputFile": "notes/sentence/sentence.scss",
       "minify": { "enabled": false }
    },
   {
     "outputFile": "collection.media/__magnus_css_kanji.css",
-    "inputFile": "Styles/kanji.scss",
+    "inputFile": "notes/kanji/kanji.scss",
       "minify": { "enabled": false }
   },
   {
     "outputFile": "collection.media/__magnus_css_radical.css",
-    "inputFile": "Styles/radical.scss",
+    "inputFile": "notes/radical/radical.scss",
       "minify": { "enabled": false }
   },
   {
     "outputFile": "collection.media/__magnus_css_vocab.css",
-    "inputFile": "Styles/vocab.scss",
+    "inputFile": "notes/vocab/vocab.scss",
       "minify": { "enabled": false }
   }
 ]
