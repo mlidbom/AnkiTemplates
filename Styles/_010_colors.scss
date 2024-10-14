@@ -67,12 +67,12 @@ html[data-bs-theme="light"] {
   --colorTextBold: color-mix(in lch, #{$colorTextBold}, black 10%);
   --colorTextWarningRed: color-mix(in lch, #{$colorTextBold}, #{$colorTextWarningRed}, black 10%);
   --colorTextMeaning: color-mix(in lch, #{$colorTextMeaning}, black 20%);
-  --colorTextItalic: color-mix(in lch, #{$colorTextItalic}, black 10%);
-  --colorTextReading: color-mix(in lch, #{$colorTextReading}, black 10%);
+  --colorTextItalic: color-mix(in lch, #{$colorTextItalic}, black 20%);
+  --colorTextReading: color-mix(in lch, #{$colorTextReading}, black 20%);
 
   --colorBgRad: color-mix(in lch, #{$colorBgRad}, white 30%);
   --colorBgKan: color-mix(in lch, #{$colorBgKan}, white 30%);
-  --colorBgVoc: color-mix(in lch, #{$colorBgVoc}, white 30%);
+  --colorBgVoc: color-mix(in lch, #{$colorBgVoc}, white 50%);
   --colorBgRead: color-mix(in lch, #{$colorBgRead}, white 30%);
   
 }
