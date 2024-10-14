@@ -46,7 +46,7 @@ html[data-bs-theme="dark"] {
 }
 
 html[data-bs-theme="light"] {
-  --colorBgCard: color-mix(in lch, white, black 5%);
+  --colorBgCard: color-mix(in lch, #f3deb7, black 10%);
   --colorBgOffset1: color-mix(in lch, var(--colorBgCard), black 5%);
   --colorBgOffset2: color-mix(in lch, var(--colorBgCard), black 10%);
   --colorBgOffset3: color-mix(in lch, var(--colorBgCard), black 15%);
