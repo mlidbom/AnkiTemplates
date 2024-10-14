@@ -1,21 +1,36 @@
 @use "sass:color";
 
-:root {
-  --colorTextGreen: #57a64a;
-  --colorTextUnderline: #bbb1ff;
-  --colorTextItalic: #ff9d17;
-  --colorTextBold: #f15034;
-  --colorTextWarningRed: red;
-  
-  --colorBgRad: #00a0f1;
-  --colorBgKan: #f100a0;
-  --colorBgVoc: #a100f1;
-  --colorBgRead: #cc7d12;
-  
-  --colorTextReading: var(--colorTextItalic);
-  --colorTextMeaning: #ff72bc;
-}
+$colorTextGreen: #57a64a;
+$colorTextUnderline: #bbb1ff;
 
+$colorTextItalic: #ff9d17;
+$colorTextBold: #f15034;
+$colorTextWarningRed: red;
+
+$colorBgRad: #00a0f1;
+$colorBgKan: #f100a0;
+$colorBgVoc: #a100f1;
+$colorBgRead: #cc7d12;
+
+$colorTextReading: $colorTextItalic;
+$colorTextMeaning: #ff72bc;
+
+
+:root {
+  --colorTextGreen: #{$colorTextGreen};
+  --colorTextUnderline: #{$colorTextUnderline};
+  --colorTextItalic: #{$colorTextItalic};
+  --colorTextBold: #{$colorTextBold};
+  --colorTextWarningRed: #{$colorTextWarningRed};
+  
+  --colorBgRad: #{$colorBgRad};
+  --colorBgKan: #{$colorBgKan};
+  --colorBgVoc: #{$colorBgVoc};
+  --colorBgRead: #{$colorBgRead};
+  
+  --colorTextReading: #{$colorTextReading};
+  --colorTextMeaning: #{$colorTextMeaning};
+}
 
 html[data-bs-theme="dark"] {
   --colorBgCard: #282828;
@@ -27,11 +42,15 @@ html[data-bs-theme="dark"] {
 }
 
 html[data-bs-theme="light"] {
-  --colorBgCard: white;
-  --colorBgOffset1: color-mix(in lch, var(--colorBgCard), black 10%);
-  --colorBgOffset2: color-mix(in lch, var(--colorBgCard), black 20%);
-  --colorBgOffset3: color-mix(in lch, var(--colorBgCard), black 30%);
+  --colorBgCard: color-mix(in lch, white, black 5%);
+  --colorBgOffset1: color-mix(in lch, var(--colorBgCard), black 5%);
+  --colorBgOffset2: color-mix(in lch, var(--colorBgCard), black 10%);
+  --colorBgOffset3: color-mix(in lch, var(--colorBgCard), black 15%);
   
+  --colorTextItalic: color-mix(in lch, #{$colorTextItalic}, black 10%);
+  --colorTextReading: color-mix(in lch, #{$colorTextReading}, black 10%);
+
+
   --colorTextCard: black;
   
 }
