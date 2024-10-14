@@ -126,10 +126,10 @@
          &.word_priority_low { & > div > .vocabQuestion{ color: var(--colorTextPriorityLow); } 
                                & > div > .vocabAnswer { color: var(--colorTextPriorityLow); } }
 
-         &.word_priority_medium { & > div > .vocabQuestion{ color: color-mix(in lch, var(--colorTextReading), white 20%); } 
+         &.word_priority_medium { & > div > .vocabQuestion{ color: var(--colorTextPriorityMedium); } 
                                   & > div > .vocabAnswer { color: var(--colorTextMeaning); } }
 
-         &.word_priority_high { & > div > .vocabQuestion{ color: color-mix(in lch, var(--colorTextReading), white 20%); } 
+         &.word_priority_high { & > div > .vocabQuestion{ color: var(--colorTextPriorityHigh); } 
                                 & > div > .vocabAnswer { color: var(--colorTextMeaning); } }
 
          &.word_priority_very_high { & > div > .vocabQuestion{ color: var(--colorTextBold); } 

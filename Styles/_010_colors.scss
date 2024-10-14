@@ -28,6 +28,8 @@ html[data-bs-theme="dark"] {
 
   --colorTextPriorityLow: darkgrey;
   --colorTextPriorityVeryLow: var(--colorTextPriorityLow);
+  --colorTextPriorityMedium: color-mix(in lch, var(--colorTextReading), white 20%);
+  --colorTextPriorityHigh: var(--colorTextPriorityMedium);
 
   --colorTextGreen: #{$colorTextGreen};
   --colorTextUnderline: #{$colorTextUnderline};
@@ -57,6 +59,8 @@ html[data-bs-theme="light"] {
 
   --colorTextPriorityLow: color-mix(in lch, var(--colorTextCard), white 50%);
   --colorTextPriorityVeryLow: var(--colorTextPriorityLow);
+  --colorTextPriorityMedium: color-mix(in lch, var(--colorTextReading), black 20%);
+  --colorTextPriorityHigh: var(--colorTextPriorityMedium);
 
   --colorTextGreen: color-mix(in lch, #{$colorTextGreen}, black 10%);
   --colorTextUnderline: color-mix(in lch, #{$colorTextUnderline}, black 10%);
