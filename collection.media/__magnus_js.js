@@ -1,8 +1,4 @@
 ﻿loadScripts(['https://cdn.jsdelivr.net/npm/clipboard@2.0.11/dist/clipboard.min.js'], () => {
-   document.documentElement.setAttribute('data-glossary-layout-mode', 'compact');
-   document.documentElement.setAttribute('data-theme', 'dark');
-
-
    function selectText(element) {
       var range = document.createRange();
       range.selectNodeContents(element);

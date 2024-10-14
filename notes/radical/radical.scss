@@ -8,7 +8,7 @@
             font-size:180px;
             line-height: 0.9;
             padding-bottom:7pt;
-            background:$colorBgRad;
+            background:var(--colorBgRad);
             display: flex;
             flex-direction: column;
             align-content: center;
@@ -33,7 +33,7 @@
    .referenceLink { font-size:10pt;	}
 
 
-   .mnemonics.user { background:$colorBgDark1; }
+   .mnemonics.user { background: var(--colorBgOffset1); }
 
    /* LAYOUT */ 
    @include flexContainerColumn;
