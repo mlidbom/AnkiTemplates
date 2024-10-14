@@ -2,35 +2,17 @@
 
 $colorTextGreen: #57a64a;
 $colorTextUnderline: #bbb1ff;
-
-$colorTextItalic: #ff9d17;
 $colorTextBold: #f15034;
 $colorTextWarningRed: red;
+$colorTextMeaning: #ff72bc;
+$colorTextItalic: #ff9d17;
+$colorTextReading: $colorTextItalic;
 
 $colorBgRad: #00a0f1;
 $colorBgKan: #f100a0;
 $colorBgVoc: #a100f1;
 $colorBgRead: #cc7d12;
 
-$colorTextReading: $colorTextItalic;
-$colorTextMeaning: #ff72bc;
-
-
-:root {
-  --colorTextGreen: #{$colorTextGreen};
-  --colorTextUnderline: #{$colorTextUnderline};
-  --colorTextItalic: #{$colorTextItalic};
-  --colorTextBold: #{$colorTextBold};
-  --colorTextWarningRed: #{$colorTextWarningRed};
-  
-  --colorBgRad: #{$colorBgRad};
-  --colorBgKan: #{$colorBgKan};
-  --colorBgVoc: #{$colorBgVoc};
-  --colorBgRead: #{$colorBgRead};
-  
-  --colorTextReading: #{$colorTextReading};
-  --colorTextMeaning: #{$colorTextMeaning};
-}
 
 html[data-bs-theme="dark"] {
   --colorBgCard: #282828;
@@ -39,6 +21,19 @@ html[data-bs-theme="dark"] {
   --colorBgOffset3: #202223;
 
   --colorTextCard: color-mix(in lch, white, black 10%);
+
+  --colorTextGreen: #{$colorTextGreen};
+  --colorTextUnderline: #{$colorTextUnderline};
+  --colorTextBold: #{$colorTextBold};
+  --colorTextWarningRed: #{$colorTextWarningRed};
+  --colorTextMeaning: #{$colorTextMeaning};
+  --colorTextItalic: #{$colorTextItalic};
+  --colorTextReading: #{$colorTextReading};
+
+  --colorBgRad: #{$colorBgRad};
+  --colorBgKan: #{$colorBgKan};
+  --colorBgVoc: #{$colorBgVoc};
+  --colorBgRead: #{$colorBgRead};
 }
 
 html[data-bs-theme="light"] {
@@ -46,11 +41,20 @@ html[data-bs-theme="light"] {
   --colorBgOffset1: color-mix(in lch, var(--colorBgCard), black 5%);
   --colorBgOffset2: color-mix(in lch, var(--colorBgCard), black 10%);
   --colorBgOffset3: color-mix(in lch, var(--colorBgCard), black 15%);
-  
+
+  --colorTextCard: black;
+
+  --colorTextGreen: #{$colorTextGreen};
+  --colorTextUnderline: #{$colorTextUnderline};
+  --colorTextBold: #{$colorTextBold};
+  --colorTextWarningRed: #{$colorTextWarningRed};
+  --colorTextMeaning: #{$colorTextMeaning};
   --colorTextItalic: color-mix(in lch, #{$colorTextItalic}, black 10%);
   --colorTextReading: color-mix(in lch, #{$colorTextReading}, black 10%);
 
-
-  --colorTextCard: black;
+  --colorBgRad: #{$colorBgRad};
+  --colorBgKan: #{$colorBgKan};
+  --colorBgVoc: #{$colorBgVoc};
+  --colorBgRead: #{$colorBgRead};
   
 }
