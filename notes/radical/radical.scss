@@ -33,7 +33,7 @@
    .referenceLink { font-size:10pt;	}
 
 
-   .mnemonics.user { background:$colorBgDark1; }
+   .mnemonics.user { background: var(--colorBgOffset1); }
 
    /* LAYOUT */ 
    @include flexContainerColumn;

@@ -7,9 +7,9 @@ $colorTextItalic: #ff9d17;
 $colorTextBold: #f15034;
 $colorTextWarningRed : red;
 
-$colorBgDark1: #1b1d1e;
-$colorBgDark2: #1f2122;
-$colorBgDark3: #202223;
+$colorBgOffset1: #1b1d1e;
+$colorBgOffset2: #1f2122;
+$colorBgOffset3: #202223;
 $colorBgCard: #282828;
 
 $colorBgRad: #00a0f1;
@@ -40,19 +40,19 @@ $colorTextMeaning: #ff72bc;
 
 
 html[data-theme="dark"] {
-  --color-bg-card: $colorBgCard;
-  --color-bg-offset-1: #1b1d1e;
-  --color-bg-offset-2: #1f2122;
-  --color-bg-offset-3: #202223;
+  --colorBgCard: $colorBgCard;
+  --colorBgOffset1: #1b1d1e;
+  --colorBgOffset2: #1f2122;
+  --colorBgOffset3: #202223;
 
   --color-txt-card: color-mix(in lch, white, black 10%);
 }
 
 html[data-theme="light"] {
-  --color-bg-card: white;
-  --color-bg-offset-1: color-mix(in lch, var(--color-bg-card), black 10%);
-  --color-bg-offset-2: color-mix(in lch, var(--color-bg-card), black 20%);
-  --color-bg-offset-3: color-mix(in lch, var(--color-bg-card), black 30%);
+  --colorBgCard: white;
+  --colorBgOffset1: color-mix(in lch, var(--colorBgCard), black 10%);
+  --colorBgOffset2: color-mix(in lch, var(--colorBgCard), black 20%);
+  --colorBgOffset3: color-mix(in lch, var(--colorBgCard), black 30%);
   
   --color-txt-card: black;
   

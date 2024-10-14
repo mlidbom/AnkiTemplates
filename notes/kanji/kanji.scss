@@ -51,7 +51,7 @@
          }
 
          .dependency_mnemonic {
-            background: $colorBgDark1;
+            background: var(--colorBgOffset1);
             white-space: pre-line;
             font-size: 20pt;
             text-align: left;
@@ -68,13 +68,13 @@
    .mnemonics{
       &.user { font-size: 25pt;
               line-height: unset; 
-              > div { background: $colorBgDark1;
+              > div { background: var(--colorBgOffset1);
                       white-space: pre-line; } } }
 
-   .hints { background: $colorBgDark1; }
+   .hints { background: var(--colorBgOffset1); }
    .referenceLink { font-size: 12px; }
    .kanjiVocabList {
-      div.primary_vocab { background: $colorBgDark1; }
+      div.primary_vocab { background: var(--colorBgOffset1); }
 
       .priority_maximum .kanji{ color: $colorTextBold; }
       .priority_high .kanji{ color: $colorTextReading; }

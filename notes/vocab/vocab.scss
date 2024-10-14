@@ -98,7 +98,7 @@
 
    .partOfSpeech { color: $colorTextBold;  }
 
-   .user { background: $colorBgDark2; 
+   .user { background: $colorBgOffset2; 
            padding: 0 5pt 0 5pt; }
 
    #__explanation { text-align: left;
@@ -108,7 +108,7 @@
 
    .vocabCompoundList {
       padding: 2pt 5pt 2pt 5pt;
-      background-color:$colorBgDark1;
+      background-color: var(--colorBgOffset1);
       
       li{ list-style-type: none; }
       .vocabCompound{
@@ -155,13 +155,13 @@
          margin-left: 20pt;
          margin-top: 5pt;
          line-height: 1.1;
-         background: $colorBgDark1;
+         background: var(--colorBgOffset1);
          white-space: pre-line
       }
    }
    
    .mnemonic.override { font-size:20pt;
-                        background:$colorBgDark1;
+                        background: var(--colorBgOffset1);
                         line-height: 1.3;
                         white-space: pre-line; }
 
