@@ -47,11 +47,11 @@ html[data-bs-theme="dark"] {
 
 html[data-bs-theme="light"] {
   --colorBgCard: color-mix(in lch, #f3deb7, black 10%);
-  --colorBgOffset1: color-mix(in lch, var(--colorBgCard), black 5%);
-  --colorBgOffset2: color-mix(in lch, var(--colorBgCard), black 10%);
-  --colorBgOffset3: color-mix(in lch, var(--colorBgCard), black 15%);
+  --colorBgOffset1: color-mix(in lch, var(--colorBgCard), black 4%);
+  --colorBgOffset2: color-mix(in lch, var(--colorBgCard), black 4%);
+  --colorBgOffset3: color-mix(in lch, var(--colorBgCard), black 8%);
   
-  --colorTextCard: black;
+  --colorTextCard: color-mix(in lch, black, var(--colorBgCard) 30%);
   --colorHighlightText: var(--colorTextCard);
 
   --colorPageSectionBorder: color-mix(in lch, var(--colorBgCard), black 20%);
@@ -64,14 +64,14 @@ html[data-bs-theme="light"] {
 
   --colorTextGreen: color-mix(in lch, #{$colorTextGreen}, black 10%);
   --colorTextUnderline: color-mix(in lch, #{$colorTextUnderline}, black 10%);
-  --colorTextBold: color-mix(in lch, #{$colorTextBold}, black 10%);
+  --colorTextBold: color-mix(in lch, #{$colorTextBold}, black 20%);
   --colorTextWarningRed: color-mix(in lch, #{$colorTextBold}, #{$colorTextWarningRed}, black 10%);
-  --colorTextMeaning: color-mix(in lch, #{$colorTextMeaning}, black 20%);
-  --colorTextItalic: color-mix(in lch, #{$colorTextItalic}, black 20%);
-  --colorTextReading: color-mix(in lch, #{$colorTextReading}, black 20%);
+  --colorTextMeaning: color-mix(in lch, #{$colorTextMeaning}, black 30%);
+  --colorTextItalic: color-mix(in lch, #{$colorTextItalic}, black 30%);
+  --colorTextReading: color-mix(in lch, #{$colorTextReading}, black 30%);
 
   --colorBgRad: color-mix(in lch, #{$colorBgRad}, white 30%);
-  --colorBgKan: color-mix(in lch, #{$colorBgKan}, white 30%);
+  --colorBgKan: color-mix(in lch, #{$colorBgKan}, white 50%);
   --colorBgVoc: color-mix(in lch, #{$colorBgVoc}, white 50%);
   --colorBgRead: color-mix(in lch, #{$colorBgRead}, white 30%);
   
