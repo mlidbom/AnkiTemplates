@@ -120,11 +120,11 @@
                        white-space: pre-line;
          }
          
-         &.word_priority_very_low { & > div > .vocabQuestion{ color: darkgrey; } 
-                                    & > div > .vocabAnswer { color: darkgrey; } }
+         &.word_priority_very_low { & > div > .vocabQuestion{ color: var(--colorTextPriorityVeryLow); } 
+                                    & > div > .vocabAnswer { color: var(--colorTextPriorityVeryLow); } }
          
-         &.word_priority_low { & > div > .vocabQuestion{ color: darkgrey; } 
-                               & > div > .vocabAnswer { color: darkgrey; } }
+         &.word_priority_low { & > div > .vocabQuestion{ color: var(--colorTextPriorityLow); } 
+                               & > div > .vocabAnswer { color: var(--colorTextPriorityLow); } }
 
          &.word_priority_medium { & > div > .vocabQuestion{ color: color-mix(in lch, var(--colorTextReading), white 20%); } 
                                   & > div > .vocabAnswer { color: var(--colorTextMeaning); } }

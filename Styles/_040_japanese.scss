@@ -24,7 +24,7 @@ ja, tag { color: var(--colorTextGreen); }
 }
 
 /* highlights */
-&{ rad, radical, kan, kanji, read, reading, voc, vocabulary, vocab, .primaryVocab { color:white; }
+&{ rad, radical, kan, kanji, read, reading, voc, vocabulary, vocab, .primaryVocab { color:var(--colorHighlightText); }
 
    rad, radical, kan, kanji, read, reading, voc, vocabulary, vocab {
        display: inline-block;
