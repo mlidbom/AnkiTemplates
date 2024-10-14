@@ -29,11 +29,11 @@ $maxWidth: 1000px;
                             background-color:var(--colorBgCard);
                             text-transform: lowercase;
                             padding:0 2px 0 2px;
-                            color:grey;
+                            color:var(--colorPageSectionTitle);
                             top: -12px;
                             left: 10px;}
       //padding-top: 5pt;
-     border: 1px solid color-mix(in lch, var(--colorBgCard), white 20%);
+     border: 1px solid var(--colorPageSectionBorder);
    }
 }
 
