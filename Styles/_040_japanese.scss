@@ -12,9 +12,9 @@
 /* FONTS & COLORS */
 primary { text-decoration: underline; }
 obsolete { text-decoration: line-through; }
-.meaning { color:$colorTextMeaning; }
+.meaning { color:var(--colorTextMeaning); }
 
-.reading { color: $colorTextReading; }
+.reading { color: var(--colorTextReading); }
 
 ja, tag { color: var(--colorTextGreen); }
 
@@ -31,10 +31,10 @@ ja, tag { color: var(--colorTextGreen); }
        line-height: 1;
    }
 
-   rad, radical { background-color: $colorBgRad}
-   kan, kanji   { background-color: $colorBgKan; }
-   voc, vocabulary, vocab, .primaryVocab   { background-color: $colorBgVoc; }
-   read, reading { background-color: $colorBgRead; } }
+   rad, radical { background-color: var(--colorBgRad)}
+   kan, kanji   { background-color: var(--colorBgKan); }
+   voc, vocabulary, vocab, .primaryVocab   { background-color: var(--colorBgVoc); }
+   read, reading { background-color: var(--colorBgRead); } }
 
 /*LAYOUT*/
 .userExplanation { display: inline-block;
@@ -52,8 +52,8 @@ ja, tag { color: var(--colorTextGreen); }
          color:darkgray;
       }
 
-      &.vocab_tag_uk { color: $colorTextWarningRed; }
-      &.vocab_tag_in_no_sentences { color: $colorTextWarningRed; }
+      &.vocab_tag_uk { color: var(--colorTextWarningRed); }
+      &.vocab_tag_in_no_sentences { color: var(--colorTextWarningRed); }
       &.vocab_tag_in_sentences { color: darkgray; }
       &.in_studying_sentences { color: var(--colorTextGreen); }
 

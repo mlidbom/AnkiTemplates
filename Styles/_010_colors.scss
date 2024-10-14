@@ -1,27 +1,5 @@
 @use "sass:color";
 
-
-$colorTextGreen: #57a64a;
-$colorTextUnderline: #bbb1ff;
-$colorTextItalic: #ff9d17;
-$colorTextBold: #f15034;
-$colorTextWarningRed : red;
-
-$colorBgOffset1: #1b1d1e;
-$colorBgOffset2: #1f2122;
-$colorBgOffset3: #202223;
-$colorBgCard: #282828;
-
-$colorBgRad: #00a0f1;
-$colorBgKan: #f100a0;
-$colorBgVoc: #a100f1;
-$colorBgRead:#cc7d12;
-
-$colorTextCard: color.adjust(white, $lightness: -5%);
-
-$colorTextReading: $colorTextItalic;
-$colorTextMeaning: #ff72bc;
-
 :root {
   --colorTextGreen: #57a64a;
   --colorTextUnderline: #bbb1ff;
@@ -45,7 +23,7 @@ html[data-theme="dark"] {
   --colorBgOffset2: #1f2122;
   --colorBgOffset3: #202223;
 
-  --color-txt-card: color-mix(in lch, white, black 10%);
+  --colorTextCard: color-mix(in lch, white, black 10%);
 }
 
 html[data-theme="light"] {
@@ -54,6 +32,6 @@ html[data-theme="light"] {
   --colorBgOffset2: color-mix(in lch, var(--colorBgCard), black 20%);
   --colorBgOffset3: color-mix(in lch, var(--colorBgCard), black 30%);
   
-  --color-txt-card: black;
+  --colorTextCard: black;
   
 }

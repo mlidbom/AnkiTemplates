@@ -8,7 +8,7 @@
    .front-and-answer{
       .kanji { font-size: 150px;
                line-height: 0.9;
-               background-color: $colorBgKan;
+               background-color: var(--colorBgKan);
                padding-bottom: 10pt; }      
 
       .primaryVocab { font-size: 50pt;
@@ -21,7 +21,7 @@
                        margin-right: 10px; } }
 
       .radicals, .reading { font-size: 32px;
-                            color: $colorTextReading; } }
+                            color: var(--colorTextReading); } }
 
    #dependencies_list{
       .dependency{
@@ -31,22 +31,22 @@
             text-align: left;
             .dependency_name{ font-size: 25pt;
                               margin-left: 10pt;
-                              color: $colorTextMeaning; }}
+                              color: var(--colorTextMeaning); }}
 
          .dependency_character {
             font-size: 30pt;
-            color: $colorTextReading;
+            color: var(--colorTextReading);
          }
 
          .dependency_readings {
             margin-left: 10pt;
             font-size: 30pt;
             white-space:nowrap;
-            color: $colorTextReading;
+            color: var(--colorTextReading);
          }
 
          .dependency_icon svg {
-            .a, .b, .c { stroke: $colorTextReading !important; }
+            .a, .b, .c { stroke: var(--colorTextReading) !important; }
             height: 35pt;
          }
 
@@ -76,8 +76,8 @@
    .kanjiVocabList {
       div.primary_vocab { background: var(--colorBgOffset1); }
 
-      .priority_maximum .kanji{ color: $colorTextBold; }
-      .priority_high .kanji{ color: $colorTextReading; }
+      .priority_maximum .kanji{ color: var(--colorTextBold); }
+      .priority_high .kanji{ color: var(--colorTextReading); }
       .priority_medium .kanji{ color: var(--colorTextGreen); }
       .priority_very_low .kanji{ color: darkgrey; }
 
@@ -87,7 +87,7 @@
 
          &.is_studying_reading { 
             border-left:solid; 
-            border-color:$colorTextReading;
+            border-color:var(--colorTextReading);
          }
          &.is_studying_listening { 
             border-left:solid; 
@@ -103,7 +103,7 @@
       .kanji { font-size: 200%;
                line-height: 1.1;}
       .vocabReading{ font-size: 130%;
-                     .kanjiReading{ color: $colorTextReading; } } }
+                     .kanjiReading{ color: var(--colorTextReading); } } }
 
    /* LAYOUT */
    @include flexContainerColumn;

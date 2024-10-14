@@ -6,7 +6,7 @@
 
   .expression { font-size: 40pt;
     line-height:1;
-    color: color-mix(in lch, $colorTextCard, black 20%);
+    color: color-mix(in lch, var(--colorTextCard), black 20%);
     white-space:pre-line;
     &.overridden { font-size: 130%; } }
   
@@ -16,9 +16,9 @@
       white-space: pre-line; }
 
    .user { background: var(--colorBgOffset1);
-           &.comments.short{ border-color: color.mix($colorBgCard, $colorTextBold, 50%); }
+           &.comments.short{ border-color: color-mix(in lch, var(--colorBgCard), var(--colorTextBold) 50%); }
            read { background-color: unset;
-                  color: $colorTextReading; } }
+                  color: var(--colorTextReading); } }
 
    .meaning { font-size:25pt;
               &.overridden { font-size: 15pt; } }
@@ -45,10 +45,10 @@
                         color: var(--colorTextGreen); }
          .kanji_readings{ margin-left: 10pt;
                           font-size: 25pt;
-                          color: $colorTextReading; }
+                          color: var(--colorTextReading); }
          .kanji_answer { margin-left: 10pt;
                          font-size: 20pt;
-                         color: $colorTextMeaning; } }
+                         color: var(--colorTextMeaning); } }
 
       .kanji_mnemonic {
          margin-left: 20pt;
@@ -66,7 +66,7 @@
       padding-left : 0;
       ul { padding-left: 20px;
            margin-left: 0; 
-           background: $colorBgCard;
+           background: var(--colorBgCard);
       }
       list-style: none;
       
@@ -81,7 +81,7 @@
       .sentenceVocabEntry{
          &.is_studying_reading .vocabQuestion { 
             border-left:solid;
-            border-color:$colorTextReading;
+            border-color:var(--colorTextReading);
          }
          &.is_studying_listening .vocabQuestion { 
             border-left:solid; 
@@ -104,7 +104,7 @@
                                      .vocabHitForm { color: var(--colorTextGreen); 
                                                      margin-left: 5pt; }
 
-                                     .vocabHitReadings { color: $colorTextReading;
+                                     .vocabHitReadings { color: var(--colorTextReading);
                                                          font-size: 25pt;
                                                          margin-left: 5pt;}
          }
@@ -126,14 +126,14 @@
          &.word_priority_low { & > div > .vocabQuestion{ color: darkgrey; } 
                                & > div > .vocabAnswer { color: darkgrey; } }
 
-         &.word_priority_medium { & > div > .vocabQuestion{ color: color-mix(in lch, $colorTextReading, white 20%); } 
-                                  & > div > .vocabAnswer { color: $colorTextMeaning; } }
+         &.word_priority_medium { & > div > .vocabQuestion{ color: color-mix(in lch, var(--colorTextReading), white 20%); } 
+                                  & > div > .vocabAnswer { color: var(--colorTextMeaning); } }
 
-         &.word_priority_high { & > div > .vocabQuestion{ color: color-mix(in lch, $colorTextReading, white 20%); } 
-                                & > div > .vocabAnswer { color: $colorTextMeaning; } }
+         &.word_priority_high { & > div > .vocabQuestion{ color: color-mix(in lch, var(--colorTextReading), white 20%); } 
+                                & > div > .vocabAnswer { color: var(--colorTextMeaning); } }
 
-         &.word_priority_very_high { & > div > .vocabQuestion{ color: $colorTextBold; } 
-                                     & > div > .vocabAnswer { color: $colorTextBold; } }
+         &.word_priority_very_high { & > div > .vocabQuestion{ color: var(--colorTextBold); } 
+                                     & > div > .vocabAnswer { color: var(--colorTextBold); } }
 
       }
    }
