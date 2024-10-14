@@ -1,6 +1,8 @@
 @use "sass:color";
 @import "_020_mixins.scss";
 
+$maxWidth: 1000px;
+
 /* FONTS & COLORS */
 .card { background:$colorBgCard !important;
         color:$colorTextCard !important;
