@@ -78,7 +78,7 @@
 
       .priority_maximum .kanji{ color: $colorTextBold; }
       .priority_high .kanji{ color: $colorTextReading; }
-      .priority_medium .kanji{ color: $colorTextGreen; }
+      .priority_medium .kanji{ color: var(--colorTextGreen); }
       .priority_very_low .kanji{ color: darkgrey; }
 
       .kanjiVocabEntry {
@@ -96,7 +96,7 @@
 
          &.is_studying_listening.is_studying_reading { 
             border-left:solid; 
-            border-color:$colorTextGreen;
+            border-color:var(--colorTextGreen);
          }
       }
 

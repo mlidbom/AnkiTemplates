@@ -16,7 +16,7 @@ obsolete { text-decoration: line-through; }
 
 .reading { color: $colorTextReading; }
 
-ja, tag { color: $colorTextGreen; }
+ja, tag { color: var(--colorTextGreen); }
 
 //The tags that we the right click to select: 
 .clipboard, ja, .headword-term, rad, radical, voc, vocab, kan, kanji, read, reading {
@@ -46,7 +46,7 @@ ja, tag { color: $colorTextGreen; }
    .vocab_tag
    {
       display:inline;
-      color: $colorTextGreen;
+      color: var(--colorTextGreen);
       &:not(:last-child):after { 
          content: "|"; 
          color:darkgray;
@@ -55,7 +55,7 @@ ja, tag { color: $colorTextGreen; }
       &.vocab_tag_uk { color: $colorTextWarningRed; }
       &.vocab_tag_in_no_sentences { color: $colorTextWarningRed; }
       &.vocab_tag_in_sentences { color: darkgray; }
-      &.in_studying_sentences { color: $colorTextGreen; }
+      &.in_studying_sentences { color: var(--colorTextGreen); }
 
    }
 }}

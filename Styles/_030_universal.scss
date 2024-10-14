@@ -33,7 +33,7 @@ $maxWidth: 1000px;
                             top: -12px;
                             left: 10px;}
       //padding-top: 5pt;
-     border: 1px solid color.adjust($colorBgCard, $lightness: 15%);
+     border: 1px solid color-mix(in lch, $colorBgCard, white 20%);
    }
 }
 
