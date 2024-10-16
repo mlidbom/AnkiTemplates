@@ -1,83 +1,82 @@
 ﻿<div id="container1">
-   <div id="container2" class="{{Tags}} card{{Card}}">
-      <!--######-->
+    <div id="container2" class="{{Tags}} card{{Card}}">
+        <!--######-->
 
-      <div class="mainContent kanji{{Card}}">
-         <div class="front-and-answer">
-            <div class="kanjiContainer">
-               <div class="kanji">
-                  <span class="clipboard">{{Q}}</span>
-                  {{#__confused_with}} !<span class="clipboard">{{__confused_with}}</span>{{/__confused_with}}
-                  {{#__near_identical_onyomi_and_meaning}}=<span class="clipboard">{{__near_identical_onyomi_and_meaning}}</span>{{/__near_identical_onyomi_and_meaning}}
-               </div>
+        <div class="mainContent kanji{{Card}}">
+            <div class="front-and-answer">
+                <div class="kanjiContainer">
+                    <div class="kanji">
+                        <span class="clipboard">{{Q}}</span>
+                        {{#__confused_with}} !<span class="clipboard">{{__confused_with}}</span>{{/__confused_with}}
+                        {{#__similar_meaning}}=<span class="clipboard">{{__similar_meaning}}</span>{{/__similar_meaning}}
+                    </div>
+                </div>
+
+                {{#__audio}}<div class="primaryVobabAudio">{{_primary_readings_tts_audio}}</div>{{/__audio}}
+
+
+                {{#__answer}}<div class="meaning user">{{__answer}}</div>{{/__answer}}
+                <div id="userImage">{{_image}}</div>
+                {{#__explanation}}<div class="userExplanation">	{{__explanation}}</div>{{/__explanation}}
+                {{#__references}}<div class="reference_url">{{__references}}</div>{{/__references}}
+
+
+                {{^__answer}}<div class="meaning">{{source_answer}}</div>{{/__answer}}
+
+                <div class="vocabList">
+                    <div class="vocabEntry"></div>
+                    <div class="vocabEntry"></div>
+                    <div class="vocabEntry"></div>
+                </div>
+
+                <div>
+                    <div class="itemInfo">
+                        <div>
+                            <div class="text ">
+                                <span class="reading">##KATAKANA_ONYOMI##</span>
+                                {{#Reading_Kun}} | <span class="reading">{{Reading_Kun}}</span>{{/Reading_Kun}}
+                                {{#__reading_Nan}} | <span class="reading">{{__reading_Nan}}</span> {{/__reading_Nan}}
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-
-            {{#__audio}}<div class="primaryVobabAudio">{{__audio}}</div>{{/__audio}}
-
-
-            {{#__answer}}<div class="meaning user">{{__answer}}</div>{{/__answer}}
-            <div id="userImage">{{_image}}</div>
-            {{#__explanation}}<div class="userExplanation">	{{__explanation}}</div>{{/__explanation}}
-            {{#__references}}<div class="reference_url">{{__references}}</div>{{/__references}}
-
-
-            {{^__answer}}<div class="meaning">{{source_answer}}</div>{{/__answer}}
-
-            <div class="vocabList">
-               <div class="vocabEntry">{{__vocab1}}</div>
-               <div class="vocabEntry">{{__vocab2}}</div>
-               <div class="vocabEntry">{{__vocab3}}</div>
-            </div>
-
+            <div class="bottomSection">
             <div>
-               <div class="itemInfo">
-                  <div>
-                     <div class="text ">
-                        <span class="reading">##KATAKANA_ONYOMI##</span>
-                        {{#Reading_Kun}} | <span class="reading">{{Reading_Kun}}</span>{{/Reading_Kun}}
-                        {{#__reading_Nan}} | <span class="reading">{{__reading_Nan}}</span> {{/__reading_Nan}}
-                     </div>
-                  </div>
-               </div>
+                {{#__mnemonic}}
+                    <div class="mnemonics user">
+                        <div>{{__mnemonic}}</div>
+                    </div>
+                {{/__mnemonic}}
+
+                {{^__mnemonic}}
+                    <div>
+                        <div class="text">{{Meaning_Mnemonic}}</div>
+                        <div class="text hints">{{Meaning_Info}}</div>
+                    </div>
+                    <div>
+                        <div class="text">{{Reading_Mnemonic}}</div>
+                        <div class="text hints">{{Reading_Info}}</div>
+                    </div>
+                </div>
+                {{/__mnemonic}}
+
+                ##DEPENDENCIES_LIST##
+
+                ##VOCAB_LIST##
             </div>
-         </div>
-         <div class="bottomSection">
-            <div>
-               {{#__mnemonic}}
-               <div class="mnemonics user">
-                  <div>{{__mnemonic}}</div>
-               </div>
-               {{/__mnemonic}}
+        </div>
 
-               {{^__mnemonic}}
-               <div>
-                  <div class="text">{{Meaning_Mnemonic}}</div>
-                  <div class="text hints">{{Meaning_Info}}</div>
-               </div>
-               <div>
-                  <div class="text">{{Reading_Mnemonic}}</div>
-                  <div class="text hints">{{Reading_Info}}</div>
-               </div>
-            </div>
-            {{/__mnemonic}}
+        <div class="referenceLink">
+            <a target="_blank" href="https://www.wanikani.com/kanji/{{Q}}">Wanikani</a>
+            <a target="_blank" href="https://jisho.org/search/{{Q}}%20%23kanji">Jisho(kanji)</a>
+            <a target="_blank" href="https://jisho.org/search/*{{Q}}*">Jisho(vocab)</a>
+            <a target="_blank" href="https://www.immersionkit.com/dictionary?keyword={{Q}}&exact=true&sort=shortness">Immersion Kit</a>
+            Tags:{{Tags}}
+        </div>
 
-            ##DEPENDENCIES_LIST##
-
-            ##VOCAB_LIST##
-         </div>
-      </div>
-
-      <div class="referenceLink">
-         <a target="_blank" href="https://www.wanikani.com/kanji/{{Q}}">Wanikani</a>
-         <a target="_blank" href="https://jisho.org/search/{{Q}}%20%23kanji">Jisho(kanji)</a>
-         <a target="_blank" href="https://jisho.org/search/*{{Q}}*">Jisho(vocab)</a>
-         <a target="_blank" href="https://www.immersionkit.com/dictionary?keyword={{Q}}&exact=true&sort=shortness">Immersion Kit</a>
-         Tags:{{Tags}}
-      </div>
-
-      <!--######-->
-   </div>
+        <!--######-->
+    </div>
 </div>
 
 <script src="__magnus_js.js"></script>
-
