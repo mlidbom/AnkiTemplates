@@ -1,4 +1,5 @@
-﻿<div id="container1">
+﻿{{_primary_readings_tts_audio}}
+<div id="container1">
     <div id="container2" class="{{Tags}} card{{Card}}">
         <!--######-->
 
@@ -11,10 +12,7 @@
                         {{#__similar_meaning}}=<span class="clipboard">{{__similar_meaning}}</span>{{/__similar_meaning}}
                     </div>
                 </div>
-
-                {{#__audio}}<div class="primaryVobabAudio">{{_primary_readings_tts_audio}}</div>{{/__audio}}
-
-
+                
                 {{#__answer}}<div class="meaning user">{{__answer}}</div>{{/__answer}}
                 <div id="userImage">{{_image}}</div>
                 {{#__explanation}}<div class="userExplanation">	{{__explanation}}</div>{{/__explanation}}
@@ -47,18 +45,6 @@
                     <div class="mnemonics user">
                         <div>{{__mnemonic}}</div>
                     </div>
-                {{/__mnemonic}}
-
-                {{^__mnemonic}}
-                    <div>
-                        <div class="text">{{Meaning_Mnemonic}}</div>
-                        <div class="text hints">{{Meaning_Info}}</div>
-                    </div>
-                    <div>
-                        <div class="text">{{Reading_Mnemonic}}</div>
-                        <div class="text hints">{{Reading_Info}}</div>
-                    </div>
-                </div>
                 {{/__mnemonic}}
 
                 ##DEPENDENCIES_LIST##
