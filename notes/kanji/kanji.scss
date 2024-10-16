@@ -21,6 +21,11 @@
 
       .radicals, .reading { font-size: 32px;
                             color: var(--colorTextReading); } }
+      .itemInfo primary {
+          text-decoration: none;
+          font-size: 40pt;
+          color: var(--colorTextGreen);
+      }
 
    #dependencies_list{
       .dependency{
@@ -124,10 +129,6 @@
       margin-left: 30pt;
       margin-bottom: 20pt;
    }
-   
-   .mnemonics { margin-top: 10px; 
-                user { margin-top: 0;
-                     margin-bottom: 10pt; } }
 
    .hints { margin-top: 10pt; 
             margin-bottom: 10px;
