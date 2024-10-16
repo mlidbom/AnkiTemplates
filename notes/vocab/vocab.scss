@@ -176,8 +176,6 @@
    .front-and-answer { text-align: center;
                        width: 100%; }
 
-    &._yomitan .meaning > div { text-align:center !important;}
-
    .itemInfo { display: inline-block;
                text-align: left;
                margin-top:10px;
@@ -258,17 +256,4 @@
    &._masustem ._masustem,
    &._uk ._uk{ display: unset; 
                color:var(--colorTextWarningRed); }
-
-
-   //this would hide the list of different writings for verbs that is the whole point of some of the Yomitan includes....
-   &{
-      .vocabList .vocabEntry.replacement .entry .entry-header { 
-            display: none; 
-            rt {display: none;}}
-    
-      &._showVariations .vocabList .vocabEntry.replacement .entry .entry-header { 
-         display: block; 
-      }
-   }
-   
 }
