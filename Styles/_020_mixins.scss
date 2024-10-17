@@ -10,19 +10,34 @@
   #kanji_list {
     line-height: 1;
     .kanji_item {
-      display:flex;
-      align-items: center;
-      .kanji_kanji { font-size: 40pt;
-        color: var(--colorTextGreen);
+      border-left:solid;
+      border-left-color: var(--colorTextBold);
+      
+      &.studying{
+        border-left:solid;
+        border-left-color: var(--colorTextGreen);
       }
-      .kanji_readings{ margin-left: 10pt;
-        font-size: 24pt;
-        white-space: nowrap;
-        color: var(--colorTextReading);
-      }
-      .kanji_answer { margin-left: 10pt;
-        font-size: 20pt;
-        color: var(--colorTextMeaning);
+      .kanji_main {
+        display: flex;
+        align-items: center;
+
+        .kanji_kanji {
+          font-size: 40pt;
+          color: var(--colorTextGreen);
+        }
+
+        .kanji_readings {
+          margin-left: 10pt;
+          font-size: 24pt;
+          white-space: nowrap;
+          color: var(--colorTextReading);
+        }
+
+        .kanji_answer {
+          margin-left: 10pt;
+          font-size: 20pt;
+          color: var(--colorTextMeaning);
+        }
       }
     }
 
