@@ -5,3 +5,37 @@
                              align-items: center;
                              justify-content: center; 
                              width: 100%; }
+
+@mixin kanji_list {
+  #kanji_list {
+    line-height: 1;
+    .kanji_item {
+      display:flex;
+      align-items: center;
+      .kanji_kanji { font-size: 40pt;
+        color: var(--colorTextGreen);
+      }
+      .kanji_readings{ margin-left: 10pt;
+        font-size: 24pt;
+        white-space: nowrap;
+        color: var(--colorTextReading);
+      }
+      .kanji_answer { margin-left: 10pt;
+        font-size: 20pt;
+        color: var(--colorTextMeaning);
+      }
+    }
+
+    .readingsSeparator{
+      color:darkgrey;
+    }
+
+    .kanji_mnemonic {
+      margin-left: 20pt;
+      margin-top: 5pt;
+      line-height: 1.1;
+      background: var(--colorBgOffset1);
+      white-space: pre-line
+    }
+  }  
+}

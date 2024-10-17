@@ -1,6 +1,8 @@
 @use "sass:color";
 @import "../../Styles/_040_japanese.scss";
 .card #container1 #container2 { //Let's stay focused and not break other stuff
+  @include kanji_list;
+  
    /* FONTS AND COLORS */
    font-size: 20pt;
 
@@ -35,27 +37,6 @@
         text-overflow: ellipsis;
       }
    }
-
-   #kanji_list {
-      line-height: 1;
-      .kanji_item {
-         display:flex;
-         align-items: center;
-         .kanji_kanji { font-size: 40pt;
-                        color: var(--colorTextGreen); }
-         .kanji_readings{ margin-left: 10pt;
-                          font-size: 25pt;
-                          color: var(--colorTextReading); }
-         .kanji_answer { margin-left: 10pt;
-                         font-size: 20pt;
-                         color: var(--colorTextMeaning); } }
-
-      .kanji_mnemonic {
-         margin-left: 20pt;
-         margin-top: 5pt;
-         line-height: 1.1;
-         background: var(--colorBgOffset1);
-         white-space: pre-line } }
 
    #debug_output {
       white-space:pre;

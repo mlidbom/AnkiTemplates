@@ -2,6 +2,8 @@
 .card #container1 #container2 .mainContent{ //Let's stay focused and not break other stuff    
                             
    /* FONTS AND COLORS */
+  @include kanji_list;
+  
    font-size: 20pt;
 
    .radical_heading { 
