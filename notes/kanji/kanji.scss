@@ -49,6 +49,10 @@
             font-size: 30pt;
             white-space:nowrap;
             color: var(--colorTextReading);
+           primary { 
+             color: var(--colorTextGreen);
+             text-decoration: none;
+           }
          }
 
          .dependency_icon svg {
