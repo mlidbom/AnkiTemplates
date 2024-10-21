@@ -31,6 +31,14 @@
     <None Remove="_malm_natsume_images_original\**" />
     <None Remove="collection.media\**" />
     <None Remove="_ReSharper.Caches\**" />
+    <Compile Remove="collection.media.backup\**" />
+    <EmbeddedResource Remove="collection.media.backup\**" />
+    <Content Remove="collection.media.backup\**" />
+    <None Remove="collection.media.backup\**" />
+    <Compile Remove="collection.media.hyperttsbackup\**" />
+    <EmbeddedResource Remove="collection.media.hyperttsbackup\**" />
+    <Content Remove="collection.media.hyperttsbackup\**" />
+    <None Remove="collection.media.hyperttsbackup\**" />
   </ItemGroup>
 
   <ItemGroup>

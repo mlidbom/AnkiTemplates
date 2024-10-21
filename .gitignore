@@ -3,6 +3,8 @@
 /backup/
 /backups/
 /collection.media/*
+/collection.media.backup/*
+/collection.media.hyperttsbackup/*
 !/collection.media/__magnus*.js
 /bin/
 /obj/
