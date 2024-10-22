@@ -29,6 +29,13 @@
           color: var(--colorTextGreen);
       }
 
+  #kanji_list{
+    inherited-reading { 
+      color: var(--colorTextGreen);
+      font-weight: bold;
+    }
+  }
+  
    #dependencies_list{
       .dependency{
          .dependency_heading {
