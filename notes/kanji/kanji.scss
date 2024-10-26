@@ -128,8 +128,14 @@
 
      .vocabReading {
        font-size: 130%;
-       .kanjiReadingPrimary { color: var(--colorTextGreen); }
-       .kanjiReadingSecondary { color: var(--colorTextWarningRed); }
+       .kanjiReadingPrimary { 
+         color: var(--colorTextGreen);
+         font-weight: bold;
+       }
+       .kanjiReadingSecondary { 
+         color: var(--colorTextWarningRed);
+         font-weight: bold;
+       }
      }
    }
 
