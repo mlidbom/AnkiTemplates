@@ -119,8 +119,13 @@
 
       .kanji { font-size: 200%;
                line-height: 1.1;}
-      .vocabReading{ font-size: 130%;
-                     .kanjiReading{ color: var(--colorTextReading); } } }
+
+     .vocabReading {
+       font-size: 130%;
+       .kanjiReadingPrimary { color: var(--colorTextGreen); }
+       .kanjiReadingSecondary { color: var(--colorTextWarningRed); }
+     }
+   }
 
    /* LAYOUT */
    @include flexContainerColumn;

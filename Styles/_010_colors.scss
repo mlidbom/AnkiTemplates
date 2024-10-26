@@ -65,7 +65,7 @@ html[data-bs-theme="light"] {
   --colorTextGreen: color-mix(in lch, #{$colorTextGreen}, black 10%);
   --colorTextUnderline: color-mix(in lch, #{$colorTextUnderline}, black 10%);
   --colorTextBold: color-mix(in lch, #{$colorTextBold}, black 20%);
-  --colorTextWarningRed: color-mix(in lch, #{$colorTextBold}, #{$colorTextWarningRed}, black 10%);
+  --colorTextWarningRed: color-mix(in lch, #{$colorTextWarningRed}, black 20%);
   --colorTextMeaning: color-mix(in lch, #{$colorTextMeaning}, black 30%);
   --colorTextItalic: color-mix(in lch, #{$colorTextItalic}, black 30%);
   --colorTextReading: color-mix(in lch, #{$colorTextReading}, black 30%);
