@@ -23,10 +23,16 @@
 
       .radicals, .reading { font-size: 32px;
                             color: var(--colorTextReading); } }
-      .itemInfo primary {
+      .itemInfo{
+        primary {
           text-decoration: none;
           font-size: 40pt;
           color: var(--colorTextGreen);
+        }
+        .readingsSeparator {
+          color: darkgrey;
+          font-size: 40pt;
+        }
       }
 
   #kanji_list{
