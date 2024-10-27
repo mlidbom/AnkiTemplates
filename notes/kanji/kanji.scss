@@ -62,6 +62,9 @@
             font-size: 30pt;
             white-space:nowrap;
             color: var(--colorTextReading);
+            .readingsSeparator {
+              color: var(--colorTextReadingsSeparator);
+            }
            primary-reading-source {
              color: var(--colorTextGreen);
              font-weight: bold;
