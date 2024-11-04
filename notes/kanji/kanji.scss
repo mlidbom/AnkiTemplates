@@ -113,11 +113,16 @@
 
          &.is_studying_reading { 
             border-left:solid; 
-            border-color:var(--colorTextReading);
+            border-color:white;
+           
+           .kanjiReadingSecondary {
+             color: var(--colorTextWarningRed);
+             font-weight: bold;
+           }
          }
          &.is_studying_listening { 
             border-left:solid; 
-            border-color:white;
+            border-color:var(--colorTextReading);
          }
 
          &.is_studying_listening.is_studying_reading { 
@@ -135,9 +140,8 @@
          color: var(--colorTextGreen);
          font-weight: bold;
        }
-       .kanjiReadingSecondary { 
-         color: var(--colorTextWarningRed);
-         font-weight: bold;
+       .kanjiReadingSecondary {
+         color: var(--colorTextReading);
        }
      }
    }
