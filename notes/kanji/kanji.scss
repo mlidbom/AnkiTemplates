@@ -44,6 +44,16 @@
   
    #dependencies_list{
       .dependency{
+          border-left:solid;
+          border-width: medium;
+          border-color:var(--colorTextReading);
+
+        &.is_studying {
+          border-left:solid;
+          border-width: medium;
+          border-color:var(--colorTextGreen);
+        }
+        
          .dependency_heading {
             display: flex;
             align-content: center;
