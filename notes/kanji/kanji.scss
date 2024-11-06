@@ -121,26 +121,19 @@
          .meaning { display: inline-block; 
                     white-space: pre-line;}
 
+        border-left:solid;
+        border-width: medium;
+        border-color:var(--colorTextReading);
+
          &.is_studying_reading {
            border-left:solid;
            border-width: medium;
-           border-color:white;
+           border-color:var(--colorTextGreen);
            
            .kanjiReadingSecondary {
              color: var(--colorTextWarningRed);
              font-weight: bold;
            }
-         }
-         &.is_studying_listening { 
-           border-left:solid;
-           border-width: medium;
-           border-color:var(--colorTextReading);
-         }
-
-         &.is_studying_listening.is_studying_reading { 
-            border-left:solid;
-            border-width: medium;
-            border-color:var(--colorTextGreen);
          }
       }
 
