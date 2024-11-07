@@ -111,6 +111,7 @@
    .referenceLink { font-size: 12px; }
    .kanjiVocabList {
       div.primary_vocab { background: var(--colorBgOffset1); }
+      div.default_primary_vocab { background: color-mix(in lch, var(--colorBgCard), white 7%); ; }
 
       .priority_maximum .kanji{ color: var(--colorTextBold); }
       .priority_high .kanji{ color: var(--colorTextReading); }
