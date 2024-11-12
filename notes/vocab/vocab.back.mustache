@@ -1,79 +1,74 @@
 <!--###everything below here should be identical for reading and listening cards###-->
 <div id="container1">
-   <div id="container2" class="
+    <div id="container2" class="
         {{Tags}}
         card{{Card}}
         {{#__explanation}}has__explanation{{/__explanation}}
         {{#__explanation_long}}has__explanation_long{{/__explanation_long}}
         ">
-      <!--######-->
+        <!--######-->
 
-      <div class="front-and-answer">
-         <div>
-            <div class="question">
-               <div>
-                  <span class="clipboard">{{Q}}</span>
-               </div>
+        <div class="front-and-answer">
+            <div>
+                <div class="question">
+                    <div>
+                        <span class="clipboard">{{Q}}</span>
+                    </div>
+                </div>
             </div>
-         </div>
-      </div>
+        </div>
 
-      <div id="middleSection">
-         {{#__references}}<div class="referenceLink">{{__references}}</div>{{/__references}}
+        <div id="middleSection">
+            {{#__references}}<div class="referenceLink">{{__references}}</div>{{/__references}}
 
 
-         {{^Audio_b}}{{^Audio_g}} <span class="reading clipboard noaudio">{{Reading}}</span>{{/Audio_g}}{{/Audio_b}}
+            {{^Audio_b}}{{^Audio_g}} <span class="reading clipboard noaudio">{{Reading}}</span>{{/Audio_g}}{{/Audio_b}}
 
-         {{#__answer}}<div class="meaning user">{{__answer}}</div>{{/__answer}}
-         {{^__answer}}<div class="meaning"> {{source_answer}}</div>{{/__answer}}
+            {{#__answer}}<div class="meaning user">{{__answer}}</div>{{/__answer}}
+            {{^__answer}}<div class="meaning"> {{source_answer}}</div>{{/__answer}}
 
-         <div id="metaData" class="##VOCAB_CLASSES##">
-            ##VOCAB_META_TAGS_HTML##
-            <span class="_derog">derog</span>
-            <span class="_masustem">masu stem</span>
-            <span class="reading clipboard">{{Reading}}</span>
-         </div>
+            <div id="metaData" class="##VOCAB_CLASSES##">
+                ##VOCAB_META_TAGS_HTML##
+                <span class="_derog">derog</span>
+                <span class="_masustem">masu stem</span>
+                <span class="reading clipboard">{{Reading}}</span>
+            </div>
 
-         {{#__mnemonic}}
-         <div>
-            <div class="mnemonic override">{{__mnemonic}}</div>
-         </div>
-         {{/__mnemonic}}
+            {{#__mnemonic}}
+                <div>
+                    <div class="mnemonic override">{{__mnemonic}}</div>
+                </div>
+            {{/__mnemonic}}
 
-         ##CONFUSED_WITH_LIST##
+            {{#__explanation}}<div id="__explanation" class="user">{{__explanation}}</div>{{/__explanation}}
 
-         ##DERIVED_FROM##
+            ##CONFUSED_WITH_LIST##
 
-         ##VOCAB_COMPOUNDS##
+            ##DERIVED_FROM##
 
-         ##ERGATIVE_TWIN##
+            ##VOCAB_COMPOUNDS##
 
-         ##FORMS_LIST##
+            ##ERGATIVE_TWIN##
 
-         ##SIMILAR_MEANING_LIST##
+            ##FORMS_LIST##
 
-         ##HOMOPHONES_LIST##
+            ##SIMILAR_MEANING_LIST##
 
-         ##KANJI_LIST##
+            ##HOMOPHONES_LIST##
 
-         ##HIGHLIGHTED_SENTENCES##
+            ##KANJI_LIST##
 
-         ##CONTEXT_SENTENCES##
+            ##HIGHLIGHTED_SENTENCES##
 
-         <div>
-            {{#__image}}<div class="image">{{__image}}</div>{{/__image}}
-            {{#Image}}<div class="image">{{Image}}</div>{{/Image}}
-         </div>
+            ##CONTEXT_SENTENCES##
 
-         {{#__explanation}}<div id="__explanation" class="user">{{__explanation}}</div>{{/__explanation}}
+        </div>
 
-      </div>
+        {{#__explanation_long}}<div id="__explanation_long" class="user">{{__explanation_long}}</div>{{/__explanation_long}}
 
-      {{#__explanation_long}}<div id="__explanation_long" class="user">{{__explanation_long}}</div>{{/__explanation_long}}
-
-      <!--<div class="tags">{{Tags}}</div>-->
-      <!--######-->
-   </div>
+        <!--<div class="tags">{{Tags}}</div>-->
+        <!--######-->
+    </div>
 </div>
 
 <script src="__magnus_js.js"></script>
