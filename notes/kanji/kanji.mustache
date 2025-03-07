@@ -12,7 +12,7 @@
                         {{#__similar_meaning}}=<span class="clipboard">{{__similar_meaning}}</span>{{/__similar_meaning}}
                     </div>
                 </div>
-                
+
                 {{#__answer}}<div class="meaning user">{{__answer}}</div>{{/__answer}}
                 <!--<div id="userImage">{{_image}}</div>-->
                 {{#__explanation}}<div class="userExplanation">	{{__explanation}}</div>{{/__explanation}}
@@ -38,18 +38,18 @@
                 </div>
             </div>
             <div>
-                {{#__mnemonic}}
-                    <div class="mnemonics user page_section">
-                        <div class="page_section_title">mnemonic</div>
-                        <div>{{__mnemonic}}</div>
-                    </div>
-                {{/__mnemonic}}
+
+                <div class="mnemonics user page_section">
+                    <div class="page_section_title">mnemonic</div>
+                    {{#__mnemonic}}<div>{{__mnemonic}}</div>{{/__mnemonic}}
+                    {{^__mnemonic}}<div>{{Meaning_Mnemonic}}</div>{{/__mnemonic}}
+                </div>
 
                 ##DEPENDENCIES_LIST##
 
-                ##KANJI_LIST##
+                ##VOCAB_LIST##
 
-                ##VOCAB_LIST##               
+                ##KANJI_LIST##
 
             </div>
         </div>
