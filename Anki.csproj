@@ -39,6 +39,10 @@
     <EmbeddedResource Remove="collection.media.hyperttsbackup\**" />
     <Content Remove="collection.media.hyperttsbackup\**" />
     <None Remove="collection.media.hyperttsbackup\**" />
+    <Compile Remove="collection.media.hyperttsbackup.backup\**" />
+    <EmbeddedResource Remove="collection.media.hyperttsbackup.backup\**" />
+    <Content Remove="collection.media.hyperttsbackup.backup\**" />
+    <None Remove="collection.media.hyperttsbackup.backup\**" />
   </ItemGroup>
 
   <ItemGroup>
