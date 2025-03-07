@@ -1,8 +1,8 @@
 ﻿loadScripts(['https://cdn.jsdelivr.net/npm/clipboard@2.0.11/dist/clipboard.min.js'], () => {
    function selectText(element) {
-      var range = document.createRange();
+      const range = document.createRange();
       range.selectNodeContents(element);
-      var selection = window.getSelection();
+      const selection = window.getSelection();
       selection.removeAllRanges();
       selection.addRange(range);
    }
@@ -29,17 +29,17 @@
 
 function setupAudioPlayers() {
    const initializedClassName = "initialized"
-   var audioElements = document.getElementsByTagName('audio');
-    
-   for (var i = 0; i < audioElements.length; i++) {
-      var audio = audioElements[i];
-      var button = audio.nextElementSibling
+   const audioElements = document.getElementsByTagName('audio');
+
+   for (let i = 0; i < audioElements.length; i++) {
+      const audio = audioElements[i];
+      const button = audio.nextElementSibling;
       if (button && audio.currentSrc && button.classList.contains('play-button') && !button.classList.contains(initializedClassName)) {
          button.classList.add(initializedClassName)
          button.innerHTML = '▶';
         
          button.addEventListener('click', function() {
-            var audioElement = this.previousElementSibling;
+            const audioElement = this.previousElementSibling;
             if (audioElement.paused) {
                   audioElement.play();
                   this.innerHTML = '⏸︎';
