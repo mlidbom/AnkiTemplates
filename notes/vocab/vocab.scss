@@ -199,7 +199,8 @@
 
                   .vocabInContext { 
                      &.primaryForm { background-color: var(--colorBgVoc); }
-                     &.secondaryForm { background-color: var(--colorBgRad); } }
+                     &.secondaryForm { background-color: var(--colorBgRad); } 
+                     &.derivedCompoundForm { background-color: var(--colorBgRead); } }
                }
                .sentenceAnswer{ color: var(--colorTextMeaning);
                                 line-height: 1;}
