@@ -42,8 +42,8 @@ ja, tag { color: var(--colorTextGreen); }
                    max-width: $maxWidth;
                    text-align: left; }
 
-.vocab_tag_list{`
-   display:inline;`
+.vocab_tag_list{
+   display:inline;
    .vocab_tag
    {
       display:inline;
@@ -54,7 +54,7 @@ ja, tag { color: var(--colorTextGreen); }
       }
 
       &.vocab_tag_uk { color: var(--colorTextWarningRed); }
-      &.vocab_tag_in_no_sentences { color: var(--colorTextWarningRed); }`
+      &.vocab_tag_in_no_sentences { color: var(--colorTextWarningRed); }
       &.vocab_tag_in_sentences { color: darkgray; }
       &.in_studying_sentences { color: var(--colorTextGreen); }
 
