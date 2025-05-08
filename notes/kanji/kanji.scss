@@ -112,11 +112,13 @@
    .kanjiVocabList {
       div.primary_vocab { background: var(--colorBgOffset1); }
       div.default_primary_vocab { background: color-mix(in lch, var(--colorBgCard), white 7%); ; }
+      div.not_matching_kanji { background: color-mix(in lch, var(--colorBgCard), var(--colorTextWarningRed) 30%); ; }
 
       .priority_maximum .kanji{ color: var(--colorTextBold); }
       .priority_high .kanji{ color: var(--colorTextReading); }
       .priority_medium .kanji{ color: var(--colorTextGreen); }
       .priority_very_low .kanji{ color: var(--colorTextPriorityVeryLow); }
+      .not_matching_kanji .kanji{ color: var(--colorTextPriorityVeryLow); }
 
       .kanjiVocabEntry {
          .meaning { display: inline-block; 
